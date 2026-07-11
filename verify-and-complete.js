@@ -150,11 +150,11 @@ async function executarVerificacao() {
       }
     });
 
-    await new Promise(r => setTimeout(r, 3000));
+    await new Promise(r => setTimeout(r, 5000)); // Aguardar mais tempo após enviar
     logger.success('   ✅ Domínio enviado!\n');
 
     // ===== PASSO 1: Verificar meta tag no Render =====
-    logger.info('🌐 [PASSO 1] Verificando meta tag no site do Render...\n');
+    logger.info('\n🌐 [PASSO 1] Verificando meta tag no site do Render...\n');
 
     let temMetaTag = false;
     let tentativasMetaTag = 0;
@@ -254,11 +254,23 @@ async function executarVerificacao() {
 
     // ===== PASSO 2: Voltar ao Facebook =====
     logger.info('\n🔙 [PASSO 2] Voltando ao Facebook...\n');
-    const facebookUrl = `https://business.facebook.com/latest/settings/domains/?business_id=${businessId}&selected_asset_id=1341619324773678&selected_asset_type=owned-domain`;
+
+    try {
+      await page.waitForNavigation({ waitUntil: 'load', timeout: 10000 }).catch(() => {
+        // Pode não haver navegação, é ok
+      });
+    } catch (e) {
+      // Ignorar
+    }
+
+    const facebookUrl = `https://business.facebook.com/latest/settings/domains/?business_id=${businessId}`;
 
     logger.info(`   Navegando para: ${facebookUrl}\n`);
-    await page.goto(facebookUrl, { waitUntil: 'load', timeout: 60000 });
-    await new Promise(r => setTimeout(r, 3000));
+    await page.goto(facebookUrl, { waitUntil: 'networkidle2', timeout: 60000 }).catch(err => {
+      logger.warn(`   ⚠️ Aviso ao navegar: ${err.message}\n`);
+    });
+
+    await new Promise(r => setTimeout(r, 4000));
     logger.success('✅ Página carregada\n');
 
     // ===== PASSO 3: Clicar "Verify domain" =====
