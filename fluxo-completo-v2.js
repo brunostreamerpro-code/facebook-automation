@@ -195,9 +195,33 @@ async function executarFluxoCompleto() {
       return;
     }
 
+    await new Promise(r => setTimeout(r, 2000));
+
+    // ===== PASSO 3: Clicar "Criar domínio" no modal =====
+    logger.info('🔗 [PASSO 3] Clicando em "Criar domínio" no modal...\n');
+
+    const clicouCriarDominio = await page.evaluate(() => {
+      const allElements = document.querySelectorAll('*');
+      for (const elem of allElements) {
+        const text = elem.textContent?.trim() || '';
+        if ((text === 'Criar um domínio' || text === 'Criar domínio') &&
+            (elem.tagName === 'BUTTON' || elem.getAttribute('role') === 'button' || elem.onclick)) {
+          elem.click();
+          return true;
+        }
+      }
+      return false;
+    });
+
+    if (clicouCriarDominio) {
+      logger.success('✅ Clique em "Criar domínio" executado\n');
+    } else {
+      logger.warn('⚠️ Não conseguiu clicar em "Criar domínio"\n');
+    }
+
     await new Promise(r => setTimeout(r, 3000));
 
-    // ===== PASSO 3: Preencher domínio =====
+    // ===== PASSO 4: Preencher domínio =====
     logger.info(`📝 [PASSO 4] Preenchendo: ${dominio}\n`);
 
     await page.evaluate(() => {
