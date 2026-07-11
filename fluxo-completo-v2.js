@@ -60,7 +60,51 @@ async function executarFluxoCompleto() {
       logger.success(`✅ ${cookies.length} cookies carregados\n`);
     }
 
-    const businessId = '1549058433439653';
+    // ===== CAPTURAR BUSINESS ID AUTOMATICAMENTE =====
+    logger.info('🔍 [PASSO 0] Capturando Business Manager ID...\n');
+
+    // Primeiro navegar para página inicial do Business Manager
+    await page.goto('https://business.facebook.com', { waitUntil: 'load', timeout: 60000 });
+    await new Promise(r => setTimeout(r, 2000));
+
+    // Extrair o ID da URL ou do conteúdo da página
+    let businessId = await page.evaluate(() => {
+      // Tentar extrair da URL
+      const urlMatch = window.location.href.match(/business_id=(\d+)/);
+      if (urlMatch) return urlMatch[1];
+
+      // Tentar extrair de links
+      const links = Array.from(document.querySelectorAll('a'));
+      for (const link of links) {
+        const href = link.href;
+        const match = href.match(/business_id=(\d+)/);
+        if (match) return match[1];
+      }
+
+      return null;
+    });
+
+    if (!businessId) {
+      logger.warn('⚠️ Não conseguiu capturar ID automaticamente, tentando método alternativo...\n');
+
+      // Tentar acessar a página de domínios direto
+      await page.goto('https://business.facebook.com/latest/settings/domains', { waitUntil: 'load', timeout: 60000 });
+      await new Promise(r => setTimeout(r, 2000));
+
+      businessId = await page.evaluate(() => {
+        const match = window.location.href.match(/business_id=(\d+)/);
+        return match ? match[1] : null;
+      });
+
+      if (!businessId) {
+        logger.error('❌ Não foi possível capturar o Business ID\n');
+        await browser.close();
+        return;
+      }
+    }
+
+    logger.success(`✅ Business ID capturado: ${businessId}\n`);
+
     const domainsUrl = `https://business.facebook.com/latest/settings/domains?business_id=${businessId}`;
 
     // ===== USAR GENESISAI2001.VERCEL.APP COMO DOMÍNIO =====
