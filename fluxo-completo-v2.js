@@ -252,39 +252,65 @@ async function executarFluxoCompleto() {
       }
     });
 
-    await new Promise(r => setTimeout(r, 3000));
+    await new Promise(r => setTimeout(r, 5000));
     logger.success('✅ Domínio enviado\n');
 
-    // ===== PASSO 7: Capturar meta tag =====
+    // ===== PASSO 7: Capturar meta tag com retry =====
     logger.info('\n🔍 [PASSO 7] Capturando meta tag do Facebook...\n');
 
-    const metaTagFacebook = await page.evaluate(() => {
-      const inputs = document.querySelectorAll('input[type="text"], input[type="hidden"]');
-      for (const input of inputs) {
-        const value = input.value || '';
-        if (value.length === 30 && /^[a-zA-Z0-9_-]+$/.test(value)) return value;
+    let metaTagFacebook = null;
+    let tentativas = 0;
+    const maxTentativas = 5;
+
+    while (!metaTagFacebook && tentativas < maxTentativas) {
+      tentativas++;
+      logger.info(`   Tentativa ${tentativas}/${maxTentativas}...\n`);
+
+      await new Promise(r => setTimeout(r, 2000));
+
+      metaTagFacebook = await page.evaluate(() => {
+        // 1. Procurar em inputs
+        const inputs = document.querySelectorAll('input[type="text"], input[type="hidden"]');
+        for (const input of inputs) {
+          const value = input.value || '';
+          if (value.length === 30 && /^[a-zA-Z0-9_-]+$/.test(value)) return value;
+        }
+
+        // 2. Procurar em code tags
+        const codeTags = document.querySelectorAll('code');
+        for (const code of codeTags) {
+          const text = code.textContent || '';
+          const match = text.match(/content=["']([a-zA-Z0-9_-]{28,32})["']/);
+          if (match && match[1]) return match[1];
+        }
+
+        // 3. Procurar em qualquer elemento de texto
+        const textElements = document.querySelectorAll('span, div, p, strong');
+        for (const elem of textElements) {
+          const text = (elem.textContent || '').trim();
+          if (text.length === 30 && /^[a-zA-Z0-9_-]+$/.test(text)) return text;
+        }
+
+        // 4. Procurar em todo o texto da página
+        const allText = document.body.innerText || '';
+        const matches = allText.match(/[a-z0-9_-]{30}/gi);
+        if (matches) {
+          for (const match of matches) {
+            if (/^[a-zA-Z0-9_-]{30}$/.test(match)) return match;
+          }
+        }
+
+        return null;
+      });
+
+      if (metaTagFacebook) {
+        logger.success(`✅ Meta tag capturado: ${metaTagFacebook}\n`);
       }
+    }
 
-      const codeTags = document.querySelectorAll('code');
-      for (const code of codeTags) {
-        const text = code.textContent || '';
-        const match = text.match(/content=["']([a-zA-Z0-9_-]{28,32})["']/);
-        if (match && match[1]) return match[1];
-      }
-
-      const textElements = document.querySelectorAll('span, div, p');
-      for (const elem of textElements) {
-        const text = (elem.textContent || '').trim();
-        if (text.length === 30 && /^[a-zA-Z0-9_-]+$/.test(text)) return text;
-      }
-
-      return null;
-    });
-
-    if (metaTagFacebook) {
-      logger.success(`✅ Meta tag capturado: ${metaTagFacebook}\n`);
-    } else {
-      logger.warn('⚠️ Meta tag não encontrado\n');
+    if (!metaTagFacebook) {
+      logger.warn('⚠️ Meta tag não encontrado após várias tentativas\n');
+      logger.info('   Verifique manualmente no Facebook Business Manager\n');
       await browser.close();
       return;
     }
