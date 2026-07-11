@@ -531,3 +531,12 @@
 {"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:55:00"}
 {"level":"error","message":"   name: (cnpj-17837924) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:55:00"}
 {"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 15:06:30"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 19:23:33"}
+{"level":"error","message":"   name: (cnpj-17838086) already in use\n","service":"bm-automation","timestamp":"2026-07-11 19:23:33"}
+{"level":"error","message":"\n❌ ERRO: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 19:24:15"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 19:24:33"}
+{"level":"error","message":"   name: (cnpj-17838086) already in use\n","service":"bm-automation","timestamp":"2026-07-11 19:24:33"}
+{"level":"error","message":"\n❌ ERRO: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.\n","service":"bm-automation","timestamp":"2026-07-11 19:24:46"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 19:24:51"}
+{"level":"error","message":"   name: (cnpj-17838086) already in use\n","service":"bm-automation","timestamp":"2026-07-11 19:24:51"}
+{"level":"error","message":"\n❌ ERRO: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 19:24:56"}

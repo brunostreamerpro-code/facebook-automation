@@ -7,8 +7,10 @@
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
+const { execSync } = require('child_process');
 const logger = require('./src/utils/logger');
 const RenderServiceAPI = require('./src/services/RenderServiceAPI');
+const atualizarMetaTag = require('./atualizar-metatag');
 
 puppeteer.use(StealthPlugin());
 
@@ -66,8 +68,12 @@ async function executarFluxoCompleto() {
     let projectId;
     try {
       const renderAPI = new RenderServiceAPI(process.env.RENDER_API_KEY || 'rnd_twVpTqjhhrY4bUYSNX2ucC282R9x');
+
+      // Gerar nome único com timestamp e random
+      const uniqueId = `${Date.now()}-${Math.random().toString(36).substring(7)}`;
+
       const renderProject = await renderAPI.createWebService({
-        cnpj: `${Date.now()}`
+        cnpj: uniqueId
       });
 
       if (renderProject && renderProject.url) {
@@ -222,46 +228,107 @@ async function executarFluxoCompleto() {
     await new Promise(r => setTimeout(r, 3000));
     logger.success('✅ Domínio enviado!\n');
 
-    // ===== PASSO 7: Debug - Verificar se funcionou =====
-    logger.info('\n🔍 [PASSO 7] DEBUG - Verificando página...\n');
-    logger.info('='.repeat(80) + '\n');
+    // ===== PASSO 7: Capturar meta tag gerado pelo Facebook =====
+    logger.info('\n🔍 [PASSO 7] Capturando meta tag gerado pelo Facebook...\n');
 
-    const pageInfo = await page.evaluate((dom) => {
-      const texto = document.body.innerText;
-      const erros = [];
-      const sucessos = [];
+    // DEBUG: Ver o HTML da página
+    const htmlDebug = await page.evaluate(() => {
+      return document.body.innerHTML.substring(0, 5000);
+    });
 
-      if (texto.includes('Erro') || texto.includes('erro')) {
-        erros.push('Contém mensagem de erro');
-      }
-      if (texto.includes(dom)) {
-        sucessos.push('Domínio aparece na página');
-      }
-      if (texto.includes('verificado') || texto.includes('Verificado')) {
-        sucessos.push('Indicação de verificação');
+    logger.info('📄 Primeiros 5000 chars do HTML:\n');
+    logger.info(htmlDebug.substring(0, 1000) + '\n');
+
+    const metaTagFacebook = await page.evaluate(() => {
+      // Procurar o meta tag que Facebook gera
+      // Facebook coloca em um input ou em um elemento específico
+
+      // 1. Procurar em inputs
+      const inputs = document.querySelectorAll('input[type="text"], input[type="hidden"]');
+      for (const input of inputs) {
+        const value = input.value || '';
+        if (value.length === 30 && /^[a-zA-Z0-9_-]+$/.test(value)) {
+          return value;
+        }
       }
 
-      return { erros, sucessos, temDominio: texto.includes('facebook-automation-688047') };
-    }, dominio);
-
-    if (pageInfo.sucessos.length > 0) {
-      logger.success('✅ Sucessos encontrados:');
-      for (const suc of pageInfo.sucessos) {
-        logger.success(`   - ${suc}`);
+      // 2. Procurar em <code> tags
+      const codeTags = document.querySelectorAll('code');
+      for (const code of codeTags) {
+        const text = code.textContent || '';
+        const match = text.match(/content=["']([a-zA-Z0-9_-]{28,32})["']/);
+        if (match && match[1]) {
+          return match[1];
+        }
       }
-    }
 
-    if (pageInfo.erros.length > 0) {
-      logger.warn('⚠️ Possíveis erros:');
-      for (const err of pageInfo.erros) {
-        logger.warn(`   - ${err}`);
+      // 3. Procurar em elementos de texto que contenham o padrão
+      const textElements = document.querySelectorAll('span, div, p');
+      for (const elem of textElements) {
+        const text = (elem.textContent || '').trim();
+        if (text.length === 30 && /^[a-zA-Z0-9_-]+$/.test(text)) {
+          return text;
+        }
       }
+
+      // 4. Procurar em qualquer elemento
+      const allText = document.body.innerText;
+      const matches = allText.match(/[a-z0-9]{30}/gi);
+      if (matches) {
+        for (const match of matches) {
+          if (/^[a-zA-Z0-9_-]{30}$/.test(match)) {
+            return match;
+          }
+        }
+      }
+
+      return null;
+    });
+
+    if (metaTagFacebook) {
+      logger.success(`✅ Meta tag capturado do Facebook: ${metaTagFacebook}\n`);
+    } else {
+      logger.warn('⚠️ Meta tag não encontrado automaticamente na página do Facebook\n');
+      logger.info('   Será necessário capturar manualmente ou verificar a página\n');
     }
 
     logger.info('\n='.repeat(80));
 
-    // ===== PASSO 8: Verificar domínio no Render =====
-    logger.info('\n🌐 [PASSO 8] Verificando domínio no Render...\n');
+    // ===== PASSO 8: Atualizar meta tag no GitHub e fazer deploy =====
+    if (metaTagFacebook) {
+      logger.info('\n📝 [PASSO 8] Atualizando meta tag no GitHub e fazendo deploy...\n');
+
+      try {
+        // 1. Atualizar arquivo HTML local
+        const atualizado = await atualizarMetaTag(metaTagFacebook);
+
+        if (atualizado) {
+          // 2. Fazer commit
+          logger.info('   📤 Fazendo commit no GitHub...\n');
+          execSync('git add src/web/public/index.html', { stdio: 'inherit' });
+          execSync(`git commit -m "feat: update facebook domain verification meta tag"`, { stdio: 'pipe' });
+          logger.success('   ✅ Commit realizado\n');
+
+          // 3. Fazer push
+          logger.info('   🚀 Fazendo push para o GitHub...\n');
+          execSync('git push origin main', { stdio: 'pipe' });
+          logger.success('   ✅ Push realizado\n');
+
+          // 4. Aguardar deploy
+          logger.info('   ⏳ Aguardando Render fazer deploy (até 2 minutos)...\n');
+          await new Promise(r => setTimeout(r, 10000));
+
+          logger.success('✅ Meta tag atualizado e deploy iniciado!\n');
+        } else {
+          logger.warn('⚠️ Problema ao atualizar meta tag\n');
+        }
+      } catch (error) {
+        logger.warn(`⚠️ Erro ao atualizar GitHub: ${error.message}\n`);
+      }
+    }
+
+    // ===== PASSO 9: Verificar se meta tag foi atualizado no Render =====
+    logger.info('\n🌐 [PASSO 9] Verificando se meta tag foi atualizado no Render...\n');
 
     try {
       const renderUrl = `https://${dominio}`;
@@ -292,8 +359,32 @@ async function executarFluxoCompleto() {
       if (response) {
         logger.success('✅ Domínio está acessível\n');
 
+        // Procurar pelo meta tag que foi enviado
+        logger.info('   🔍 Procurando pelo meta tag enviado...\n');
+
+        const temMetaTagCorreto = await page.evaluate((metaTagEsperado) => {
+          const metaTag = document.querySelector('meta[name="facebook-domain-verification"]');
+          if (metaTag) {
+            const content = metaTag.getAttribute('content');
+            if (content === metaTagEsperado) {
+              return 'correto';
+            } else {
+              return `incorreto:${content}`;
+            }
+          }
+          return 'nao_encontrado';
+        }, metaTagFacebook);
+
+        if (temMetaTagCorreto === 'correto') {
+          logger.success(`✅ Meta tag correto encontrado: ${metaTagFacebook}\n`);
+        } else if (temMetaTagCorreto.startsWith('incorreto')) {
+          logger.warn(`⚠️ Meta tag encontrado mas com valor diferente: ${temMetaTagCorreto}\n`);
+        } else {
+          logger.warn('⚠️ Meta tag não encontrado no site\n');
+        }
+
         // Procurar por meta tag
-        logger.info('   🔍 Procurando meta tag...\n');
+        logger.info('   🔍 Procurando todos os meta tags...\n');
 
         const metaTagInfo = await page.evaluate(() => {
           const metas = [];
@@ -356,15 +447,15 @@ async function executarFluxoCompleto() {
       logger.warn(`   ⚠️ Erro ao verificar Render: ${error.message}\n`);
     }
 
-    // ===== PASSO 9: Voltar ao Facebook e verificar domínio =====
-    logger.info('\n🔗 [PASSO 9] Voltando para Facebook para verificar domínio...\n');
+    // ===== PASSO 10: Voltar ao Facebook e verificar domínio =====
+    logger.info('\n🔗 [PASSO 10] Voltando para Facebook para verificar domínio...\n');
 
     await page.goto(domainsUrl, { waitUntil: 'load', timeout: 30000 });
     await new Promise(r => setTimeout(r, 3000));
     logger.success('✅ De volta na página de domínios\n');
 
-    // ===== PASSO 10: Procurar botão "Verificar" =====
-    logger.info('🔍 [PASSO 10] Procurando botão "Verificar"...\n');
+    // ===== PASSO 11: Procurar botão "Verificar" =====
+    logger.info('🔍 [PASSO 11] Procurando botão "Verificar"...\n');
 
     const temBotaoVerificar = await page.evaluate(() => {
       const buttons = document.querySelectorAll('button, [role="button"]');
