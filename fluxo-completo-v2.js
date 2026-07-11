@@ -1,25 +1,27 @@
 /**
- * 🚀 FLUXO COMPLETO V2 - Domain verification otimizado
+ * 🚀 FLUXO COMPLETO V2 - USANDO GENESISAI2001
  *
- * ESTRATÉGIA CORRIGIDA COM XPATH FUNCIONANDO
+ * ✅ SEM CRIAR RENDER
+ * ✅ USA API DO GENESISAI2001
+ * ✅ INSTANTÂNEO E ESCALÁVEL
  */
 
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
-const { execSync } = require('child_process');
 const logger = require('./src/utils/logger');
-const RenderServiceAPI = require('./src/services/RenderServiceAPI');
-const { atualizarMetaTag } = require('./atualizar-metatag-v2');
 
 puppeteer.use(StealthPlugin());
+
+const GENESIZ_API = 'https://genesisai2001.vercel.app/api/generate-site';
+const GENESIZ_URL = 'https://genesisai2001.vercel.app';
 
 async function executarFluxoCompleto() {
   let browser, page;
 
   try {
     logger.info('\n' + '='.repeat(80));
-    logger.info('🚀 FLUXO COMPLETO V2 - Domain Verification');
+    logger.info('🚀 FLUXO COMPLETO V2 - Usando Genesisai2001');
     logger.info('='.repeat(80) + '\n');
 
     // Inicializar browser
@@ -61,85 +63,18 @@ async function executarFluxoCompleto() {
     const businessId = '1549058433439653';
     const domainsUrl = `https://business.facebook.com/latest/settings/domains?business_id=${businessId}`;
 
-    // ===== CRIAR NOVO PROJETO RENDER =====
-    logger.info('🔧 Criando novo projeto Render...\n');
+    // ===== USAR GENESISAI2001.VERCEL.APP COMO DOMÍNIO =====
+    const dominio = 'genesisai2001.vercel.app';
+    logger.success(`✅ Usando Genesisai2001: ${dominio}\n`);
+    logger.info('   (Sem criar Render, sem git deploy)\n');
 
-    let dominio;
-    let projectId;
-    try {
-      const renderAPI = new RenderServiceAPI(process.env.RENDER_API_KEY || 'rnd_twVpTqjhhrY4bUYSNX2ucC282R9x');
-
-      // Gerar nome único com timestamp e random
-      const uniqueId = `${Date.now()}-${Math.random().toString(36).substring(7)}`;
-
-      const renderProject = await renderAPI.createWebService({
-        cnpj: uniqueId
-      });
-
-      if (renderProject && renderProject.url) {
-        dominio = renderProject.url.replace('https://', '');
-        projectId = renderProject.id;
-        logger.success(`✅ Projeto Render criado: ${dominio}\n`);
-        logger.info(`   Project ID: ${projectId}\n`);
-
-        // Aguardar projeto ficar acessível via HTTP
-        logger.info('⏳ Aguardando projeto ficar acessível...\n');
-        const maxTentativas = 20; // 20 tentativas = até 2 minutos
-        let tentativa = 0;
-        let projetoAcessivel = false;
-
-        while (tentativa < maxTentativas && !projetoAcessivel) {
-          tentativa++;
-          await new Promise(r => setTimeout(r, 6000)); // Aguarda 6 segundos entre tentativas
-
-          try {
-            const response = await fetch(`https://${dominio}`, { timeout: 5000 });
-            if (response.status === 200 || response.status === 500) {
-              logger.success(`✅ Projeto está acessível (status: ${response.status})!\n`);
-              projetoAcessivel = true;
-            } else {
-              logger.info(`   [${tentativa}/${maxTentativas}] Status: ${response.status}`);
-            }
-          } catch (e) {
-            logger.info(`   [${tentativa}/${maxTentativas}] Verificando... (${e.message.substring(0, 40)})`);
-          }
-        }
-
-        if (!projetoAcessivel) {
-          logger.warn(`⚠️ Projeto não ficou acessível após ${maxTentativas * 6}s\n`);
-          logger.info('   Continuando mesmo assim...\n');
-        }
-      } else {
-        throw new Error('Não foi possível obter URL do projeto');
-      }
-    } catch (error) {
-      logger.warn(`⚠️ Erro ao criar projeto Render: ${error.message}\n`);
-      logger.info('   Usando domínio padrão\n');
-      dominio = `facebook-automation-${Date.now().toString().slice(-6)}.onrender.com`;
-    }
-
-    // ===== PASSO 1: Ir para página de domínios =====
-    logger.info(`🌐 [PASSO 1] Navegando para: ${domainsUrl}\n`);
+    // ===== PASSO 1: Navegar para Facebook Domains =====
+    logger.info(`🌐 [PASSO 1] Navegando para Facebook Domains...\n`);
     await page.goto(domainsUrl, { waitUntil: 'load', timeout: 60000 });
     await new Promise(r => setTimeout(r, 3000));
-    logger.success('✅ Página carregada\n');
 
-    // ===== PASSO 2: Clicar "Adicionar" =====
-    logger.info('➕ [PASSO 2] Clicando em "Adicionar"...\n');
-    await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button, [role="button"]');
-      for (const btn of buttons) {
-        if (btn.textContent?.toLowerCase().includes('adicionar') && btn.offsetParent !== null) {
-          btn.click();
-          return true;
-        }
-      }
-    });
-    await new Promise(r => setTimeout(r, 2500));
-    logger.success('✅ Modal de opções aberto\n');
-
-    // ===== PASSO 3: Clicar "Criar um domínio" com XPath =====
-    logger.info('🔗 [PASSO 3] Clicando em "Criar um domínio" (XPath)...\n');
+    // ===== PASSO 2: Clicar "Criar um domínio" =====
+    logger.info('🔗 [PASSO 2] Clicando em "Criar um domínio"...\n');
     const elements = await page.$x("//div[text()='Criar um domínio']");
 
     if (elements.length > 0) {
@@ -158,49 +93,39 @@ async function executarFluxoCompleto() {
       if (clicouCriarDominio) {
         logger.success('✅ Clique executado\n');
       }
-    } else {
-      logger.warn('⚠️ Elemento "Criar um domínio" não encontrado\n');
     }
 
     await new Promise(r => setTimeout(r, 3000));
 
-    // ===== PASSO 4: Preencher domínio =====
-    logger.info(`📝 [PASSO 4] Preenchendo domínio: ${dominio}\n`);
-    logger.info('   Digitando letra por letra (humanizado)...\n');
+    // ===== PASSO 3: Preencher domínio =====
+    logger.info(`📝 [PASSO 3] Preenchendo: ${dominio}\n`);
 
-    // Focar no input primeiro
     await page.evaluate(() => {
       const input = document.querySelector('input[placeholder*="exemplo.com"]') ||
                     document.querySelector('input[placeholder*="domínio"]') ||
                     document.querySelector('input[type="text"]');
-      if (input) {
-        input.focus();
-      }
+      if (input) input.focus();
     });
 
-    // Digitar letra por letra com delay humanizado
     for (const letra of dominio) {
       await page.keyboard.type(letra);
-      const delay = Math.random() * 100 + 30; // 30-130ms entre letras
-      await new Promise(r => setTimeout(r, delay));
+      await new Promise(r => setTimeout(r, Math.random() * 100 + 30));
     }
 
     await new Promise(r => setTimeout(r, 1500));
-    logger.success('✅ Domínio preenchido (humanizado)\n');
+    logger.success('✅ Domínio preenchido\n');
 
-    // ===== PASSO 5: Anti-bot =====
-    logger.info('🤖 [PASSO 5] Aplicando anti-bot...\n');
+    // ===== PASSO 4: Anti-bot =====
+    logger.info('🤖 [PASSO 4] Anti-bot...\n');
 
     const ultimaLetra = await page.evaluate((dom) => {
       const input = document.querySelector('input[placeholder*="exemplo.com"]') ||
                     document.querySelector('input[type="text"]');
       if (!input) return null;
-
       input.value = dom.slice(0, -1);
       input.dispatchEvent(new Event('input', { bubbles: true }));
       input.dispatchEvent(new Event('keydown', { bubbles: true }));
       input.dispatchEvent(new Event('keyup', { bubbles: true }));
-
       return dom.slice(-1);
     }, dominio);
 
@@ -212,11 +137,10 @@ async function executarFluxoCompleto() {
       logger.success('✅ Anti-bot aplicado\n');
     }
 
-    // ===== PASSO 6: Enviar domínio =====
-    logger.info('✅ [PASSO 6] Clicando "Adicionar" para enviar...\n');
+    // ===== PASSO 5: Enviar domínio =====
+    logger.info('✅ [PASSO 5] Clicando "Adicionar"...\n');
     await page.evaluate(() => {
-      const buttons = Array.from(document.querySelectorAll('button, [role="button"]'))
-        .reverse();
+      const buttons = Array.from(document.querySelectorAll('button, [role="button"]')).reverse();
       for (const btn of buttons) {
         if (btn.textContent?.toLowerCase().includes('adicionar') && btn.offsetParent !== null) {
           btn.click();
@@ -226,287 +150,152 @@ async function executarFluxoCompleto() {
     });
 
     await new Promise(r => setTimeout(r, 3000));
-    logger.success('✅ Domínio enviado!\n');
+    logger.success('✅ Domínio enviado\n');
 
-    // ===== PASSO 7: Capturar meta tag gerado pelo Facebook =====
-    logger.info('\n🔍 [PASSO 7] Capturando meta tag gerado pelo Facebook...\n');
-
-    // DEBUG: Ver o HTML da página
-    const htmlDebug = await page.evaluate(() => {
-      return document.body.innerHTML.substring(0, 5000);
-    });
-
-    logger.info('📄 Primeiros 5000 chars do HTML:\n');
-    logger.info(htmlDebug.substring(0, 1000) + '\n');
+    // ===== PASSO 6: Capturar meta tag =====
+    logger.info('\n🔍 [PASSO 6] Capturando meta tag do Facebook...\n');
 
     const metaTagFacebook = await page.evaluate(() => {
-      // Procurar o meta tag que Facebook gera
-      // Facebook coloca em um input ou em um elemento específico
-
-      // 1. Procurar em inputs
       const inputs = document.querySelectorAll('input[type="text"], input[type="hidden"]');
       for (const input of inputs) {
         const value = input.value || '';
-        if (value.length === 30 && /^[a-zA-Z0-9_-]+$/.test(value)) {
-          return value;
-        }
+        if (value.length === 30 && /^[a-zA-Z0-9_-]+$/.test(value)) return value;
       }
 
-      // 2. Procurar em <code> tags
       const codeTags = document.querySelectorAll('code');
       for (const code of codeTags) {
         const text = code.textContent || '';
         const match = text.match(/content=["']([a-zA-Z0-9_-]{28,32})["']/);
-        if (match && match[1]) {
-          return match[1];
-        }
+        if (match && match[1]) return match[1];
       }
 
-      // 3. Procurar em elementos de texto que contenham o padrão
       const textElements = document.querySelectorAll('span, div, p');
       for (const elem of textElements) {
         const text = (elem.textContent || '').trim();
-        if (text.length === 30 && /^[a-zA-Z0-9_-]+$/.test(text)) {
-          return text;
-        }
-      }
-
-      // 4. Procurar em qualquer elemento
-      const allText = document.body.innerText;
-      const matches = allText.match(/[a-z0-9]{30}/gi);
-      if (matches) {
-        for (const match of matches) {
-          if (/^[a-zA-Z0-9_-]{30}$/.test(match)) {
-            return match;
-          }
-        }
+        if (text.length === 30 && /^[a-zA-Z0-9_-]+$/.test(text)) return text;
       }
 
       return null;
     });
 
     if (metaTagFacebook) {
-      logger.success(`✅ Meta tag capturado do Facebook: ${metaTagFacebook}\n`);
+      logger.success(`✅ Meta tag capturado: ${metaTagFacebook}\n`);
     } else {
-      logger.warn('⚠️ Meta tag não encontrado automaticamente na página do Facebook\n');
-      logger.info('   Será necessário capturar manualmente ou verificar a página\n');
+      logger.warn('⚠️ Meta tag não encontrado\n');
+      await browser.close();
+      return;
     }
 
-    logger.info('\n='.repeat(80));
+    // ===== PASSO 7: Chamar API do Genesisai2001 =====
+    logger.info('\n🎨 [PASSO 7] Chamando API Genesisai2001...\n');
 
-    // ===== PASSO 8: Atualizar meta tag no GitHub e fazer deploy =====
-    if (metaTagFacebook) {
-      logger.info('\n📝 [PASSO 8] Atualizando meta tag no GitHub e fazendo deploy...\n');
-
-      try {
-        // 1. Atualizar arquivo HTML local com dados dinâmicos
-        const dadosEmpresa = {
-          cnpj: '00000000000000',
-          razaoSocial: 'Empresa Teste',
-          emailDomain: 'empresa.com.br',
-          telefone: '(11) 0000-0000',
-          whatsapp: '',
-          logradouro: 'Rua Exemplo',
-          numero: '123',
-          complemento: '',
-          bairro: 'Centro',
-          cidadeUf: 'São Paulo-SP',
-          cep: '00000-000',
-          atividadePrincipal: 'Serviços',
-          segmento: 'servicos',
-          descricao: 'Empresa de serviços brasileira',
-          horario: 'Segunda a sexta, das 09h às 18h'
-        };
-
-        const atualizado = await atualizarMetaTag(metaTagFacebook, dadosEmpresa);
-
-        if (atualizado) {
-          // 2. Fazer commit
-          logger.info('   📤 Fazendo commit no GitHub...\n');
-          execSync('git add src/web/public/index.html', { stdio: 'inherit' });
-          execSync(`git commit -m "feat: update facebook domain verification meta tag"`, { stdio: 'pipe' });
-          logger.success('   ✅ Commit realizado\n');
-
-          // 3. Fazer push
-          logger.info('   🚀 Fazendo push para o GitHub...\n');
-          execSync('git push origin main', { stdio: 'pipe' });
-          logger.success('   ✅ Push realizado\n');
-
-          // 4. Aguardar deploy
-          logger.info('   ⏳ Aguardando Render fazer deploy (até 2 minutos)...\n');
-          await new Promise(r => setTimeout(r, 10000));
-
-          logger.success('✅ Meta tag atualizado e deploy iniciado!\n');
-        } else {
-          logger.warn('⚠️ Problema ao atualizar meta tag\n');
-        }
-      } catch (error) {
-        logger.warn(`⚠️ Erro ao atualizar GitHub: ${error.message}\n`);
-      }
-    }
-
-    // ===== PASSO 9: Verificar se meta tag foi atualizado no Render =====
-    logger.info('\n🌐 [PASSO 9] Verificando se meta tag foi atualizado no Render...\n');
+    const companyData = {
+      razaoSocial: 'Empresa Teste',
+      cnpj: '00000000000000',
+      emailDomain: 'empresa.com.br',
+      telefone: '(11) 0000-0000',
+      whatsapp: '',
+      logradouro: 'Rua Exemplo',
+      numero: '123',
+      complemento: '',
+      bairro: 'Centro',
+      cidadeUf: 'São Paulo-SP',
+      cep: '00000-000',
+      atividadePrincipal: 'Serviços',
+      segmento: 'servicos',
+      descricao: 'Empresa de serviços brasileira',
+      horario: 'Segunda a sexta, das 09h às 18h',
+      fbVerificationTag: metaTagFacebook
+    };
 
     try {
-      const renderUrl = `https://${dominio}`;
-      logger.info(`   Acessando: ${renderUrl}\n`);
+      logger.info(`   POST ${GENESIZ_API}\n`);
 
-      // Tentar acessar com múltiplas tentativas
-      let response = null;
-      let tentativasRender = 0;
-      const maxTentativasRender = 10;
+      const startTime = Date.now();
 
-      while (tentativasRender < maxTentativasRender && !response) {
-        tentativasRender++;
-        logger.info(`   Tentativa ${tentativasRender}/${maxTentativasRender}...`);
+      const response = await fetch(GENESIZ_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(companyData)
+      });
 
-        response = await page.goto(renderUrl, {
-          waitUntil: 'load',
-          timeout: 8000
-        }).catch(e => {
-          logger.info(`     ⚠️ Não respondeu: ${e.message.substring(0, 50)}`);
-          return null;
-        });
+      const endTime = Date.now();
 
-        if (!response) {
-          await new Promise(r => setTimeout(r, 3000)); // Aguardar 3s antes de tentar novamente
-        }
+      if (!response.ok) {
+        logger.error(`❌ Erro HTTP: ${response.status}\n`);
+        await browser.close();
+        return;
       }
 
-      if (response) {
-        logger.success('✅ Domínio está acessível\n');
+      const html = await response.text();
+      logger.success(`✅ Resposta 200 OK em ${endTime - startTime}ms\n`);
+      logger.success(`✅ HTML gerado (${(html.length / 1024).toFixed(2)} KB)\n`);
 
-        // Procurar pelo meta tag que foi enviado
-        logger.info('   🔍 Verificando se o meta tag foi atualizado no site...\n');
-
-        let temMetaTagCorreto = false;
-        let tentativasVerificacao = 0;
-        const maxTentativasVerificacao = 5;
-
-        while (!temMetaTagCorreto && tentativasVerificacao < maxTentativasVerificacao) {
-          tentativasVerificacao++;
-          logger.info(`   Tentativa ${tentativasVerificacao}/${maxTentativasVerificacao}...`);
-
-          const verificacao = await page.evaluate((metaTagEsperado) => {
-            const metaTag = document.querySelector('meta[name="facebook-domain-verification"]');
-            if (metaTag) {
-              const content = metaTag.getAttribute('content');
-              if (content && content !== '{{META_TAG}}' && content !== '') {
-                if (content === metaTagEsperado) {
-                  return 'correto';
-                } else {
-                  return `incorreto:${content}`;
-                }
-              } else {
-                return 'vazio_ou_placeholder';
-              }
-            }
-            return 'nao_encontrado';
-          }, metaTagFacebook);
-
-          if (verificacao === 'correto') {
-            logger.success(`✅ Meta tag CORRETO encontrado: ${metaTagFacebook}\n`);
-            temMetaTagCorreto = true;
-          } else if (verificacao === 'vazio_ou_placeholder') {
-            logger.info(`   ⏳ Meta tag ainda é placeholder/vazio, aguardando deploy do Render...\n`);
-            await new Promise(r => setTimeout(r, 8000)); // Aguardar 8s para Render fazer deploy
-          } else if (verificacao.startsWith('incorreto')) {
-            logger.warn(`   ⚠️ Meta tag diferente: ${verificacao}\n`);
-            await new Promise(r => setTimeout(r, 8000));
-          } else {
-            logger.warn(`   ⚠️ Meta tag não encontrado no site\n`);
-            await new Promise(r => setTimeout(r, 8000));
-          }
-        }
-
-        if (!temMetaTagCorreto) {
-          logger.error('\n❌ Meta tag não foi atualizado no site após várias tentativas!\n');
-          logger.info('⚠️ NÃO vou clicar em "Verificar" porque vai dar erro\n');
-          logger.info('Encerrando fluxo por segurança\n');
-          await new Promise(() => {}); // Ficar aberto indefinidamente
-          return;
-        }
-
-        // Procurar por meta tag
-        logger.info('   🔍 Procurando todos os meta tags...\n');
-
-        const metaTagInfo = await page.evaluate(() => {
-          const metas = [];
-
-          // Procurar em todas as meta tags
-          document.querySelectorAll('meta').forEach(meta => {
-            const content = meta.getAttribute('content') || '';
-            if (content.includes('facebook-domain-verification') || content.length > 15) {
-              metas.push({
-                name: meta.getAttribute('name'),
-                property: meta.getAttribute('property'),
-                content: content.substring(0, 100)
-              });
-            }
-          });
-
-          // Procurar em strong tags (Facebook coloca ali)
-          const strongTags = [];
-          document.querySelectorAll('strong').forEach(strong => {
-            const text = strong.textContent || '';
-            if (text.length > 15 && !text.includes('facebook.com')) {
-              strongTags.push(text.substring(0, 100));
-            }
-          });
-
-          // Procurar em code tags
-          const codeTags = [];
-          document.querySelectorAll('code').forEach(code => {
-            const text = code.textContent || '';
-            if (text.length > 15) {
-              codeTags.push(text.substring(0, 100));
-            }
-          });
-
-          return { metas, strongTags, codeTags };
-        });
-
-        if (metaTagInfo.metas.length > 0) {
-          logger.success('✅ Meta tags encontradas:');
-          for (const meta of metaTagInfo.metas) {
-            logger.success(`   - ${meta.property || meta.name}: ${meta.content}`);
-          }
-        }
-
-        if (metaTagInfo.strongTags.length > 0) {
-          logger.success('✅ Strong tags encontradas:');
-          for (const tag of metaTagInfo.strongTags) {
-            logger.success(`   - ${tag}`);
-          }
-        }
-
-        if (metaTagInfo.codeTags.length > 0) {
-          logger.success('✅ Code tags encontradas:');
-          for (const tag of metaTagInfo.codeTags) {
-            logger.success(`   - ${tag}`);
-          }
-        }
+      if (html.includes(metaTagFacebook)) {
+        logger.success(`✅ Meta tag injetado corretamente no HTML\n`);
+      } else {
+        logger.warn('⚠️ Meta tag não encontrado na resposta\n');
       }
+
     } catch (error) {
-      logger.warn(`   ⚠️ Erro ao verificar Render: ${error.message}\n`);
+      logger.error(`❌ Erro ao chamar API: ${error.message}\n`);
+      await browser.close();
+      return;
     }
 
-    // ===== PASSO 10: Voltar ao Facebook e verificar domínio =====
-    logger.info('\n🔗 [PASSO 10] Voltando para Facebook para verificar domínio...\n');
+    // ===== PASSO 8: Verificar meta tag no Genesisai2001 =====
+    logger.info('\n🌐 [PASSO 8] Verificando meta tag no Genesisai2001...\n');
 
-    await page.goto(domainsUrl, { waitUntil: 'load', timeout: 30000 });
+    let temMetaTagCorreto = false;
+    let tentativasVerificacao = 0;
+    const maxTentativasVerificacao = 5;
+
+    while (!temMetaTagCorreto && tentativasVerificacao < maxTentativasVerificacao) {
+      tentativasVerificacao++;
+      logger.info(`   Tentativa ${tentativasVerificacao}/${maxTentativasVerificacao}...\n`);
+
+      try {
+        const response = await page.goto(GENESIZ_API, {
+          waitUntil: 'load',
+          timeout: 8000
+        }).catch(() => null);
+
+        if (response) {
+          const htmlContent = await page.content();
+
+          if (htmlContent.includes(`content="${metaTagFacebook}"`) ||
+              htmlContent.includes(`content='${metaTagFacebook}'`)) {
+            logger.success(`✅ Meta tag encontrado no Genesisai2001!\n`);
+            temMetaTagCorreto = true;
+          } else {
+            logger.warn('⚠️ Aguardando...\n');
+            await new Promise(r => setTimeout(r, 8000));
+          }
+        }
+      } catch (e) {
+        logger.info(`   ⚠️ ${e.message.substring(0, 50)}\n`);
+        await new Promise(r => setTimeout(r, 8000));
+      }
+    }
+
+    if (!temMetaTagCorreto) {
+      logger.error('❌ Meta tag não foi verificado\n');
+      await browser.close();
+      return;
+    }
+
+    // ===== PASSO 9: Voltar ao Facebook e clicar Verificar =====
+    logger.info('\n✅ [PASSO 9] Voltando ao Facebook para verificar domínio...\n');
+
+    await page.goto(domainsUrl, { waitUntil: 'load' });
     await new Promise(r => setTimeout(r, 3000));
-    logger.success('✅ De volta na página de domínios\n');
 
-    // ===== PASSO 11: Procurar botão "Verificar" =====
-    logger.info('🔍 [PASSO 11] Procurando botão "Verificar"...\n');
+    logger.info('   Procurando botão "Verificar"...\n');
 
-    const temBotaoVerificar = await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button, [role="button"]');
+    const verificouDominio = await page.evaluate(() => {
+      const buttons = Array.from(document.querySelectorAll('button, [role="button"]'));
       for (const btn of buttons) {
-        const texto = btn.textContent?.toLowerCase() || '';
-        if (texto.includes('verificar') && btn.offsetParent !== null) {
+        if (btn.textContent?.toLowerCase().includes('verificar')) {
           btn.click();
           return true;
         }
@@ -514,47 +303,31 @@ async function executarFluxoCompleto() {
       return false;
     });
 
-    if (temBotaoVerificar) {
-      logger.success('✅ Botão "Verificar" encontrado e clicado!\n');
-      await new Promise(r => setTimeout(r, 3000));
+    if (verificouDominio) {
+      logger.success('✅ Botão "Verificar" clicado!\n');
+      await new Promise(r => setTimeout(r, 5000));
 
-      // Verificar resultado da verificação
-      logger.info('🔍 Verificando resultado...\n');
-      const resultadoVerificacao = await page.evaluate(() => {
-        const texto = document.body.innerText.toLowerCase();
-        if (texto.includes('verificado') || texto.includes('verified')) {
-          return 'verificado';
-        } else if (texto.includes('erro') || texto.includes('error')) {
-          return 'erro';
-        } else if (texto.includes('pendente') || texto.includes('pending')) {
-          return 'pendente';
-        }
-        return 'desconhecido';
-      });
-
-      logger.info(`📊 Resultado: ${resultadoVerificacao}\n`);
-
-      if (resultadoVerificacao === 'verificado') {
-        logger.success('✅✅ DOMÍNIO VERIFICADO COM SUCESSO!\n');
-      } else if (resultadoVerificacao === 'pendente') {
-        logger.warn('⏳ Verificação pendente\n');
+      const htmlFinal = await page.content();
+      if (htmlFinal.includes('Verificado') || htmlFinal.includes('ativa')) {
+        logger.success('✅ ✅ DOMÍNIO VERIFICADO COM SUCESSO! ✅ ✅\n');
       } else {
-        logger.warn('⚠️ Status desconhecido\n');
+        logger.warn('⚠️ Verifique manualmente no Facebook\n');
       }
-    } else {
-      logger.warn('⚠️ Botão "Verificar" não encontrado\n');
     }
 
     logger.info('\n' + '='.repeat(80));
-    logger.success('\n✅✅ FLUXO COMPLETO CONCLUÍDO!\n');
-    logger.info('Navegador aberto para inspeção manual\n');
-    logger.info('Pressione CTRL+C para sair\n');
+    logger.success('🎉 FLUXO COMPLETO V2 - CONCLUÍDO!');
+    logger.info('='.repeat(80) + '\n');
 
-    await new Promise(() => {});
+    await browser.close();
 
   } catch (error) {
-    logger.error(`\n❌ ERRO: ${error.message}\n`);
+    logger.error(`\n❌ Erro: ${error.message}\n`);
+    if (browser) await browser.close();
   }
 }
 
-executarFluxoCompleto();
+executarFluxoCompleto().catch(err => {
+  logger.error(`Erro fatal: ${err.message}`);
+  process.exit(1);
+});
