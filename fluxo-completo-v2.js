@@ -291,7 +291,7 @@ async function executarFluxoCompleto() {
       }
     });
 
-    await new Promise(r => setTimeout(r, 5000));
+    await new Promise(r => setTimeout(r, 8000));
     logger.success('✅ Domínio enviado\n');
 
     // ===== PASSO 7: Capturar meta tag com retry =====
@@ -305,7 +305,7 @@ async function executarFluxoCompleto() {
       tentativas++;
       logger.info(`   Tentativa ${tentativas}/${maxTentativas}...\n`);
 
-      await new Promise(r => setTimeout(r, 2000));
+      await new Promise(r => setTimeout(r, 3000));
 
       metaTagFacebook = await page.evaluate(() => {
         // 1. Procurar em inputs
