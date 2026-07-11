@@ -80,28 +80,40 @@ async function executarVerificacao() {
     await new Promise(r => setTimeout(r, 3000));
     logger.success('   ✅ Página carregada\n');
 
-    // Clicar "Adicionar"
-    logger.info('   ➕ Clicando em "Adicionar"...');
+    // Clicar "Adicionar" (abre o modal com opções)
+    logger.info('   ➕ Clicando em "Adicionar" (abre opções)...');
     await page.evaluate(() => {
       const buttons = document.querySelectorAll('button, [role="button"]');
+      // Procurar o primeiro botão "Adicionar" visível na página
       for (const btn of buttons) {
-        if (btn.textContent?.toLowerCase().includes('adicionar')) {
+        const text = btn.textContent?.toLowerCase() || '';
+        if (text.includes('adicionar') && btn.offsetParent !== null) {
           btn.click();
           return true;
         }
       }
     });
-    await new Promise(r => setTimeout(r, 2000));
-    logger.success('   ✅ Modal aberto\n');
+    await new Promise(r => setTimeout(r, 2500));
+    logger.success('   ✅ Modal de opções aberto\n');
 
-    // Clicar "Criar um domínio"
-    logger.info('   🔗 Clicando em "Criar um domínio"...');
-    await page.evaluate(() => {
+    // Clicar em "Criar um domínio" dentro do modal
+    logger.info('   🔗 Clicando em "Criar um domínio" (dentro do modal)...');
+    const clicouCriar = await page.evaluate(() => {
       const btn = document.getElementById('js_k8');
-      if (btn) btn.click();
+      if (btn) {
+        btn.click();
+        return true;
+      }
+      return false;
     });
-    await new Promise(r => setTimeout(r, 3000));
-    logger.success('   ✅ Modal de domínio aberto\n');
+
+    if (clicouCriar) {
+      logger.success('   ✅ Modal de domínio aberto\n');
+    } else {
+      logger.warn('   ⚠️ Botão "Criar um domínio" não encontrado via ID\n');
+    }
+
+    await new Promise(r => setTimeout(r, 2000));
 
     // Preencher domínio
     logger.info(`   📝 Preenchendo domínio: ${dominio}...\n`);

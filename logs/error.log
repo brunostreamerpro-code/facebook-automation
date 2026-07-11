@@ -524,3 +524,4 @@
 {"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}
 {"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}
 {"level":"error","message":"\n❌ ERRO: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 14:34:39"}
+{"level":"error","message":"\n❌ ERRO: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 14:35:51"}
