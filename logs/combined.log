@@ -25367,3 +25367,235 @@
 {"level":"info","message":"\u001b[32m✅ \n✅✅ FLUXO COMPLETO CONCLUÍDO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:26:44"}
 {"level":"info","message":"Navegador aberto para inspeção manual\n","service":"bm-automation","timestamp":"2026-07-11 19:26:44"}
 {"level":"info","message":"Pressione CTRL+C para sair\n","service":"bm-automation","timestamp":"2026-07-11 19:26:44"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"🚀 FLUXO COMPLETO V2 - Domain Verification","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"🔧 Criando novo projeto Render...\n","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-17838090...\n","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 19:30:15"}
+{"level":"info","message":"✅ Projeto criado: cnpj-17838090","service":"bm-automation","timestamp":"2026-07-11 19:30:17"}
+{"level":"info","message":"🌐 URL: https://cnpj-17838090.onrender.com","service":"bm-automation","timestamp":"2026-07-11 19:30:17"}
+{"level":"info","message":"📊 Status: not_suspended\n","service":"bm-automation","timestamp":"2026-07-11 19:30:17"}
+{"level":"info","message":"\u001b[32m✅ ✅ Projeto Render criado: cnpj-17838090.onrender.com\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:30:17"}
+{"level":"info","message":"   Project ID: undefined\n","service":"bm-automation","timestamp":"2026-07-11 19:30:17"}
+{"level":"info","message":"⏳ Aguardando projeto ficar acessível...\n","service":"bm-automation","timestamp":"2026-07-11 19:30:17"}
+{"level":"info","message":"   [1/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:30:24"}
+{"level":"info","message":"   [2/20] Status: 404","service":"bm-automation","timestamp":"2026-07-11 19:30:30"}
+{"level":"info","message":"   [3/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:30:37"}
+{"level":"info","message":"   [4/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:30:43"}
+{"level":"info","message":"   [5/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:30:49"}
+{"level":"info","message":"   [6/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:30:56"}
+{"level":"info","message":"   [7/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:31:02"}
+{"level":"info","message":"   [8/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:31:08"}
+{"level":"info","message":"\u001b[32m✅ ✅ Projeto está acessível (status: 200)!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:15"}
+{"level":"info","message":"🌐 [PASSO 1] Navegando para: https://business.facebook.com/latest/settings/domains?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 19:31:15"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:21"}
+{"level":"info","message":"➕ [PASSO 2] Clicando em \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:21"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de opções aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:24"}
+{"level":"info","message":"🔗 [PASSO 3] Clicando em \"Criar um domínio\" (XPath)...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:24"}
+{"level":"info","message":"\u001b[32m✅ ✅ Clique executado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:24"}
+{"level":"info","message":"📝 [PASSO 4] Preenchendo domínio: cnpj-17838090.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 19:31:27"}
+{"level":"info","message":"   Digitando letra por letra (humanizado)...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:27"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido (humanizado)\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:31"}
+{"level":"info","message":"🤖 [PASSO 5] Aplicando anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:31"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:31"}
+{"level":"info","message":"✅ [PASSO 6] Clicando \"Adicionar\" para enviar...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:31"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\n🔍 [PASSO 7] Capturando meta tag gerado pelo Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"📄 Primeiros 5000 chars do HTML:\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\n<script type=\"application/json\" data-content-len=\"53\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"maybeDisableAnimations\",null,null,[]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce=\"\" data-btmanifest=\"1043024505_main\"></script>\n<script type=\"application/json\" data-content-len=\"49\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"replaceNativeTimer\",null,null,[]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce=\"\" data-btmanifest=\"1043024505_main\"></script>\n<script type=\"application/json\" data-content-len=\"60\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"bootstrapWebSession\",null,null,[1783809070]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag capturado do Facebook: zmtilmiix1maxyxxinevoa2nu0btf9\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\n📝 [PASSO 8] Atualizando meta tag no GitHub e fazendo deploy...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\n📝 Atualizando meta tag no HTML...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"   Novo meta tag: zmtilmiix1maxyxxinevoa2nu0btf9\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"   ✅ Template processado com sucesso\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\u001b[32m✅ ✅ Arquivo atualizado com sucesso\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"   📤 Fazendo commit no GitHub...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\u001b[32m✅    ✅ Commit realizado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"   🚀 Fazendo push para o GitHub...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:34"}
+{"level":"info","message":"\u001b[32m✅    ✅ Push realizado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:36"}
+{"level":"info","message":"   ⏳ Aguardando Render fazer deploy (até 2 minutos)...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag atualizado e deploy iniciado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:46"}
+{"level":"info","message":"\n🌐 [PASSO 9] Verificando se meta tag foi atualizado no Render...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:46"}
+{"level":"info","message":"   Acessando: https://cnpj-17838090.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 19:31:46"}
+{"level":"info","message":"   Tentativa 1/10...","service":"bm-automation","timestamp":"2026-07-11 19:31:46"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio está acessível\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"   🔍 Procurando pelo meta tag enviado...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"warn","message":"⚠️ Meta tag encontrado mas com valor diferente: incorreto:{{META_TAG}}\n","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"   🔍 Procurando todos os meta tags...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tags encontradas:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅    - viewport: width=device-width, initial-scale=1.0\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅    - description: 33261945000116 BALEM CONSTR — CNPJ 33261945000116\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅    - og:description: BALEM CONSTR — CNPJ 33261945000116\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅ ✅ Strong tags encontradas:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅    - ARCELY TONICO BALEM 41464974934\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅    - 1. Dados Coletados\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅    - 3. Compartilhamento\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅    - 4. Seus Direitos\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\n🔗 [PASSO 10] Voltando para Facebook para verificar domínio...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:47"}
+{"level":"info","message":"\u001b[32m✅ ✅ De volta na página de domínios\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:52"}
+{"level":"info","message":"🔍 [PASSO 11] Procurando botão \"Verificar\"...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:52"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Verificar\" encontrado e clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:52"}
+{"level":"info","message":"🔍 Verificando resultado...\n","service":"bm-automation","timestamp":"2026-07-11 19:31:55"}
+{"level":"info","message":"📊 Resultado: verificado\n","service":"bm-automation","timestamp":"2026-07-11 19:31:55"}
+{"level":"info","message":"\u001b[32m✅ ✅✅ DOMÍNIO VERIFICADO COM SUCESSO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:55"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 19:31:55"}
+{"level":"info","message":"\u001b[32m✅ \n✅✅ FLUXO COMPLETO CONCLUÍDO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:31:55"}
+{"level":"info","message":"Navegador aberto para inspeção manual\n","service":"bm-automation","timestamp":"2026-07-11 19:31:55"}
+{"level":"info","message":"Pressione CTRL+C para sair\n","service":"bm-automation","timestamp":"2026-07-11 19:31:55"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 19:35:49"}
+{"level":"info","message":"🚀 FLUXO COMPLETO V2 - Domain Verification","service":"bm-automation","timestamp":"2026-07-11 19:35:49"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 19:35:49"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 19:35:50"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:35:50"}
+{"level":"info","message":"🔧 Criando novo projeto Render...\n","service":"bm-automation","timestamp":"2026-07-11 19:35:50"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-17838093...\n","service":"bm-automation","timestamp":"2026-07-11 19:35:50"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 19:35:50"}
+{"level":"info","message":"✅ Projeto criado: cnpj-17838093","service":"bm-automation","timestamp":"2026-07-11 19:35:52"}
+{"level":"info","message":"🌐 URL: https://cnpj-17838093.onrender.com","service":"bm-automation","timestamp":"2026-07-11 19:35:52"}
+{"level":"info","message":"📊 Status: not_suspended\n","service":"bm-automation","timestamp":"2026-07-11 19:35:52"}
+{"level":"info","message":"\u001b[32m✅ ✅ Projeto Render criado: cnpj-17838093.onrender.com\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:35:52"}
+{"level":"info","message":"   Project ID: undefined\n","service":"bm-automation","timestamp":"2026-07-11 19:35:52"}
+{"level":"info","message":"⏳ Aguardando projeto ficar acessível...\n","service":"bm-automation","timestamp":"2026-07-11 19:35:52"}
+{"level":"info","message":"   [1/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:35:58"}
+{"level":"info","message":"   [2/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:36:05"}
+{"level":"info","message":"   [3/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:36:11"}
+{"level":"info","message":"   [4/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:36:18"}
+{"level":"info","message":"   [5/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:36:24"}
+{"level":"info","message":"\u001b[32m✅ ✅ Projeto está acessível (status: 200)!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:30"}
+{"level":"info","message":"🌐 [PASSO 1] Navegando para: https://business.facebook.com/latest/settings/domains?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 19:36:30"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:36"}
+{"level":"info","message":"➕ [PASSO 2] Clicando em \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de opções aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:39"}
+{"level":"info","message":"🔗 [PASSO 3] Clicando em \"Criar um domínio\" (XPath)...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:39"}
+{"level":"info","message":"\u001b[32m✅ ✅ Clique executado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:39"}
+{"level":"info","message":"📝 [PASSO 4] Preenchendo domínio: cnpj-17838093.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 19:36:42"}
+{"level":"info","message":"   Digitando letra por letra (humanizado)...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido (humanizado)\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:46"}
+{"level":"info","message":"🤖 [PASSO 5] Aplicando anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:46"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:46"}
+{"level":"info","message":"✅ [PASSO 6] Clicando \"Adicionar\" para enviar...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:46"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\n🔍 [PASSO 7] Capturando meta tag gerado pelo Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"📄 Primeiros 5000 chars do HTML:\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\n<script type=\"application/json\" data-content-len=\"53\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"maybeDisableAnimations\",null,null,[]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce=\"\" data-btmanifest=\"1043024505_main\"></script>\n<script type=\"application/json\" data-content-len=\"49\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"replaceNativeTimer\",null,null,[]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce=\"\" data-btmanifest=\"1043024505_main\"></script>\n<script type=\"application/json\" data-content-len=\"60\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"bootstrapWebSession\",null,null,[1783809386]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag capturado do Facebook: pfdsy0pmh5foqmdl5zu7jljunos1xw\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\n📝 [PASSO 8] Atualizando meta tag no GitHub e fazendo deploy...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\n📝 Atualizando meta tag no HTML...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"   Novo meta tag: pfdsy0pmh5foqmdl5zu7jljunos1xw\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"   ✅ Template processado com sucesso\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\u001b[32m✅ ✅ Arquivo atualizado com sucesso\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"   📤 Fazendo commit no GitHub...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:49"}
+{"level":"info","message":"\u001b[32m✅    ✅ Commit realizado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:50"}
+{"level":"info","message":"   🚀 Fazendo push para o GitHub...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:50"}
+{"level":"info","message":"\u001b[32m✅    ✅ Push realizado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:36:51"}
+{"level":"info","message":"   ⏳ Aguardando Render fazer deploy (até 2 minutos)...\n","service":"bm-automation","timestamp":"2026-07-11 19:36:51"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag atualizado e deploy iniciado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\n🌐 [PASSO 9] Verificando se meta tag foi atualizado no Render...\n","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"   Acessando: https://cnpj-17838093.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"   Tentativa 1/10...","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio está acessível\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"   🔍 Procurando pelo meta tag enviado...\n","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"warn","message":"⚠️ Meta tag encontrado mas com valor diferente: incorreto:{{META_TAG}}\n","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"   🔍 Procurando todos os meta tags...\n","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tags encontradas:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅    - viewport: width=device-width, initial-scale=1.0\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅    - description: 33261945000116 BALEM CONSTR — CNPJ 33261945000116\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅    - og:description: BALEM CONSTR — CNPJ 33261945000116\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅ ✅ Strong tags encontradas:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅    - ARCELY TONICO BALEM 41464974934\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅    - 1. Dados Coletados\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅    - 3. Compartilhamento\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅    - 4. Seus Direitos\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\n🔗 [PASSO 10] Voltando para Facebook para verificar domínio...\n","service":"bm-automation","timestamp":"2026-07-11 19:37:01"}
+{"level":"info","message":"\u001b[32m✅ ✅ De volta na página de domínios\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:10"}
+{"level":"info","message":"🔍 [PASSO 11] Procurando botão \"Verificar\"...\n","service":"bm-automation","timestamp":"2026-07-11 19:37:10"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Verificar\" encontrado e clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:10"}
+{"level":"info","message":"🔍 Verificando resultado...\n","service":"bm-automation","timestamp":"2026-07-11 19:37:13"}
+{"level":"info","message":"📊 Resultado: verificado\n","service":"bm-automation","timestamp":"2026-07-11 19:37:13"}
+{"level":"info","message":"\u001b[32m✅ ✅✅ DOMÍNIO VERIFICADO COM SUCESSO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:13"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 19:37:13"}
+{"level":"info","message":"\u001b[32m✅ \n✅✅ FLUXO COMPLETO CONCLUÍDO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:37:13"}
+{"level":"info","message":"Navegador aberto para inspeção manual\n","service":"bm-automation","timestamp":"2026-07-11 19:37:13"}
+{"level":"info","message":"Pressione CTRL+C para sair\n","service":"bm-automation","timestamp":"2026-07-11 19:37:13"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"🚀 FLUXO COMPLETO V2 - Domain Verification","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"🔧 Criando novo projeto Render...\n","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-17838095...\n","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 19:39:58"}
+{"level":"info","message":"✅ Projeto criado: cnpj-17838095","service":"bm-automation","timestamp":"2026-07-11 19:40:02"}
+{"level":"info","message":"🌐 URL: https://cnpj-17838095.onrender.com","service":"bm-automation","timestamp":"2026-07-11 19:40:02"}
+{"level":"info","message":"📊 Status: not_suspended\n","service":"bm-automation","timestamp":"2026-07-11 19:40:02"}
+{"level":"info","message":"\u001b[32m✅ ✅ Projeto Render criado: cnpj-17838095.onrender.com\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:40:02"}
+{"level":"info","message":"   Project ID: undefined\n","service":"bm-automation","timestamp":"2026-07-11 19:40:02"}
+{"level":"info","message":"⏳ Aguardando projeto ficar acessível...\n","service":"bm-automation","timestamp":"2026-07-11 19:40:02"}
+{"level":"info","message":"   [1/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:40:09"}
+{"level":"info","message":"   [2/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:40:15"}
+{"level":"info","message":"   [3/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:40:22"}
+{"level":"info","message":"   [4/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:40:30"}
+{"level":"info","message":"   [5/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:40:36"}
+{"level":"info","message":"   [6/20] Status: 502","service":"bm-automation","timestamp":"2026-07-11 19:40:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Projeto está acessível (status: 200)!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:40:49"}
+{"level":"info","message":"🌐 [PASSO 1] Navegando para: https://business.facebook.com/latest/settings/domains?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 19:40:49"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:40:55"}
+{"level":"info","message":"➕ [PASSO 2] Clicando em \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 19:40:55"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de opções aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:40:58"}
+{"level":"info","message":"🔗 [PASSO 3] Clicando em \"Criar um domínio\" (XPath)...\n","service":"bm-automation","timestamp":"2026-07-11 19:40:58"}
+{"level":"info","message":"\u001b[32m✅ ✅ Clique executado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:40:58"}
+{"level":"info","message":"📝 [PASSO 4] Preenchendo domínio: cnpj-17838095.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 19:41:01"}
+{"level":"info","message":"   Digitando letra por letra (humanizado)...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:01"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido (humanizado)\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:05"}
+{"level":"info","message":"🤖 [PASSO 5] Aplicando anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:05"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:06"}
+{"level":"info","message":"✅ [PASSO 6] Clicando \"Adicionar\" para enviar...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:06"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\n🔍 [PASSO 7] Capturando meta tag gerado pelo Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"📄 Primeiros 5000 chars do HTML:\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\n<script type=\"application/json\" data-content-len=\"53\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"maybeDisableAnimations\",null,null,[]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce=\"\" data-btmanifest=\"1043024505_main\"></script>\n<script type=\"application/json\" data-content-len=\"49\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"replaceNativeTimer\",null,null,[]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce=\"\" data-btmanifest=\"1043024505_main\"></script>\n<script type=\"application/json\" data-content-len=\"60\" data-sjs=\"\" data-processed=\"1\">{\"require\":[[\"bootstrapWebSession\",null,null,[1783809644]]]}</script>\n<script src=\"data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk=\" nonce\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag capturado do Facebook: p38z6z9t7loo18scbz8zo8i8eh5kak\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\n📝 [PASSO 8] Atualizando meta tag no GitHub e fazendo deploy...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\n📝 Atualizando meta tag no HTML...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"   Novo meta tag: p38z6z9t7loo18scbz8zo8i8eh5kak\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"   ✅ Template processado com sucesso\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\u001b[32m✅ ✅ Arquivo atualizado com sucesso\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"   📤 Fazendo commit no GitHub...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\u001b[32m✅    ✅ Commit realizado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"   🚀 Fazendo push para o GitHub...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:09"}
+{"level":"info","message":"\u001b[32m✅    ✅ Push realizado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:10"}
+{"level":"info","message":"   ⏳ Aguardando Render fazer deploy (até 2 minutos)...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:10"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag atualizado e deploy iniciado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:20"}
+{"level":"info","message":"\n🌐 [PASSO 9] Verificando se meta tag foi atualizado no Render...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:20"}
+{"level":"info","message":"   Acessando: https://cnpj-17838095.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 19:41:20"}
+{"level":"info","message":"   Tentativa 1/10...","service":"bm-automation","timestamp":"2026-07-11 19:41:20"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio está acessível\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"   🔍 Procurando pelo meta tag enviado...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"warn","message":"⚠️ Meta tag encontrado mas com valor diferente: incorreto:{{META_TAG}}\n","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"   🔍 Procurando todos os meta tags...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tags encontradas:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅    - viewport: width=device-width, initial-scale=1.0\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅    - description: 33261945000116 BALEM CONSTR — CNPJ 33261945000116\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅    - og:description: BALEM CONSTR — CNPJ 33261945000116\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅ ✅ Strong tags encontradas:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅    - ARCELY TONICO BALEM 41464974934\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅    - 1. Dados Coletados\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅    - 3. Compartilhamento\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅    - 4. Seus Direitos\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\n🔗 [PASSO 10] Voltando para Facebook para verificar domínio...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:21"}
+{"level":"info","message":"\u001b[32m✅ ✅ De volta na página de domínios\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:27"}
+{"level":"info","message":"🔍 [PASSO 11] Procurando botão \"Verificar\"...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:27"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Verificar\" encontrado e clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:27"}
+{"level":"info","message":"🔍 Verificando resultado...\n","service":"bm-automation","timestamp":"2026-07-11 19:41:30"}
+{"level":"info","message":"📊 Resultado: verificado\n","service":"bm-automation","timestamp":"2026-07-11 19:41:30"}
+{"level":"info","message":"\u001b[32m✅ ✅✅ DOMÍNIO VERIFICADO COM SUCESSO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:30"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 19:41:30"}
+{"level":"info","message":"\u001b[32m✅ \n✅✅ FLUXO COMPLETO CONCLUÍDO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 19:41:30"}
+{"level":"info","message":"Navegador aberto para inspeção manual\n","service":"bm-automation","timestamp":"2026-07-11 19:41:30"}
+{"level":"info","message":"Pressione CTRL+C para sair\n","service":"bm-automation","timestamp":"2026-07-11 19:41:30"}

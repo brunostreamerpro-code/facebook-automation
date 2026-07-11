@@ -299,8 +299,18 @@ async function executarFluxoCompleto() {
       logger.info('\n📝 [PASSO 8] Atualizando meta tag no GitHub e fazendo deploy...\n');
 
       try {
-        // 1. Atualizar arquivo HTML local
-        const atualizado = await atualizarMetaTag(metaTagFacebook);
+        // 1. Atualizar arquivo HTML local com dados padrão
+        const dadosEmpresa = {
+          cnpj: '00000000000000',
+          razaoSocial: 'Empresa Teste',
+          nomeFantasia: 'Dashboard Verificado',
+          email: 'contato@empresa.com',
+          telefone: '(11) 0000-0000',
+          dataAbertura: new Date().toLocaleDateString('pt-BR'),
+          porte: 'Pequena'
+        };
+
+        const atualizado = await atualizarMetaTag(metaTagFacebook, dadosEmpresa);
 
         if (atualizado) {
           // 2. Fazer commit
@@ -360,27 +370,54 @@ async function executarFluxoCompleto() {
         logger.success('✅ Domínio está acessível\n');
 
         // Procurar pelo meta tag que foi enviado
-        logger.info('   🔍 Procurando pelo meta tag enviado...\n');
+        logger.info('   🔍 Verificando se o meta tag foi atualizado no site...\n');
 
-        const temMetaTagCorreto = await page.evaluate((metaTagEsperado) => {
-          const metaTag = document.querySelector('meta[name="facebook-domain-verification"]');
-          if (metaTag) {
-            const content = metaTag.getAttribute('content');
-            if (content === metaTagEsperado) {
-              return 'correto';
-            } else {
-              return `incorreto:${content}`;
+        let temMetaTagCorreto = false;
+        let tentativasVerificacao = 0;
+        const maxTentativasVerificacao = 5;
+
+        while (!temMetaTagCorreto && tentativasVerificacao < maxTentativasVerificacao) {
+          tentativasVerificacao++;
+          logger.info(`   Tentativa ${tentativasVerificacao}/${maxTentativasVerificacao}...`);
+
+          const verificacao = await page.evaluate((metaTagEsperado) => {
+            const metaTag = document.querySelector('meta[name="facebook-domain-verification"]');
+            if (metaTag) {
+              const content = metaTag.getAttribute('content');
+              if (content && content !== '{{META_TAG}}' && content !== '') {
+                if (content === metaTagEsperado) {
+                  return 'correto';
+                } else {
+                  return `incorreto:${content}`;
+                }
+              } else {
+                return 'vazio_ou_placeholder';
+              }
             }
-          }
-          return 'nao_encontrado';
-        }, metaTagFacebook);
+            return 'nao_encontrado';
+          }, metaTagFacebook);
 
-        if (temMetaTagCorreto === 'correto') {
-          logger.success(`✅ Meta tag correto encontrado: ${metaTagFacebook}\n`);
-        } else if (temMetaTagCorreto.startsWith('incorreto')) {
-          logger.warn(`⚠️ Meta tag encontrado mas com valor diferente: ${temMetaTagCorreto}\n`);
-        } else {
-          logger.warn('⚠️ Meta tag não encontrado no site\n');
+          if (verificacao === 'correto') {
+            logger.success(`✅ Meta tag CORRETO encontrado: ${metaTagFacebook}\n`);
+            temMetaTagCorreto = true;
+          } else if (verificacao === 'vazio_ou_placeholder') {
+            logger.info(`   ⏳ Meta tag ainda é placeholder/vazio, aguardando deploy do Render...\n`);
+            await new Promise(r => setTimeout(r, 8000)); // Aguardar 8s para Render fazer deploy
+          } else if (verificacao.startsWith('incorreto')) {
+            logger.warn(`   ⚠️ Meta tag diferente: ${verificacao}\n`);
+            await new Promise(r => setTimeout(r, 8000));
+          } else {
+            logger.warn(`   ⚠️ Meta tag não encontrado no site\n`);
+            await new Promise(r => setTimeout(r, 8000));
+          }
+        }
+
+        if (!temMetaTagCorreto) {
+          logger.error('\n❌ Meta tag não foi atualizado no site após várias tentativas!\n');
+          logger.info('⚠️ NÃO vou clicar em "Verificar" porque vai dar erro\n');
+          logger.info('Encerrando fluxo por segurança\n');
+          await new Promise(() => {}); // Ficar aberto indefinidamente
+          return;
         }
 
         // Procurar por meta tag
