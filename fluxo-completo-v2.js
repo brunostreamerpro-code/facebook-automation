@@ -201,15 +201,30 @@ async function executarFluxoCompleto() {
     logger.info('🔗 [PASSO 3] Clicando em "Criar domínio" no modal...\n');
 
     const clicouCriarDominio = await page.evaluate(() => {
+      // Procurar por "Criar um domínio" de várias formas
       const allElements = document.querySelectorAll('*');
+
       for (const elem of allElements) {
         const text = elem.textContent?.trim() || '';
-        if ((text === 'Criar um domínio' || text === 'Criar domínio') &&
-            (elem.tagName === 'BUTTON' || elem.getAttribute('role') === 'button' || elem.onclick)) {
-          elem.click();
-          return true;
+
+        // Se encontrou "Criar um domínio", clicar nele ou no pai
+        if (text.includes('Criar um domínio')) {
+          // Tentar clicar direto
+          try {
+            elem.click();
+            return true;
+          } catch (e) {
+            // Se não funcionar, tentar clicar no pai
+            try {
+              elem.parentElement?.click();
+              return true;
+            } catch (e2) {
+              // Continuar buscando
+            }
+          }
         }
       }
+
       return false;
     });
 
