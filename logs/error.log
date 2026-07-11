@@ -528,3 +528,6 @@
 {"level":"error","message":"\n❌ ERRO: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 14:36:56"}
 {"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:38:09"}
 {"level":"error","message":"\n❌ ERRO: dominio is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:48:39"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:55:00"}
+{"level":"error","message":"   name: (cnpj-17837924) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:55:00"}
+{"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 15:06:30"}

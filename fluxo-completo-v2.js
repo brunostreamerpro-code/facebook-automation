@@ -63,6 +63,7 @@ async function executarFluxoCompleto() {
     logger.info('🔧 Criando novo projeto Render...\n');
 
     let dominio;
+    let projectId;
     try {
       const renderAPI = new RenderServiceAPI(process.env.RENDER_API_KEY || 'rnd_twVpTqjhhrY4bUYSNX2ucC282R9x');
       const renderProject = await renderAPI.createWebService({
@@ -71,7 +72,37 @@ async function executarFluxoCompleto() {
 
       if (renderProject && renderProject.url) {
         dominio = renderProject.url.replace('https://', '');
+        projectId = renderProject.id;
         logger.success(`✅ Projeto Render criado: ${dominio}\n`);
+        logger.info(`   Project ID: ${projectId}\n`);
+
+        // Aguardar projeto ficar acessível via HTTP
+        logger.info('⏳ Aguardando projeto ficar acessível...\n');
+        const maxTentativas = 20; // 20 tentativas = até 2 minutos
+        let tentativa = 0;
+        let projetoAcessivel = false;
+
+        while (tentativa < maxTentativas && !projetoAcessivel) {
+          tentativa++;
+          await new Promise(r => setTimeout(r, 6000)); // Aguarda 6 segundos entre tentativas
+
+          try {
+            const response = await fetch(`https://${dominio}`, { timeout: 5000 });
+            if (response.status === 200 || response.status === 500) {
+              logger.success(`✅ Projeto está acessível (status: ${response.status})!\n`);
+              projetoAcessivel = true;
+            } else {
+              logger.info(`   [${tentativa}/${maxTentativas}] Status: ${response.status}`);
+            }
+          } catch (e) {
+            logger.info(`   [${tentativa}/${maxTentativas}] Verificando... (${e.message.substring(0, 40)})`);
+          }
+        }
+
+        if (!projetoAcessivel) {
+          logger.warn(`⚠️ Projeto não ficou acessível após ${maxTentativas * 6}s\n`);
+          logger.info('   Continuando mesmo assim...\n');
+        }
       } else {
         throw new Error('Não foi possível obter URL do projeto');
       }
@@ -236,13 +267,27 @@ async function executarFluxoCompleto() {
       const renderUrl = `https://${dominio}`;
       logger.info(`   Acessando: ${renderUrl}\n`);
 
-      const response = await page.goto(renderUrl, {
-        waitUntil: 'load',
-        timeout: 10000
-      }).catch(e => {
-        logger.warn(`   ⚠️ Erro ao acessar: ${e.message}`);
-        return null;
-      });
+      // Tentar acessar com múltiplas tentativas
+      let response = null;
+      let tentativasRender = 0;
+      const maxTentativasRender = 10;
+
+      while (tentativasRender < maxTentativasRender && !response) {
+        tentativasRender++;
+        logger.info(`   Tentativa ${tentativasRender}/${maxTentativasRender}...`);
+
+        response = await page.goto(renderUrl, {
+          waitUntil: 'load',
+          timeout: 8000
+        }).catch(e => {
+          logger.info(`     ⚠️ Não respondeu: ${e.message.substring(0, 50)}`);
+          return null;
+        });
+
+        if (!response) {
+          await new Promise(r => setTimeout(r, 3000)); // Aguardar 3s antes de tentar novamente
+        }
+      }
 
       if (response) {
         logger.success('✅ Domínio está acessível\n');
@@ -311,7 +356,60 @@ async function executarFluxoCompleto() {
       logger.warn(`   ⚠️ Erro ao verificar Render: ${error.message}\n`);
     }
 
-    logger.info('\n='.repeat(80));
+    // ===== PASSO 9: Voltar ao Facebook e verificar domínio =====
+    logger.info('\n🔗 [PASSO 9] Voltando para Facebook para verificar domínio...\n');
+
+    await page.goto(domainsUrl, { waitUntil: 'load', timeout: 30000 });
+    await new Promise(r => setTimeout(r, 3000));
+    logger.success('✅ De volta na página de domínios\n');
+
+    // ===== PASSO 10: Procurar botão "Verificar" =====
+    logger.info('🔍 [PASSO 10] Procurando botão "Verificar"...\n');
+
+    const temBotaoVerificar = await page.evaluate(() => {
+      const buttons = document.querySelectorAll('button, [role="button"]');
+      for (const btn of buttons) {
+        const texto = btn.textContent?.toLowerCase() || '';
+        if (texto.includes('verificar') && btn.offsetParent !== null) {
+          btn.click();
+          return true;
+        }
+      }
+      return false;
+    });
+
+    if (temBotaoVerificar) {
+      logger.success('✅ Botão "Verificar" encontrado e clicado!\n');
+      await new Promise(r => setTimeout(r, 3000));
+
+      // Verificar resultado da verificação
+      logger.info('🔍 Verificando resultado...\n');
+      const resultadoVerificacao = await page.evaluate(() => {
+        const texto = document.body.innerText.toLowerCase();
+        if (texto.includes('verificado') || texto.includes('verified')) {
+          return 'verificado';
+        } else if (texto.includes('erro') || texto.includes('error')) {
+          return 'erro';
+        } else if (texto.includes('pendente') || texto.includes('pending')) {
+          return 'pendente';
+        }
+        return 'desconhecido';
+      });
+
+      logger.info(`📊 Resultado: ${resultadoVerificacao}\n`);
+
+      if (resultadoVerificacao === 'verificado') {
+        logger.success('✅✅ DOMÍNIO VERIFICADO COM SUCESSO!\n');
+      } else if (resultadoVerificacao === 'pendente') {
+        logger.warn('⏳ Verificação pendente\n');
+      } else {
+        logger.warn('⚠️ Status desconhecido\n');
+      }
+    } else {
+      logger.warn('⚠️ Botão "Verificar" não encontrado\n');
+    }
+
+    logger.info('\n' + '='.repeat(80));
     logger.success('\n✅✅ FLUXO COMPLETO CONCLUÍDO!\n');
     logger.info('Navegador aberto para inspeção manual\n');
     logger.info('Pressione CTRL+C para sair\n');
