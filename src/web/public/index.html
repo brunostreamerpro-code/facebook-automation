@@ -1,164 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="facebook-domain-verification" content="lbis6wo7ecxx6nb9pi190wt6w8x3nk" />
-  <title>BM Automation Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="00000000000000 Empresa Teste — CNPJ 00000000000000"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="facebook-domain-verification" content="zmtilmiix1maxyxxinevoa2nu0btf9" />
+  <meta property="og:title" content="Empresa Teste"/>
+  <meta property="og:description" content="Empresa Teste — CNPJ 00000000000000"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <title>Empresa Teste | CNPJ 00000000000000</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#222;background:#fff;line-height:1.7}
+    nav{background:#1a1a2e;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100}
+    .nav-logo{color:#fff;font-size:18px;font-weight:700;text-decoration:none;letter-spacing:1px;text-transform:uppercase}
+    .nav-links{display:flex;gap:24px;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:13px;font-weight:600}
+    .hero{background:linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);color:#fff;padding:60px 24px;text-align:center}
+    .hero h1{color:#fff;font-size:30px;margin-bottom:10px;max-width:800px;margin-left:auto;margin-right:auto;text-transform:uppercase}
+    .hero p{color:rgba(255,255,255,.85);font-size:15px;max-width:640px;margin:0 auto 20px}
+    .cnpj-tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:13px;padding:8px 20px;border-radius:4px;letter-spacing:.5px}
+    .section{padding:56px 24px;max-width:960px;margin:0 auto}
+    .section-alt{padding:56px 24px;background:#f7f7f7}
+    .section-alt .inner{max-width:960px;margin:0 auto}
+    h2{font-size:22px;color:#1a1a2e;margin-bottom:16px;border-bottom:2px solid #1a1a2e;padding-bottom:6px}
+    p{margin-bottom:12px;color:#444}
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
+    .info-box{border:1px solid #e0e0e0;border-radius:6px;padding:18px;background:#fff}
+    .info-box strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#999;margin-bottom:6px}
+    .info-box span{font-size:14px;color:#222;font-weight:600}
+    .status-ativa{color:#166534;font-weight:700}
+    .contact-table{width:100%;border-collapse:collapse;margin:20px 0}
+    .contact-table td{padding:11px 16px;border:1px solid #e0e0e0;vertical-align:top}
+    .contact-table td:first-child{background:#f5f5f5;font-weight:700;color:#555;font-size:13px;width:180px}
+    .contact-table a{color:#1a1a2e;text-decoration:none}
+    .priv-box{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:24px;line-height:1.8;font-size:14px}
+    footer{background:#111;color:#aaa;text-align:center;padding:32px 24px;font-size:13px}
+    footer strong{color:#fff}
+    .verified-badge{display:inline-block;background:#166534;color:#fff;padding:6px 12px;border-radius:4px;font-size:12px;font-weight:700;margin-left:8px}
+    @media(max-width:700px){.info-grid{grid-template-columns:1fr}.nav-links{display:none}.hero h1{font-size:22px}}
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>🚀 BM Automation Dashboard</h1>
-      <p>Sistema Automático de Criação e Verificação de Contas Facebook Ads</p>
-    </header>
-
-    <nav class="tabs">
-      <button class="tab-btn active" onclick="switchTab('dashboard')">📊 Dashboard</button>
-      <button class="tab-btn" onclick="switchTab('create')">➕ Nova Automação</button>
-      <button class="tab-btn" onclick="switchTab('accounts')">📋 Contas</button>
-      <button class="tab-btn" onclick="switchTab('import')">📥 Importar</button>
-    </nav>
-
-    <!-- TAB: DASHBOARD -->
-    <div id="dashboard" class="tab-content active">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <h3>Total de Contas</h3>
-          <p class="stat-number" id="stat-total">0</p>
-        </div>
-        <div class="stat-card">
-          <h3>Verificadas</h3>
-          <p class="stat-number verified" id="stat-verified">0</p>
-        </div>
-        <div class="stat-card">
-          <h3>Pendentes</h3>
-          <p class="stat-number pending" id="stat-pending">0</p>
-        </div>
-        <div class="stat-card">
-          <h3>Falhadas</h3>
-          <p class="stat-number failed" id="stat-failed">0</p>
-        </div>
-        <div class="stat-card">
-          <h3>Taxa de Sucesso</h3>
-          <p class="stat-number" id="stat-percentage">0%</p>
-        </div>
-      </div>
-
-      <div class="recent-activity">
-        <h3>Atividade Recente</h3>
-        <div id="activity-log">
-          <p class="empty">Nenhuma atividade ainda...</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- TAB: CRIAR AUTOMAÇÃO -->
-    <div id="create" class="tab-content">
-      <form id="automationForm" class="form-container">
-        <h2>Iniciar Nova Automação</h2>
-
-        <fieldset>
-          <legend>Dados da Conta Facebook</legend>
-          <input type="email" id="email" placeholder="Email ou UID do Facebook" required>
-          <input type="password" id="password" placeholder="Senha do Facebook" required>
-          <input type="text" id="twoFASecret" placeholder="Link/ID do Autenticador 2FA (opcional)">
-          <input type="text" id="businessName" placeholder="Nome da Empresa" required>
-        </fieldset>
-
-        <fieldset>
-          <legend>Dados CNPJ/MEI</legend>
-          <input type="text" id="cnpj" placeholder="CNPJ da Empresa" required>
-          <input type="text" id="personName" placeholder="Nome da Pessoa Responsável" required>
-          <input type="email" id="companyEmail" placeholder="Email da Empresa" required>
-        </fieldset>
-
-        <fieldset>
-          <legend>Configurações Adicionais</legend>
-          <input type="text" id="proxy" placeholder="Proxy (opcional) - format: http://user:pass@host:port">
-          <select id="country">
-            <option value="BR">Brasil</option>
-            <option value="US">Estados Unidos</option>
-            <option value="MX">México</option>
-          </select>
-        </fieldset>
-
-        <button type="submit" class="btn-primary">🚀 Iniciar Automação</button>
-        <div id="formStatus" class="status-message"></div>
-      </form>
-    </div>
-
-    <!-- TAB: CONTAS -->
-    <div id="accounts" class="tab-content">
-      <div class="filter-bar">
-        <button onclick="filterAccounts('all')" class="filter-btn active">Todas</button>
-        <button onclick="filterAccounts('completed')" class="filter-btn">Concluídas</button>
-        <button onclick="filterAccounts('pending')" class="filter-btn">Pendentes</button>
-        <button onclick="filterAccounts('failed')" class="filter-btn">Falhadas</button>
-      </div>
-
-      <div class="table-container">
-        <table id="accountsTable">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Email</th>
-              <th>CNPJ</th>
-              <th>Status</th>
-              <th>Verificado</th>
-              <th>Criado em</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody id="accountsBody">
-            <tr><td colspan="7" class="empty">Carregando...</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- TAB: IMPORTAR -->
-    <div id="import" class="tab-content">
-      <div class="import-container">
-        <h2>Importar Contas</h2>
-
-        <div class="import-options">
-          <div class="option-card">
-            <h3>📄 De Arquivo TXT</h3>
-            <p>Cole o conteúdo do arquivo lista.txt</p>
-            <textarea id="txtImport" placeholder="Cole o conteúdo do lista.txt aqui..." rows="10"></textarea>
-            <button onclick="importFromTxt()" class="btn-secondary">Processar TXT</button>
-          </div>
-
-          <div class="option-card">
-            <h3>📊 De JSON</h3>
-            <p>Cole um array JSON com os dados das contas</p>
-            <textarea id="jsonImport" placeholder='[{"email":"...","password":"...","cnpj":"..."}]' rows="10"></textarea>
-            <button onclick="importFromJson()" class="btn-secondary">Processar JSON</button>
-          </div>
-        </div>
-
-        <div id="importResult" class="import-result"></div>
-      </div>
-    </div>
+<nav>
+  <a href="#inicio" class="nav-logo">Empresa Teste</a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#privacidade">Privacidade</a></li>
+  </ul>
+</nav>
+<div class="hero" id="inicio">
+  <h1>Empresa Teste</h1>
+  <p>Empresa verificada e ativa</p>
+  <div class="cnpj-tag">CNPJ: 00000000000000 &nbsp;|&nbsp; Situação: <span class="verified-badge">ATIVA</span></div>
+</div>
+<div class="section" id="sobre">
+  <h2>Sobre a Empresa</h2>
+  <p>Quem Somos<br><br>A Empresa Teste é uma empresa fundada em 2024-01-01, localizada no Brasil.<br><br>Pequena<br><br>CNPJ: 00000000000000<br><br>Nossa equipe está pronta para oferecer o melhor atendimento e serviços de qualidade.</p>
+  <div class="info-grid">
+    <div class="info-box"><strong>Razão Social</strong><span>Empresa Teste</span></div>
+    <div class="info-box"><strong>CNPJ</strong><span>00000000000000</span></div>
+    <div class="info-box"><strong>Situação</strong><span class="status-ativa">✔ ATIVA</span></div>
   </div>
-
-  <!-- Modal de Detalhes da Conta -->
-  <div id="accountModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeAccountModal()">&times;</span>
-      <h2>Detalhes da Conta</h2>
-      <div id="modalBody" class="modal-body">
-        <!-- Preenchido via JS -->
-      </div>
-      <div id="modalLogs" class="modal-logs">
-        <h3>Logs</h3>
-        <div id="logsList"></div>
-      </div>
-    </div>
+</div>
+<div class="section-alt">
+  <div class="inner" id="contato">
+    <h2>Contato</h2>
+    <table class="contact-table">
+      <tr><td>Razão Social</td><td><strong>Empresa Teste</strong></td></tr>
+      <tr><td>CNPJ</td><td><strong>00000000000000</strong></td></tr>
+      <tr><td>E-mail</td><td><a href="mailto:contato@empresa.com">contato@empresa.com</a></td></tr>
+      <tr><td>Telefone</td><td><a href="tel:(11) 0000-0000">(11) 0000-0000</a></td></tr>
+      <tr><td>Data de Abertura</td><td>2024-01-01</td></tr>
+      <tr><td>Porte</td><td>Pequena</td></tr>
+    </table>
   </div>
-
-  <script src="app.js"></script>
+</div>
+<div class="section" id="privacidade">
+  <h2>Política de Privacidade</h2>
+  <div class="priv-box">
+    Política de Privacidade<br><br>Empresa Teste (CNPJ: 00000000000000) está comprometida com a proteção dos seus dados pessoais, conforme a LGPD — Lei nº 13.709/2018.<br><br><strong>1. Dados Coletados</strong><br>Nome completo, e-mail e telefone fornecidos voluntariamente.<br><br><strong>2. Finalidade</strong><br>Atendimento ao cliente e comunicação comercial.<br><br><strong>3. Compartilhamento</strong><br>Não vendemos seus dados a terceiros.<br><br><strong>4. Seus Direitos</strong><br>Acesso, correção e exclusão dos seus dados a qualquer momento.<br><br><strong>5. Contato</strong><br><a href="mailto:contato@empresa.com">contato@empresa.com</a>
+  </div>
+</div>
+<footer>
+  <p><strong>Empresa Teste</strong></p>
+  <p>CNPJ: 00000000000000</p>
+  <p>© 2026 - Empresa Verificada</p>
+</footer>
 </body>
 </html>
