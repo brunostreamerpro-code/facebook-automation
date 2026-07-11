@@ -21532,3 +21532,358 @@
 {"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
 {"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
 {"level":"info","message":"\u001b[32m✅ \n✅ Teste concluído! Verifique os debugs acima.\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 14:23:25"}
+{"level":"info","message":"🔄 FLUXO COMPLETO DE VERIFICAÇÃO DE DOMÍNIO","service":"bm-automation","timestamp":"2026-07-11 14:23:25"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:23:25"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:25"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:25"}
+{"level":"info","message":"🌐 [PASSO 1] Navegando para domínios...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:25"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:31"}
+{"level":"info","message":"🔍 [PASSO 2] Verificando se há erro...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:31"}
+{"level":"info","message":"\u001b[32m✅ ✅ Nenhum erro\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:31"}
+{"level":"info","message":"➕ [PASSO 3] Clicando em \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:31"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:33"}
+{"level":"info","message":"🔗 [PASSO 4] Clicando em \"Criar um domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:33"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:36"}
+{"level":"info","message":"📝 [PASSO 5] Preenchendo domínio: facebook-automation-test.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:38"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:23:38"}
+{"level":"info","message":"================================================================================","service":"bm-automation","timestamp":"2026-07-11 14:23:38"}
+{"level":"info","message":"\n📋 Procurando por códigos/tokens:\n","service":"bm-automation","timestamp":"2026-07-11 14:23:38"}
+{"level":"info","message":"\u001b[32m✅    [0] d6gzp2g9l05elk8zttwlujzzy70yf4\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:38"}
+{"level":"info","message":"\n📄 Elementos com \"código/token/verification\":\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: \":root, .__fb-light-mode:root, .__fb-light-mode {--geodesic-appearance-border-control:0px;--geodesic-\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <head><link rel=\"shortcut icon\" href=\"/images/bizkit/mbs_favicon.png\"><meta name=\"bingbot\" content=\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"routing_namespace\":\"business_comet\",\"ghlss\":\"p1pLyf\",\"sjsListenerNew\":true,\"use_ssr_state_manager\"\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"routing_namespace\":\"business_comet\",\"ghlss\":\"p1pLyf\",\"sjsListenerNew\":true,\"use_ssr_state_manager\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:310\",[\"RunWWW\"],{\"__rc\":[\"\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:310\",[\"RunWWW\"],{\"__rc\":[\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div><div class=\"\"><div class=\"x9f619 x1n2onr6 x1ja2u2z\"><div aria-valuetext=\"Carregando...\" role=\"p\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"\"><div class=\"x9f619 x1n2onr6 x1ja2u2z\"><div aria-valuetext=\"Carregando...\" role=\"progre\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 x1n2onr6 x1ja2u2z\"><div aria-valuetext=\"Carregando...\" role=\"progressbar\" tabinde\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div aria-valuetext=\"Carregando...\" role=\"progressbar\" tabindex=\"0\" class=\"always-enable-animations \n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x1n2onr6 x1ja2u2z\"><div class=\"x78zum5 xdt5ytf xg6iff7 x1n2onr6\"><div cl\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf xg6iff7 x1n2onr6\"><div class=\"x78zum5 xdt5ytf x10cihs4 x1t2pt76 x1n2onr6\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x10cihs4 x1t2pt76 x1n2onr6 x1ja2u2z\"><span data-surface-wrapper=\"1\" data\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings\" style=\"display: contents;\" data-auto-\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SPAN: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1qjc9v5 x78zum5 xdt5ytf x13a6bvl x2lwn1j xeuugli x1dr59a3 x6ikm8r x10wlt62\"><span class\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <span class=\"_li\"></span><div class=\"x1qjc9v5 x78zum5 x15zctf7 x13a6bvl xeuugli x1iyjqo2 xs83m0k x2l\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x1iyjqo2 x1n2onr6\"><div><div data-visualcompletion=\"ignore\" class=\"\"></d\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div><div data-visualcompletion=\"ignore\" class=\"\"></div><div data-pagelet=\"CometBizKitRoot\"><div dat\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div data-visualcompletion=\"ignore\" class=\"\"></div><div data-pagelet=\"CometBizKitRoot\"><div data-pag\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div data-pagelet=\"MainView\"><span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SE\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS\" style=\"display: conte\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SPAN: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div style=\"flex: 1 1 0%; min-width: 0px;\"><div class=\"x78zum5 xdt5ytf x1dr59a3 xmz0i5r xh8yej3 x1vj\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x1dr59a3 xmz0i5r xh8yej3 x1vjfegm x1q85c4o x1jrmryl x1nr1p0w\"><div class\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 x1dr59a3 xmz0i5r x193iq5w xw2csxc xh8yej3\"><div class=\"xwxc41k x13jy36j x64bnmy \n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"xwxc41k x13jy36j x64bnmy xyamay9 x6s0dn4 x78zum5 xdt5ytf x1iyjqo2 x1n2onr6\" style=\"min-w\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1q0g3np xeuugli x1iyjqo2 x14bzwq1 xqjyukv x1qjc9v5 x78zum5 xozqiw3 x5yr21d x2lwn1j xh8y\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1cy8zhl x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 x1kxxb1g\"><div class=\"x9f619 x\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 xh8yej3\"><div class=\"x1q0g3np xozqiw3 x8va1my x6s0dn4 x78zum5 x1c4vz4f x2lah0s x1\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"Informações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x2lah0s x1jn76jz x14atkfc\"><div class=\"xhgxa4x xy5ysw6 x1qkj6lk xn3walq xnvurfn x1v3rft4\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1n2onr6 x1iyjqo2 xh8yej3 x5yr21d\"><span data-surface-wrapper=\"1\" data-surface=\"/bizweb:\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS/lib:bizweb_settings:co\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SPAN: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x2lwn1j xeuugli x5yr21d\"><span data-surface-wrapper=\"1\" data-surface=\"/b\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS/lib:bizweb_settings:co\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SPAN: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div aria-labelledby=\"js_m5\" class=\"x1gzqxud xjwep3j x1t39747 x1wcsgtt x1pczhz8 xhgxa4x xy5ysw6 x1qk\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x5yr21d xedcshv x1t2pt76 xh8yej3\"><div class=\"x9f619 x78zum5 x2lah0s xh8\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 x78zum5 x2lah0s xh8yej3 xyamay9 x1l90r2v xf7dkkf xv54qhq\"><div class=\"x1iyjqo2 xe\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SPAN: \"NomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot VerifiedNot Veri\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 x5yr21d x1n2onr6 x1kmqopl\"><span data-surface-wrapper=\"1\" data-surface=\"/bizweb:s\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"NomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot VerifiedNot Veri\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS/lib:bizweb_settings:co\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"Verificar domínioVerificar domínioVerificar domínioMaisMaisMaisSelecione uma opçãoAdicionar uma meta\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1p5oq8j x64bnmy x18d9i69 x13jy36j xh8yej3 x9f619\"><div><div class=\"x78zum5 xdmi676 x193\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"Adicionar uma metatagVerifique esse domínio copiando e colando o código de metatag fornecido na seçã\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div aria-level=\"3\" class=\"x1vvvo52 x1uxerd5 x1xlr1w8 xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuu\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"Verifique esse domínio copiando e colando o código de metatag fornecido na seção <head> ... <head> d\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: Verifique esse domínio copiando e colando o código de metatag fornecido na seção &lt;head&gt; ... &l\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"1. Copie esta metatag: <meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy7\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 x1l90r2v xf7dkkf xv54qhq x1yhoyej xjwe\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"1. Copie esta metatag: <meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy7\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div></div><span class=\"x1vvvo52 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli\">1. Copie\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SPAN: \"1. Copie esta metatag: <meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy7\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: 1. Copie esta metatag: <strong>&lt;meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   STRONG: \"<meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy70yf4\" />\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: &lt;meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy70yf4\" /&gt;\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"2. Cole a metatag na seção <head>...</head> da fonte HTML da página inicial do site e publique a pág\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 xyamay9 x1l90r2v xf7dkkf xv54qhq x1yho\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"Observação: a verificação falhará se o código de metatag estiver fora da seção <head> ou em uma seçã\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: Observação: a verificação falhará se o código de metatag estiver fora da seção &lt;head&gt; ou em um\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando http://fac\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 xyamay9 x1l90r2v xf7dkkf xv54qhq x1yho\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando http://fac\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x178xt8z x13fuv20 x10l6tqk x1pdr0v7 x1o0tod xtijo5x xwebqov x1x9jw1y xrsgblv xceihxd\"></\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SPAN: \"3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando http://fac\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: 3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando <a class=\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"4. Clique em Verify domainObservação: o Facebook pode levar até 72 horas para encontrar o código de \"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 xyamay9 x1l90r2v xf7dkkf xv54qhq x1yho\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   DIV: \"Observação: o Facebook pode levar até 72 horas para encontrar o código de metatag. Se o status do do\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: Observação: o Facebook pode levar até 72 horas para encontrar o código de metatag. Se o status do do\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:26571\",[\"MetaBrandPinFille\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:26571\",[\"MetaBrandPinFille\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"RelayPrefetchedStreamCache\\u\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"RelayPrefetchedStreamCache\\u\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"Bootloader\",\"handlePayload\",null,[{\"consistency\":{\"rev\":1043020865},\"rsrcMap\":{\"bbz6I9\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"require\":[[\"Bootloader\",\"handlePayload\",null,[{\"consistency\":{\"rev\":1043020865},\"rsrcMap\":{\"bbz6I9\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:38451\",[\"CometRouterUIComp\"","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:38451\",[\"CometRouterUIComp\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"🤖 [PASSO 6] Aplicando anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"✅ [PASSO 7] Clicando em \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:39"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"\n🔍 APÓS ENVIAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"================================================================================","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"\n📋 Procurando por códigos/tokens:\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"\u001b[32m✅    [0] d6gzp2g9l05elk8zttwlujzzy70yf4\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"\n📄 Elementos com \"código/token/verification\":\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: \":root, .__fb-light-mode:root, .__fb-light-mode {--geodesic-appearance-border-control:0px;--geodesic-\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <head><link rel=\"shortcut icon\" href=\"/images/bizkit/mbs_favicon.png\"><meta name=\"bingbot\" content=\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"routing_namespace\":\"business_comet\",\"ghlss\":\"p1pLyf\",\"sjsListenerNew\":true,\"use_ssr_state_manager\"\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"routing_namespace\":\"business_comet\",\"ghlss\":\"p1pLyf\",\"sjsListenerNew\":true,\"use_ssr_state_manager\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:310\",[\"RunWWW\"],{\"__rc\":[\"\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:310\",[\"RunWWW\"],{\"__rc\":[\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div><div class=\"\"><div class=\"x9f619 x1n2onr6 x1ja2u2z\"><div aria-valuetext=\"Carregando...\" role=\"p\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"\"><div class=\"x9f619 x1n2onr6 x1ja2u2z\"><div aria-valuetext=\"Carregando...\" role=\"progre\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 x1n2onr6 x1ja2u2z\"><div aria-valuetext=\"Carregando...\" role=\"progressbar\" tabinde\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div aria-valuetext=\"Carregando...\" role=\"progressbar\" tabindex=\"0\" class=\"always-enable-animations \n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x1n2onr6 x1ja2u2z\"><div class=\"x78zum5 xdt5ytf xg6iff7 x1n2onr6\"><div cl\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf xg6iff7 x1n2onr6\"><div class=\"x78zum5 xdt5ytf x10cihs4 x1t2pt76 x1n2onr6\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x10cihs4 x1t2pt76 x1n2onr6 x1ja2u2z\"><span data-surface-wrapper=\"1\" data\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings\" style=\"display: contents;\" data-auto-\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SPAN: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1qjc9v5 x78zum5 xdt5ytf x13a6bvl x2lwn1j xeuugli x1dr59a3 x6ikm8r x10wlt62\"><span class\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <span class=\"_li\"></span><div class=\"x1qjc9v5 x78zum5 x15zctf7 x13a6bvl xeuugli x1iyjqo2 xs83m0k x2l\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x1iyjqo2 x1n2onr6\"><div><div data-visualcompletion=\"ignore\" class=\"\"></d\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div><div data-visualcompletion=\"ignore\" class=\"\"></div><div data-pagelet=\"CometBizKitRoot\"><div dat\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div data-visualcompletion=\"ignore\" class=\"\"></div><div data-pagelet=\"CometBizKitRoot\"><div data-pag\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div data-pagelet=\"MainView\"><span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SE\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS\" style=\"display: conte\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SPAN: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div style=\"flex: 1 1 0%; min-width: 0px;\"><div class=\"x78zum5 xdt5ytf x1dr59a3 xmz0i5r xh8yej3 x1vj\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x1dr59a3 xmz0i5r xh8yej3 x1vjfegm x1q85c4o x1jrmryl x1nr1p0w\"><div class\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 x1dr59a3 xmz0i5r x193iq5w xw2csxc xh8yej3\"><div class=\"xwxc41k x13jy36j x64bnmy \n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"xwxc41k x13jy36j x64bnmy xyamay9 x6s0dn4 x78zum5 xdt5ytf x1iyjqo2 x1n2onr6\" style=\"min-w\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1q0g3np xeuugli x1iyjqo2 x14bzwq1 xqjyukv x1qjc9v5 x78zum5 xozqiw3 x5yr21d x2lwn1j xh8y\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1cy8zhl x78zum5 xdt5ytf xozqiw3 x2lwn1j xeuugli x1iyjqo2 x1kxxb1g\"><div class=\"x9f619 x\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grup\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 xh8yej3\"><div class=\"x1q0g3np xozqiw3 x8va1my x6s0dn4 x78zum5 x1c4vz4f x2lah0s x1\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"Informações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x2lah0s x1jn76jz x14atkfc\"><div class=\"xhgxa4x xy5ysw6 x1qkj6lk xn3walq xnvurfn x1v3rft4\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1n2onr6 x1iyjqo2 xh8yej3 x5yr21d\"><span data-surface-wrapper=\"1\" data-surface=\"/bizweb:\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS/lib:bizweb_settings:co\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SPAN: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x2lwn1j xeuugli x5yr21d\"><span data-surface-wrapper=\"1\" data-surface=\"/b\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS/lib:bizweb_settings:co\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SPAN: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div aria-labelledby=\"js_m5\" class=\"x1gzqxud xjwep3j x1t39747 x1wcsgtt x1pczhz8 xhgxa4x xy5ysw6 x1qk\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x78zum5 xdt5ytf x5yr21d xedcshv x1t2pt76 xh8yej3\"><div class=\"x9f619 x78zum5 x2lah0s xh8\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"DomainsAdicionarNomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 x78zum5 x2lah0s xh8yej3 xyamay9 x1l90r2v xf7dkkf xv54qhq\"><div class=\"x1iyjqo2 xe\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SPAN: \"NomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot VerifiedNot Veri\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x9f619 x5yr21d x1n2onr6 x1kmqopl\"><span data-surface-wrapper=\"1\" data-surface=\"/bizweb:s\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"NomeFull access​Acesso parcial​Parceiros​facebook-automation-099373.onrender.comNot VerifiedNot Veri\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <span data-surface-wrapper=\"1\" data-surface=\"/bizweb:settings/bizweb:SETTINGS/lib:bizweb_settings:co\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"Verificar domínioVerificar domínioVerificar domínioMaisMaisMaisSelecione uma opçãoAdicionar uma meta\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1p5oq8j x64bnmy x18d9i69 x13jy36j xh8yej3 x9f619\"><div><div class=\"x78zum5 xdmi676 x193\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"Adicionar uma metatagVerifique esse domínio copiando e colando o código de metatag fornecido na seçã\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div aria-level=\"3\" class=\"x1vvvo52 x1uxerd5 x1xlr1w8 xrohxju xbsr9hj xq9mrsl x1yc453h x1h4wwuj xeuu\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"Verifique esse domínio copiando e colando o código de metatag fornecido na seção <head> ... <head> d\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: Verifique esse domínio copiando e colando o código de metatag fornecido na seção &lt;head&gt; ... &l\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"1. Copie esta metatag: <meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy7\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 x1l90r2v xf7dkkf xv54qhq x1yhoyej xjwe\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"1. Copie esta metatag: <meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy7\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div></div><span class=\"x1vvvo52 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1h4wwuj xeuugli\">1. Copie\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SPAN: \"1. Copie esta metatag: <meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy7\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: 1. Copie esta metatag: <strong>&lt;meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   STRONG: \"<meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy70yf4\" />\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: &lt;meta name=\"facebook-domain-verification\" content=\"d6gzp2g9l05elk8zttwlujzzy70yf4\" /&gt;\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"2. Cole a metatag na seção <head>...</head> da fonte HTML da página inicial do site e publique a pág\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 xyamay9 x1l90r2v xf7dkkf xv54qhq x1yho\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"Observação: a verificação falhará se o código de metatag estiver fora da seção <head> ou em uma seçã\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: Observação: a verificação falhará se o código de metatag estiver fora da seção &lt;head&gt; ou em um\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando http://fac\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 xyamay9 x1l90r2v xf7dkkf xv54qhq x1yho\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando http://fac\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x178xt8z x13fuv20 x10l6tqk x1pdr0v7 x1o0tod xtijo5x xwebqov x1x9jw1y xrsgblv xceihxd\"></\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SPAN: \"3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando http://fac\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: 3. Depois de ter publicado a página inicial, confirme se a metatag está vísivel acessando <a class=\"\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"4. Clique em Verify domainObservação: o Facebook pode levar até 72 horas para encontrar o código de \"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: <div class=\"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 xyamay9 x1l90r2v xf7dkkf xv54qhq x1yho\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   DIV: \"Observação: o Facebook pode levar até 72 horas para encontrar o código de metatag. Se o status do do\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: Observação: o Facebook pode levar até 72 horas para encontrar o código de metatag. Se o status do do\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:26571\",[\"MetaBrandPinFille\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:26571\",[\"MetaBrandPinFille\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"emptyFunction\\u00400b6075d2a\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"RelayPrefetchedStreamCache\\u\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"require\":[[\"RelayPrefetchedStreamCache\\u\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"Bootloader\",\"handlePayload\",null,[{\"consistency\":{\"rev\":1043020865},\"rsrcMap\":{\"bbz6I9\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"require\":[[\"Bootloader\",\"handlePayload\",null,[{\"consistency\":{\"rev\":1043020865},\"rsrcMap\":{\"bbz6I9\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   SCRIPT: \"{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:38451\",[\"CometRouterUIComp\"","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"   HTML: {\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:38451\",[\"CometRouterUIComp\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"📋 [PASSO 8] Capturando meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"🔍 Extração de meta tag - Tentativa 1: <code> tags\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"⚠️ Não encontrado em <code> tags, tentando outra forma\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"🔍 Extração - Tentativa 2: Qualquer elemento de texto\n","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag encontrada (método 2): maybeDisableAnimations\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:23:42"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:24:31"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:24:31"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:24:31"}
+{"level":"info","message":"ℹ️ Usando Business ID alternativo: 1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:24:31"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:24:31"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:24:32"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:32"}
+{"level":"info","message":"\u001b[32m✅ ✅ Usando Business ID: 1549058433439653\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:32"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:24:32"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:42"}
+{"level":"info","message":"⚠️  Verificando se há erro na página...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Nenhum erro detectado, prosseguindo...\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:42"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:24:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:45"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:45"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão clicado com sucesso!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:48"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:48"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 14:24:48"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:48"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:48"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-688047.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-688047.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1341619324773678&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"\u001b[32m✅ ✅ MENSAGENS DE SUCESSO:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 14:24:50"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:51"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:24:51"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Adicionar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:51"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:51"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\u001b[32m✅ \n✅✅ META TAG ENCONTRADO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\u001b[32m✅ Código: qk94qu19ovn1tkg3h6t23lfkkcfitm\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"Meta tag completa:\n<meta name=\"facebook-domain-verification\" content=\"qk94qu19ovn1tkg3h6t23lfkkcfitm\" />\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1827810094863563&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\u001b[32m✅ ✅ MENSAGENS DE SUCESSO:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão encontrado e clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:54"}
+{"level":"info","message":"🔍 DEBUG 3: Resultado da verificação\n","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"\n🔍 APÓS TENTAR VERIFICAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1827810094863563&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"\u001b[32m✅ ✅ MENSAGENS DE SUCESSO:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}
+{"level":"info","message":"\u001b[32m✅ \n✅ Teste concluído! Verifique os debugs acima.\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:24:57"}

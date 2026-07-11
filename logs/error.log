@@ -521,3 +521,5 @@
 {"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
 {"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}
 {"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:24:49"}

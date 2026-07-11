@@ -430,6 +430,17 @@ async function testarFluxoDominio() {
     // Capturar meta tag
     logger.info('🔍 Procurando meta tag gerada...\n');
     const metaTag = await page.evaluate(() => {
+      // Estratégia 1: Procurar em <strong> tag (Facebook coloca aí!)
+      const strongTags = document.querySelectorAll('strong');
+      for (const tag of strongTags) {
+        const text = tag.innerText || tag.textContent || '';
+        const match = text.match(/content=["']([a-zA-Z0-9\-_]{20,})["']/);
+        if (match && match[1]) {
+          return match[1];
+        }
+      }
+
+      // Estratégia 2: Procurar em code tags
       const codeTags = document.querySelectorAll('code');
       for (const tag of codeTags) {
         const text = tag.innerText || tag.textContent || '';
@@ -439,11 +450,15 @@ async function testarFluxoDominio() {
         }
       }
 
-      const metas = document.querySelectorAll('meta[name="facebook-domain-verification"], meta[property*="facebook"]');
-      for (const meta of metas) {
-        const content = meta.getAttribute('content');
-        if (content && content.length > 10) {
-          return content;
+      // Estratégia 3: Procurar em qualquer elemento
+      const elementos = document.querySelectorAll('*');
+      for (const elem of elementos) {
+        const text = elem.textContent || '';
+        if (text.includes('facebook-domain-verification')) {
+          const match = text.match(/content=["']([a-zA-Z0-9\-_]{20,})["']/);
+          if (match && match[1]) {
+            return match[1];
+          }
         }
       }
 
@@ -451,9 +466,11 @@ async function testarFluxoDominio() {
     });
 
     if (metaTag) {
-      logger.success(`✅ Meta tag encontrada: ${metaTag}\n`);
+      logger.success(`\n✅✅ META TAG ENCONTRADO!\n`);
+      logger.success(`Código: ${metaTag}\n`);
+      logger.info(`Meta tag completa:\n<meta name="facebook-domain-verification" content="${metaTag}" />\n`);
     } else {
-      logger.warn('⚠️ Meta tag não encontrada\n');
+      logger.error('\n❌ Meta tag NÃO encontrado - verificação pode falhar\n');
     }
 
     // DEBUG 2: Após capturar meta tag
