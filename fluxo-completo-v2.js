@@ -132,19 +132,19 @@ async function executarFluxoCompleto() {
       await page.goto(domainsUrl, { waitUntil: 'load', timeout: 60000 });
       await new Promise(r => setTimeout(r, 2000));
 
-      // Verificar se "Criar um domínio" está disponível
-      const temCriarDominio = await page.evaluate(() => {
-        const allElements = document.querySelectorAll('*');
-        for (const elem of allElements) {
-          if (elem.textContent?.includes('Criar um domínio')) {
+      // Verificar se botão "Adicionar" está disponível
+      const temAdicionar = await page.evaluate(() => {
+        const buttons = document.querySelectorAll('button, [role="button"]');
+        for (const btn of buttons) {
+          if (btn.textContent?.trim() === 'Adicionar') {
             return true;
           }
         }
         return false;
       });
 
-      if (temCriarDominio) {
-        logger.success(`✅ Business ID ${id} tem acesso a "Criar um domínio"!\n`);
+      if (temAdicionar) {
+        logger.success(`✅ Business ID ${id} tem acesso a adicionar domínios!\n`);
         businessId = id;
         break;
       } else {
@@ -172,81 +172,32 @@ async function executarFluxoCompleto() {
     await page.goto(domainsUrl, { waitUntil: 'load', timeout: 60000 });
     await new Promise(r => setTimeout(r, 3000));
 
-    // ===== PASSO 2: Clicar "Criar um domínio" =====
-    logger.info('🔗 [PASSO 2] Clicando em "Criar um domínio"...\n');
+    // ===== PASSO 2: Clicar "Adicionar" =====
+    logger.info('➕ [PASSO 2] Clicando em "Adicionar" para adicionar novo domínio...\n');
 
-    let clicouComSucesso = false;
-
-    // Tentar com XPath
-    const elements = await page.$x("//div[text()='Criar um domínio']");
-    if (elements.length > 0) {
-      clicouComSucesso = await page.evaluate((elem) => {
-        let current = elem;
-        for (let i = 0; i < 15; i++) {
-          if (current && current.getAttribute && current.getAttribute('role') === 'gridcell') {
-            current.click();
-            return true;
-          }
-          current = current?.parentElement;
+    const clicouAdicionar = await page.evaluate(() => {
+      // Procurar pelo botão "Adicionar"
+      const buttons = document.querySelectorAll('button, [role="button"]');
+      for (const btn of buttons) {
+        if (btn.textContent?.trim() === 'Adicionar') {
+          btn.click();
+          return true;
         }
-        return false;
-      }, elements[0]);
-    }
-
-    // Se não funcionou com XPath, tentar método alternativo
-    if (!clicouComSucesso) {
-      logger.info('   Tentando método alternativo...\n');
-      clicouComSucesso = await page.evaluate(() => {
-        // Procurar por todos os elementos que contêm "Criar um domínio"
-        const allElements = document.querySelectorAll('*');
-        for (const elem of allElements) {
-          if (elem.textContent?.includes('Criar um domínio') && elem.textContent.length < 50) {
-            // Encontrou, agora clicar nele ou no pai
-            let target = elem;
-            // Tentar clicar no elemento ou em um pai clicável
-            while (target && target !== document.body) {
-              if (target.onclick || target.getAttribute('role') === 'button' || target.getAttribute('role') === 'gridcell' || target.tagName === 'BUTTON') {
-                target.click();
-                return true;
-              }
-              target = target.parentElement;
-            }
-            elem.click();
-            return true;
-          }
-        }
-        return false;
-      });
-    }
-
-    if (clicouComSucesso) {
-      logger.success('✅ Clique executado com sucesso\n');
-    } else {
-      logger.warn('⚠️ Não conseguiu clicar em "Criar um domínio"\n');
-    }
-
-    await new Promise(r => setTimeout(r, 3000));
-
-    // ===== PASSO 3: Validar se modal foi aberto =====
-    logger.info('🔍 [PASSO 3-CHECK] Verificando se modal foi aberto...\n');
-
-    const temInput = await page.evaluate(() => {
-      const input = document.querySelector('input[placeholder*="exemplo.com"]') ||
-                    document.querySelector('input[placeholder*="domínio"]') ||
-                    document.querySelector('input[type="text"]');
-      return !!input;
+      }
+      return false;
     });
 
-    if (!temInput) {
-      logger.error('❌ Modal NÃO foi aberto! Input não encontrado.\n');
-      logger.warn('⚠️ Verifique se o DOM mudou no Facebook\n');
+    if (clicouAdicionar) {
+      logger.success('✅ Clique em "Adicionar" executado\n');
+    } else {
+      logger.error('❌ Não conseguiu clicar em "Adicionar"\n');
       await browser.close();
       return;
     }
 
-    logger.success('✅ Modal aberto, input encontrado\n');
+    await new Promise(r => setTimeout(r, 3000));
 
-    // ===== PASSO 4: Preencher domínio =====
+    // ===== PASSO 3: Preencher domínio =====
     logger.info(`📝 [PASSO 4] Preenchendo: ${dominio}\n`);
 
     await page.evaluate(() => {
