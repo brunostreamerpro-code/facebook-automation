@@ -10,7 +10,7 @@ const fs = require('fs');
 const { execSync } = require('child_process');
 const logger = require('./src/utils/logger');
 const RenderServiceAPI = require('./src/services/RenderServiceAPI');
-const atualizarMetaTag = require('./atualizar-metatag');
+const { atualizarMetaTag } = require('./atualizar-metatag-v2');
 
 puppeteer.use(StealthPlugin());
 
@@ -299,15 +299,23 @@ async function executarFluxoCompleto() {
       logger.info('\n📝 [PASSO 8] Atualizando meta tag no GitHub e fazendo deploy...\n');
 
       try {
-        // 1. Atualizar arquivo HTML local com dados padrão
+        // 1. Atualizar arquivo HTML local com dados dinâmicos
         const dadosEmpresa = {
           cnpj: '00000000000000',
           razaoSocial: 'Empresa Teste',
-          nomeFantasia: 'Dashboard Verificado',
-          email: 'contato@empresa.com',
+          emailDomain: 'empresa.com.br',
           telefone: '(11) 0000-0000',
-          dataAbertura: new Date().toLocaleDateString('pt-BR'),
-          porte: 'Pequena'
+          whatsapp: '',
+          logradouro: 'Rua Exemplo',
+          numero: '123',
+          complemento: '',
+          bairro: 'Centro',
+          cidadeUf: 'São Paulo-SP',
+          cep: '00000-000',
+          atividadePrincipal: 'Serviços',
+          segmento: 'servicos',
+          descricao: 'Empresa de serviços brasileira',
+          horario: 'Segunda a sexta, das 09h às 18h'
         };
 
         const atualizado = await atualizarMetaTag(metaTagFacebook, dadosEmpresa);
