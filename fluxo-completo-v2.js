@@ -75,10 +75,13 @@ async function executarFluxoCompleto() {
 
     // ===== PASSO 2: Clicar "Criar um domínio" =====
     logger.info('🔗 [PASSO 2] Clicando em "Criar um domínio"...\n');
-    const elements = await page.$x("//div[text()='Criar um domínio']");
 
+    let clicouComSucesso = false;
+
+    // Tentar com XPath
+    const elements = await page.$x("//div[text()='Criar um domínio']");
     if (elements.length > 0) {
-      const clicouCriarDominio = await page.evaluate((elem) => {
+      clicouComSucesso = await page.evaluate((elem) => {
         let current = elem;
         for (let i = 0; i < 15; i++) {
           if (current && current.getAttribute && current.getAttribute('role') === 'gridcell') {
@@ -89,22 +92,72 @@ async function executarFluxoCompleto() {
         }
         return false;
       }, elements[0]);
+    }
 
-      if (clicouCriarDominio) {
-        logger.success('✅ Clique executado\n');
-      }
+    // Se não funcionou com XPath, tentar método alternativo
+    if (!clicouComSucesso) {
+      logger.info('   Tentando método alternativo...\n');
+      clicouComSucesso = await page.evaluate(() => {
+        // Procurar por todos os elementos que contêm "Criar um domínio"
+        const allElements = document.querySelectorAll('*');
+        for (const elem of allElements) {
+          if (elem.textContent?.includes('Criar um domínio') && elem.textContent.length < 50) {
+            // Encontrou, agora clicar nele ou no pai
+            let target = elem;
+            // Tentar clicar no elemento ou em um pai clicável
+            while (target && target !== document.body) {
+              if (target.onclick || target.getAttribute('role') === 'button' || target.getAttribute('role') === 'gridcell' || target.tagName === 'BUTTON') {
+                target.click();
+                return true;
+              }
+              target = target.parentElement;
+            }
+            elem.click();
+            return true;
+          }
+        }
+        return false;
+      });
+    }
+
+    if (clicouComSucesso) {
+      logger.success('✅ Clique executado com sucesso\n');
+    } else {
+      logger.warn('⚠️ Não conseguiu clicar em "Criar um domínio"\n');
     }
 
     await new Promise(r => setTimeout(r, 3000));
 
-    // ===== PASSO 3: Preencher domínio =====
-    logger.info(`📝 [PASSO 3] Preenchendo: ${dominio}\n`);
+    // ===== PASSO 3: Validar se modal foi aberto =====
+    logger.info('🔍 [PASSO 3-CHECK] Verificando se modal foi aberto...\n');
+
+    const temInput = await page.evaluate(() => {
+      const input = document.querySelector('input[placeholder*="exemplo.com"]') ||
+                    document.querySelector('input[placeholder*="domínio"]') ||
+                    document.querySelector('input[type="text"]');
+      return !!input;
+    });
+
+    if (!temInput) {
+      logger.error('❌ Modal NÃO foi aberto! Input não encontrado.\n');
+      logger.warn('⚠️ Verifique se o DOM mudou no Facebook\n');
+      await browser.close();
+      return;
+    }
+
+    logger.success('✅ Modal aberto, input encontrado\n');
+
+    // ===== PASSO 4: Preencher domínio =====
+    logger.info(`📝 [PASSO 4] Preenchendo: ${dominio}\n`);
 
     await page.evaluate(() => {
       const input = document.querySelector('input[placeholder*="exemplo.com"]') ||
                     document.querySelector('input[placeholder*="domínio"]') ||
                     document.querySelector('input[type="text"]');
-      if (input) input.focus();
+      if (input) {
+        input.focus();
+        input.click();
+      }
     });
 
     for (const letra of dominio) {
@@ -115,8 +168,8 @@ async function executarFluxoCompleto() {
     await new Promise(r => setTimeout(r, 1500));
     logger.success('✅ Domínio preenchido\n');
 
-    // ===== PASSO 4: Anti-bot =====
-    logger.info('🤖 [PASSO 4] Anti-bot...\n');
+    // ===== PASSO 5: Anti-bot =====
+    logger.info('🤖 [PASSO 5] Anti-bot...\n');
 
     const ultimaLetra = await page.evaluate((dom) => {
       const input = document.querySelector('input[placeholder*="exemplo.com"]') ||
@@ -137,8 +190,8 @@ async function executarFluxoCompleto() {
       logger.success('✅ Anti-bot aplicado\n');
     }
 
-    // ===== PASSO 5: Enviar domínio =====
-    logger.info('✅ [PASSO 5] Clicando "Adicionar"...\n');
+    // ===== PASSO 6: Enviar domínio =====
+    logger.info('✅ [PASSO 6] Clicando "Adicionar"...\n');
     await page.evaluate(() => {
       const buttons = Array.from(document.querySelectorAll('button, [role="button"]')).reverse();
       for (const btn of buttons) {
@@ -152,8 +205,8 @@ async function executarFluxoCompleto() {
     await new Promise(r => setTimeout(r, 3000));
     logger.success('✅ Domínio enviado\n');
 
-    // ===== PASSO 6: Capturar meta tag =====
-    logger.info('\n🔍 [PASSO 6] Capturando meta tag do Facebook...\n');
+    // ===== PASSO 7: Capturar meta tag =====
+    logger.info('\n🔍 [PASSO 7] Capturando meta tag do Facebook...\n');
 
     const metaTagFacebook = await page.evaluate(() => {
       const inputs = document.querySelectorAll('input[type="text"], input[type="hidden"]');
@@ -186,8 +239,8 @@ async function executarFluxoCompleto() {
       return;
     }
 
-    // ===== PASSO 7: Chamar API do Genesisai2001 =====
-    logger.info('\n🎨 [PASSO 7] Chamando API Genesisai2001...\n');
+    // ===== PASSO 8: Chamar API do Genesisai2001 =====
+    logger.info('\n🎨 [PASSO 8] Chamando API Genesisai2001...\n');
 
     const companyData = {
       razaoSocial: 'Empresa Teste',
@@ -243,8 +296,8 @@ async function executarFluxoCompleto() {
       return;
     }
 
-    // ===== PASSO 8: Verificar meta tag no Genesisai2001 =====
-    logger.info('\n🌐 [PASSO 8] Verificando meta tag no Genesisai2001...\n');
+    // ===== PASSO 9: Verificar meta tag no Genesisai2001 =====
+    logger.info('\n🌐 [PASSO 9] Verificando meta tag no Genesisai2001...\n');
 
     let temMetaTagCorreto = false;
     let tentativasVerificacao = 0;
@@ -284,8 +337,8 @@ async function executarFluxoCompleto() {
       return;
     }
 
-    // ===== PASSO 9: Voltar ao Facebook e clicar Verificar =====
-    logger.info('\n✅ [PASSO 9] Voltando ao Facebook para verificar domínio...\n');
+    // ===== PASSO 10: Voltar ao Facebook e clicar Verificar =====
+    logger.info('\n✅ [PASSO 10] Voltando ao Facebook para verificar domínio...\n');
 
     await page.goto(domainsUrl, { waitUntil: 'load' });
     await new Promise(r => setTimeout(r, 3000));
