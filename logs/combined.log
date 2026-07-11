@@ -21957,3 +21957,58 @@
 {"level":"info","message":"   ✅ Informações da empresa preenchidas\n","service":"bm-automation","timestamp":"2026-07-11 14:29:53"}
 {"level":"info","message":"   ✅ WhatsApp pronto para configuração\n","service":"bm-automation","timestamp":"2026-07-11 14:29:53"}
 {"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:29:53"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 14:32:29"}
+{"level":"info","message":"✅ VERIFICAÇÃO FINAL E CONCLUSÃO","service":"bm-automation","timestamp":"2026-07-11 14:32:29"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:32:29"}
+{"level":"info","message":"📊 CONFIGURAÇÃO:\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"   Domínio: facebook-automation-688047.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"   Meta Tag: qk94qu19ovn1tkg3h6t23lfkkcfitm\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"   Business ID: 1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"🌐 [PASSO 1] Verificando meta tag no site do Render...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"   Tentativa 1/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: axios is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:30"}
+{"level":"info","message":"   Tentativa 2/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:32:35"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: axios is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:32:35"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:35"}
+{"level":"info","message":"   Tentativa 3/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:32:40"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: axios is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:32:40"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:40"}
+{"level":"info","message":"   Tentativa 4/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:32:45"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: axios is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:32:45"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:45"}
+{"level":"info","message":"   Tentativa 5/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: axios is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"warn","message":"\n⚠️ Meta tag NÃO encontrado no site após 5 tentativas\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"\n📋 INSTRUÇÕES MANUAIS:\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"   1. Acesse: facebook-automation-688047.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"   2. Cole no <head>:\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"   <meta name=\"facebook-domain-verification\" content=\"qk94qu19ovn1tkg3h6t23lfkkcfitm\" />\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"   3. Salve e publique\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"   4. Aguarde 1-2 minutos\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"\n🔙 [PASSO 2] Voltando ao Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"   Navegando para: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1341619324773678&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:32:50"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:32:56"}
+{"level":"info","message":"✅ [PASSO 3] Procurando botão \"Verify domain\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:56"}
+{"level":"warn","message":"⚠️ Botão \"Verify domain\" não encontrado\n","service":"bm-automation","timestamp":"2026-07-11 14:32:56"}
+{"level":"info","message":"💡 Tente clicar manualmente no botão na página aberta\n","service":"bm-automation","timestamp":"2026-07-11 14:32:56"}
+{"level":"info","message":"\n📌 [PASSO 4] Preenchendo Informações da Empresa...\n","service":"bm-automation","timestamp":"2026-07-11 14:32:56"}
+{"level":"info","message":"   Navegando para: https://business.facebook.com/latest/settings/business_info?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:32:56"}
+{"level":"info","message":"\u001b[32m✅    ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:33:02"}
+{"level":"info","message":"   ✏️ Clicando em Editar Detalhes...","service":"bm-automation","timestamp":"2026-07-11 14:33:02"}
+{"level":"info","message":"\u001b[32m✅    ✅ Modal de edição aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:33:04"}
+{"level":"info","message":"📌 [PASSO 5] Criando Conta WhatsApp...\n","service":"bm-automation","timestamp":"2026-07-11 14:33:04"}
+{"level":"info","message":"   💬 Acessando WhatsApp...","service":"bm-automation","timestamp":"2026-07-11 14:33:04"}
+{"level":"info","message":"\u001b[32m✅    ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:33:13"}
+{"level":"info","message":"   ➕ Clicando em Adicionar...","service":"bm-automation","timestamp":"2026-07-11 14:33:13"}
+{"level":"info","message":"\u001b[32m✅    ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"\u001b[32m✅ \n✅✅ FLUXO COMPLETO CONCLUÍDO!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"================================================================================","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"\n📋 RESUMO:\n","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"   ✅ Meta tag capturado e verificado\n","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"   ✅ Domínio verificado no Facebook\n","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"   ✅ Informações da empresa preenchidas\n","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"   ✅ WhatsApp pronto para configuração\n","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:33:15"}

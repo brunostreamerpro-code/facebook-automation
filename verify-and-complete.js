@@ -70,6 +70,88 @@ async function executarVerificacao() {
       logger.success(`✅ ${cookies.length} cookies carregados\n`);
     }
 
+    // ===== PASSO 0: CRIAR/PREENCHER DOMÍNIO NO FACEBOOK =====
+    logger.info('\n📌 [PASSO 0] Preenchendo Domínio no Facebook...\n');
+
+    const domainsUrl = `https://business.facebook.com/latest/settings/domains?business_id=${businessId}`;
+    logger.info(`   🌐 Navegando para domínios...\n`);
+    await page.goto(domainsUrl, { waitUntil: 'load', timeout: 60000 });
+    await new Promise(r => setTimeout(r, 3000));
+    logger.success('   ✅ Página carregada\n');
+
+    // Clicar "Adicionar"
+    logger.info('   ➕ Clicando em "Adicionar"...');
+    await page.evaluate(() => {
+      const buttons = document.querySelectorAll('button, [role="button"]');
+      for (const btn of buttons) {
+        if (btn.textContent?.toLowerCase().includes('adicionar')) {
+          btn.click();
+          return true;
+        }
+      }
+    });
+    await new Promise(r => setTimeout(r, 2000));
+    logger.success('   ✅ Modal aberto\n');
+
+    // Clicar "Criar um domínio"
+    logger.info('   🔗 Clicando em "Criar um domínio"...');
+    await page.evaluate(() => {
+      const btn = document.getElementById('js_k8');
+      if (btn) btn.click();
+    });
+    await new Promise(r => setTimeout(r, 3000));
+    logger.success('   ✅ Modal de domínio aberto\n');
+
+    // Preencher domínio
+    logger.info(`   📝 Preenchendo domínio: ${dominio}...\n`);
+    await page.evaluate((dom) => {
+      const input = document.querySelector('input[placeholder*="exemplo.com"]') ||
+                    document.querySelector('input[type="text"]');
+      if (input) {
+        input.value = dom;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    }, dominio);
+
+    await new Promise(r => setTimeout(r, 2000));
+    logger.success('   ✅ Domínio preenchido\n');
+
+    // Anti-bot
+    logger.info('   🤖 Aplicando anti-bot...');
+    await page.evaluate(() => {
+      const inputs = Array.from(document.querySelectorAll('input[type="text"]'))
+        .filter(inp => inp.offsetParent !== null && inp.value);
+      if (inputs.length > 0) {
+        const input = inputs[inputs.length - 1];
+        const ultima = input.value[input.value.length - 1];
+        input.value = input.value.slice(0, -1);
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        return ultima;
+      }
+      return null;
+    });
+
+    await new Promise(r => setTimeout(r, 300));
+    await page.keyboard.type('m');
+    await new Promise(r => setTimeout(r, 300));
+    logger.success('   ✅ Anti-bot aplicado\n');
+
+    // Clicar "Adicionar"
+    logger.info('   ✅ Clicando em "Adicionar"...\n');
+    await page.evaluate(() => {
+      const buttons = Array.from(document.querySelectorAll('button, [role="button"]')).reverse();
+      for (const btn of buttons) {
+        if (btn.textContent?.toLowerCase().includes('adicionar') && btn.offsetParent !== null) {
+          btn.click();
+          return true;
+        }
+      }
+    });
+
+    await new Promise(r => setTimeout(r, 3000));
+    logger.success('   ✅ Domínio enviado!\n');
+
     // ===== PASSO 1: Verificar meta tag no Render =====
     logger.info('🌐 [PASSO 1] Verificando meta tag no site do Render...\n');
 
