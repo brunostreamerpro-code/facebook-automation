@@ -22109,3 +22109,53 @@
 {"level":"info","message":"\u001b[32m✅ ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:35:51"}
 {"level":"info","message":"✅ [PASSO 3] Procurando botão \"Verify domain\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:35:51"}
 {"level":"error","message":"\n❌ ERRO: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 14:35:51"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"✅ VERIFICAÇÃO FINAL E CONCLUSÃO","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"📊 CONFIGURAÇÃO:\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"   Domínio: facebook-automation-688047.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"   Meta Tag: qk94qu19ovn1tkg3h6t23lfkkcfitm\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"   Business ID: 1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"\n📌 [PASSO 0] Preenchendo Domínio no Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"   🌐 Navegando para domínios...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:08"}
+{"level":"info","message":"\u001b[32m✅    ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:13"}
+{"level":"info","message":"   ➕ Clicando em \"Adicionar\" (abre opções)...","service":"bm-automation","timestamp":"2026-07-11 14:36:13"}
+{"level":"info","message":"\u001b[32m✅    ✅ Modal de opções aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:16"}
+{"level":"info","message":"   🔗 Clicando em \"Criar um domínio\" (dentro do modal)...","service":"bm-automation","timestamp":"2026-07-11 14:36:16"}
+{"level":"info","message":"\u001b[32m✅    ✅ Modal de domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:16"}
+{"level":"info","message":"   📝 Preenchendo domínio: facebook-automation-688047.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:18"}
+{"level":"info","message":"\u001b[32m✅    ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:20"}
+{"level":"info","message":"   🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 14:36:20"}
+{"level":"info","message":"\u001b[32m✅    ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:20"}
+{"level":"info","message":"   ✅ Clicando em \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:20"}
+{"level":"info","message":"\u001b[32m✅    ✅ Domínio enviado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:26"}
+{"level":"info","message":"\n🌐 [PASSO 1] Verificando meta tag no site do Render...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:26"}
+{"level":"info","message":"   Tentativa 1/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:36:26"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: Request failed with status code 404\n","service":"bm-automation","timestamp":"2026-07-11 14:36:26"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:26"}
+{"level":"info","message":"   Tentativa 2/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:36:31"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: Request failed with status code 404\n","service":"bm-automation","timestamp":"2026-07-11 14:36:32"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:32"}
+{"level":"info","message":"   Tentativa 3/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:36:37"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: Request failed with status code 404\n","service":"bm-automation","timestamp":"2026-07-11 14:36:38"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:38"}
+{"level":"info","message":"   Tentativa 4/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:36:43"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: Request failed with status code 404\n","service":"bm-automation","timestamp":"2026-07-11 14:36:43"}
+{"level":"info","message":"   ⏳ Aguardando 5 segundos antes de tentar novamente...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:43"}
+{"level":"info","message":"   Tentativa 5/5: Acessando http://facebook-automation-688047.onrender.com/\n","service":"bm-automation","timestamp":"2026-07-11 14:36:48"}
+{"level":"warn","message":"   ⚠️ Erro ao acessar site: Request failed with status code 404\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"warn","message":"\n⚠️ Meta tag NÃO encontrado no site após 5 tentativas\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"\n📋 INSTRUÇÕES MANUAIS:\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"   1. Acesse: facebook-automation-688047.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"   2. Cole no <head>:\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"   <meta name=\"facebook-domain-verification\" content=\"qk94qu19ovn1tkg3h6t23lfkkcfitm\" />\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"   3. Salve e publique\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"   4. Aguarde 1-2 minutos\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"\n🔙 [PASSO 2] Voltando ao Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:49"}
+{"level":"info","message":"   Navegando para: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:36:52"}
+{"level":"warn","message":"   ⚠️ Aviso ao navegar: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 14:36:52"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:36:56"}
+{"level":"info","message":"✅ [PASSO 3] Procurando botão \"Verify domain\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:36:56"}
+{"level":"error","message":"\n❌ ERRO: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 14:36:56"}

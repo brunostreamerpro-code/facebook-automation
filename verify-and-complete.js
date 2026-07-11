@@ -288,29 +288,35 @@ async function executarVerificacao() {
     // ===== PASSO 3: Clicar "Verify domain" =====
     logger.info('✅ [PASSO 3] Procurando botão "Verify domain"...\n');
 
-    const clicouVerify = await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button, [role="button"], div[role="button"]');
-      for (const btn of buttons) {
-        const text = btn.textContent?.toLowerCase() || '';
-        if (text.includes('verify') && text.includes('domain')) {
-          logger.info('   ✅ Botão encontrado! Clicando...');
-          btn.click();
-          return true;
-        }
-      }
+    let clicouVerify = false;
 
-      // Procurar alternativas
-      const elementos = document.querySelectorAll('*');
-      for (const elem of elementos) {
-        const text = (elem.textContent || '').toLowerCase();
-        if (text === 'verify domain' || (text.includes('verify') && text.includes('domain') && text.length < 30)) {
-          elem.click?.();
-          return true;
+    try {
+      clicouVerify = await page.evaluate(() => {
+        const buttons = document.querySelectorAll('button, [role="button"], div[role="button"]');
+        for (const btn of buttons) {
+          const text = btn.textContent?.toLowerCase() || '';
+          if (text.includes('verify') && text.includes('domain')) {
+            btn.click();
+            return true;
+          }
         }
-      }
 
-      return false;
-    });
+        // Procurar alternativas
+        const elementos = document.querySelectorAll('*');
+        for (const elem of elementos) {
+          const text = (elem.textContent || '').toLowerCase();
+          if (text === 'verify domain' || (text.includes('verify') && text.includes('domain') && text.length < 30)) {
+            elem.click?.();
+            return true;
+          }
+        }
+
+        return false;
+      });
+    } catch (err) {
+      logger.warn(`   ⚠️ Erro ao clicar verify: ${err.message}\n`);
+      logger.info('   💡 Tente clicar manualmente - o domínio foi adicionado com sucesso!\n');
+    }
 
     if (clicouVerify) {
       logger.success('✅ Botão clicado!\n');
