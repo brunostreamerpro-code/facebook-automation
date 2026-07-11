@@ -637,6 +637,121 @@ async function applicarAntiBot(page) {
 }
 
 /**
+ * Debugar página - verificar meta tags, erros e sucesso
+ */
+async function debugarPagina(page, titulo = 'Debug') {
+  logger.info(`\n🔍 ${titulo.toUpperCase()}\n`);
+  logger.info('='.repeat(60));
+
+  try {
+    const debugInfo = await page.evaluate(() => {
+      const result = {
+        url: window.location.href,
+        title: document.title,
+        metaTags: [],
+        errors: [],
+        successMessages: [],
+        htmlSnippet: ''
+      };
+
+      // 1. Procurar por meta tags (principalmente o da Facebook)
+      const metaTags = document.querySelectorAll('meta');
+      for (const meta of metaTags) {
+        const name = meta.getAttribute('name') || meta.getAttribute('property') || '';
+        const content = meta.getAttribute('content') || '';
+
+        if (name.toLowerCase().includes('facebook') || name.toLowerCase().includes('domain')) {
+          result.metaTags.push({
+            type: name,
+            content: content.substring(0, 50) + (content.length > 50 ? '...' : '')
+          });
+        }
+      }
+
+      // 2. Procurar por código/token da Facebook (em <code> tags)
+      const codeTags = document.querySelectorAll('code');
+      for (const code of codeTags) {
+        const text = code.textContent || code.innerText || '';
+        if (text.match(/[a-zA-Z0-9\-_]{15,}/)) {
+          result.metaTags.push({
+            type: 'code-snippet',
+            content: text.substring(0, 50) + (text.length > 50 ? '...' : '')
+          });
+        }
+      }
+
+      // 3. Procurar por mensagens de erro
+      const errorElements = document.querySelectorAll('[role="alert"], .x1gslohp, [class*="error"], [class*="Error"]');
+      for (const elem of errorElements) {
+        const text = elem.textContent || elem.innerText || '';
+        if (text && text.length > 0) {
+          result.errors.push(text.substring(0, 80) + (text.length > 80 ? '...' : ''));
+        }
+      }
+
+      // 4. Procurar por mensagens de sucesso
+      const successElements = document.querySelectorAll('[role="status"], [class*="success"], [class*="Success"], .x12yjp61');
+      for (const elem of successElements) {
+        const text = elem.textContent || elem.innerText || '';
+        if (text && text.length > 0) {
+          result.successMessages.push(text.substring(0, 80) + (text.length > 80 ? '...' : ''));
+        }
+      }
+
+      // 5. Capturar HTML relevante (procurar por modais ou sections importantes)
+      const modal = document.querySelector('[role="dialog"], .x1iyjqo2, [class*="modal"]');
+      if (modal) {
+        result.htmlSnippet = modal.textContent?.substring(0, 200) || '';
+      }
+
+      return result;
+    });
+
+    logger.info(`📍 URL: ${debugInfo.url}\n`);
+    logger.info(`📄 Título: ${debugInfo.title}\n`);
+
+    // Exibir meta tags
+    if (debugInfo.metaTags.length > 0) {
+      logger.info('📋 Meta Tags / Código detectado:');
+      for (const tag of debugInfo.metaTags) {
+        logger.info(`   • ${tag.type}: ${tag.content}`);
+      }
+      logger.info('');
+    } else {
+      logger.info('   ℹ️ Nenhuma meta tag Facebook detectada\n');
+    }
+
+    // Exibir erros
+    if (debugInfo.errors.length > 0) {
+      logger.warn('❌ ERROS DETECTADOS:');
+      for (const error of debugInfo.errors) {
+        logger.warn(`   • ${error}`);
+      }
+      logger.warn('');
+    }
+
+    // Exibir mensagens de sucesso
+    if (debugInfo.successMessages.length > 0) {
+      logger.success('✅ MENSAGENS DE SUCESSO:');
+      for (const msg of debugInfo.successMessages) {
+        logger.success(`   • ${msg}`);
+      }
+      logger.success('');
+    }
+
+    // Exibir snippet HTML
+    if (debugInfo.htmlSnippet) {
+      logger.info(`📝 Conteúdo da modal:\n   ${debugInfo.htmlSnippet}\n`);
+    }
+
+    logger.info('='.repeat(60) + '\n');
+
+  } catch (err) {
+    logger.warn(`⚠️ Erro ao debugar página: ${err.message}\n`);
+  }
+}
+
+/**
  * Verificar se conta está bloqueada
  */
 async function verificarContaBloqueada(page) {
@@ -3236,6 +3351,12 @@ async function automateAutoRetry(email, password, proxyUrl = null, browserscanUr
         } // Fim do while loop de tentativas de domínio
     }
 
+    // ===== DEBUG APÓS PREENCHER DOMÍNIO =====
+    if (dominioAdicionadoComSucesso) {
+      logger.info('\n📋 Debugando página após preencher domínio...\n');
+      await debugarPagina(page3, 'após preencher domínio');
+    }
+
     // ===== INFORMAÇÕES DA EMPRESA =====
     logger.info('\n📌 Passo: Preenchendo Informações da Empresa...\n');
 
@@ -3471,6 +3592,10 @@ async function automateAutoRetry(email, password, proxyUrl = null, browserscanUr
     }
 
     await new Promise(r => setTimeout(r, 2000));
+
+    // ===== DEBUG APÓS SALVAR PORTFÓLIO =====
+    logger.info('\n📋 Debugando página após salvar informações do portfólio...\n');
+    await debugarPagina(page3, 'após salvar informações');
 
     // ===== WHATSAPP =====
     logger.info('\n📌 Passo: Criando Conta WhatsApp...\n');
