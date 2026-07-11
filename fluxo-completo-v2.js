@@ -60,50 +60,105 @@ async function executarFluxoCompleto() {
       logger.success(`✅ ${cookies.length} cookies carregados\n`);
     }
 
-    // ===== CAPTURAR BUSINESS ID AUTOMATICAMENTE =====
-    logger.info('🔍 [PASSO 0] Capturando Business Manager ID...\n');
+    // ===== CAPTURAR TODOS OS BUSINESS IDS =====
+    logger.info('🔍 [PASSO 0] Capturando todos os Business Manager IDs...\n');
 
     // Primeiro navegar para página inicial do Business Manager
     await page.goto('https://business.facebook.com', { waitUntil: 'load', timeout: 60000 });
     await new Promise(r => setTimeout(r, 2000));
 
-    // Extrair o ID da URL ou do conteúdo da página
-    let businessId = await page.evaluate(() => {
-      // Tentar extrair da URL
-      const urlMatch = window.location.href.match(/business_id=(\d+)/);
-      if (urlMatch) return urlMatch[1];
+    // Extrair TODOS os IDs da página
+    let businessIds = await page.evaluate(() => {
+      const ids = new Set();
 
-      // Tentar extrair de links
+      // 1. Procurar na URL
+      const urlMatch = window.location.href.match(/business_id=(\d+)/);
+      if (urlMatch) ids.add(urlMatch[1]);
+
+      // 2. Procurar em todos os links
       const links = Array.from(document.querySelectorAll('a'));
       for (const link of links) {
         const href = link.href;
         const match = href.match(/business_id=(\d+)/);
-        if (match) return match[1];
+        if (match) ids.add(match[1]);
       }
 
-      return null;
+      // 3. Procurar em data attributes
+      const allElements = document.querySelectorAll('[data-business-id], [data-bid]');
+      for (const elem of allElements) {
+        const bid = elem.getAttribute('data-business-id') || elem.getAttribute('data-bid');
+        if (bid) ids.add(bid);
+      }
+
+      // 4. Procurar em scripts/JSON
+      const scripts = document.querySelectorAll('script');
+      for (const script of scripts) {
+        const matches = script.textContent.match(/"businessId":"?(\d+)"?/g);
+        if (matches) {
+          matches.forEach(match => {
+            const id = match.match(/\d+/);
+            if (id) ids.add(id[0]);
+          });
+        }
+      }
+
+      return Array.from(ids);
     });
 
-    if (!businessId) {
-      logger.warn('⚠️ Não conseguiu capturar ID automaticamente, tentando método alternativo...\n');
-
-      // Tentar acessar a página de domínios direto
+    if (businessIds.length === 0) {
+      logger.warn('⚠️ Nenhum ID encontrado, tentando página de domínios...\n');
       await page.goto('https://business.facebook.com/latest/settings/domains', { waitUntil: 'load', timeout: 60000 });
       await new Promise(r => setTimeout(r, 2000));
 
-      businessId = await page.evaluate(() => {
+      businessIds = await page.evaluate(() => {
         const match = window.location.href.match(/business_id=(\d+)/);
-        return match ? match[1] : null;
+        return match ? [match[1]] : [];
+      });
+    }
+
+    logger.success(`✅ ${businessIds.length} Business ID(s) encontrado(s):\n`);
+    for (const id of businessIds) {
+      logger.info(`   • ${id}`);
+    }
+    logger.info('');
+
+    // Tentar cada ID até encontrar um que tenha acesso a domínios
+    let businessId = null;
+
+    for (const id of businessIds) {
+      logger.info(`🔄 Testando Business ID: ${id}\n`);
+
+      const domainsUrl = `https://business.facebook.com/latest/settings/domains?business_id=${id}`;
+      await page.goto(domainsUrl, { waitUntil: 'load', timeout: 60000 });
+      await new Promise(r => setTimeout(r, 2000));
+
+      // Verificar se "Criar um domínio" está disponível
+      const temCriarDominio = await page.evaluate(() => {
+        const allElements = document.querySelectorAll('*');
+        for (const elem of allElements) {
+          if (elem.textContent?.includes('Criar um domínio')) {
+            return true;
+          }
+        }
+        return false;
       });
 
-      if (!businessId) {
-        logger.error('❌ Não foi possível capturar o Business ID\n');
-        await browser.close();
-        return;
+      if (temCriarDominio) {
+        logger.success(`✅ Business ID ${id} tem acesso a "Criar um domínio"!\n`);
+        businessId = id;
+        break;
+      } else {
+        logger.warn(`⚠️ Business ID ${id} NÃO tem acesso a domínios\n`);
       }
     }
 
-    logger.success(`✅ Business ID capturado: ${businessId}\n`);
+    if (!businessId) {
+      logger.error('❌ Nenhum Business ID tem permissão para criar domínios\n');
+      await browser.close();
+      return;
+    }
+
+    logger.success(`✅ Usando Business ID: ${businessId}\n`);
 
     const domainsUrl = `https://business.facebook.com/latest/settings/domains?business_id=${businessId}`;
 
