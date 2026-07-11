@@ -1,94 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="00000000000000 Dashboard Verificado — CNPJ 00000000000000"/>
-  <meta name="robots" content="index, follow"/>
-  <meta name="facebook-domain-verification" content="wrrb22brqaxrbc6ek5y59d9vka18tc" />
-  <meta property="og:title" content="Dashboard Verificado"/>
-  <meta property="og:description" content="Dashboard Verificado — CNPJ 00000000000000"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:locale" content="pt_BR"/>
-  <title>Dashboard Verificado | CNPJ 00000000000000</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#222;background:#fff;line-height:1.7}
-    nav{background:#1a1a2e;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100}
-    .nav-logo{color:#fff;font-size:18px;font-weight:700;text-decoration:none;letter-spacing:1px;text-transform:uppercase}
-    .nav-links{display:flex;gap:24px;list-style:none}
-    .nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:13px;font-weight:600}
-    .hero{background:linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);color:#fff;padding:60px 24px;text-align:center}
-    .hero h1{color:#fff;font-size:30px;margin-bottom:10px;max-width:800px;margin-left:auto;margin-right:auto;text-transform:uppercase}
-    .hero p{color:rgba(255,255,255,.85);font-size:15px;max-width:640px;margin:0 auto 20px}
-    .cnpj-tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:13px;padding:8px 20px;border-radius:4px;letter-spacing:.5px}
-    .section{padding:56px 24px;max-width:960px;margin:0 auto}
-    .section-alt{padding:56px 24px;background:#f7f7f7}
-    .section-alt .inner{max-width:960px;margin:0 auto}
-    h2{font-size:22px;color:#1a1a2e;margin-bottom:16px;border-bottom:2px solid #1a1a2e;padding-bottom:6px}
-    p{margin-bottom:12px;color:#444}
-    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
-    .info-box{border:1px solid #e0e0e0;border-radius:6px;padding:18px;background:#fff}
-    .info-box strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#999;margin-bottom:6px}
-    .info-box span{font-size:14px;color:#222;font-weight:600}
-    .status-ativa{color:#166534;font-weight:700}
-    .contact-table{width:100%;border-collapse:collapse;margin:20px 0}
-    .contact-table td{padding:11px 16px;border:1px solid #e0e0e0;vertical-align:top}
-    .contact-table td:first-child{background:#f5f5f5;font-weight:700;color:#555;font-size:13px;width:180px}
-    .contact-table a{color:#1a1a2e;text-decoration:none}
-    .priv-box{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:24px;line-height:1.8;font-size:14px}
-    footer{background:#111;color:#aaa;text-align:center;padding:32px 24px;font-size:13px}
-    footer strong{color:#fff}
-    .verified-badge{display:inline-block;background:#166534;color:#fff;padding:6px 12px;border-radius:4px;font-size:12px;font-weight:700;margin-left:8px}
-    @media(max-width:700px){.info-grid{grid-template-columns:1fr}.nav-links{display:none}.hero h1{font-size:22px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="sw49wnv2mtlm8w0tm8egjhn7fcb2a4" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Empresa Teste">
+    <title>Empresa Teste — Serviços · São Paulo</title>
+    <meta name="description" content="Empresa de serviços brasileira">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Empresa Teste">
+    <meta property="og:title" content="Empresa Teste">
+    <meta property="og:description" content="Empresa de serviços brasileira">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Empresa Teste","legalName":"Empresa Teste","description":"Empresa de serviços brasileira","url":"https://empresa.com.br","email":"contato@empresa.com.br","telephone":"(11) 0000-0000","taxID":"00000000000000","foundingDate":"2020-01-01","address":{"@type":"PostalAddress","streetAddress":"Rua Exemplo, 123","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"00000-000","addressCountry":"BR"}}</script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#1f1f1f;background:#fff;line-height:1.6;font-size:16px}
+        .container{max-width:1000px;margin:0 auto;padding:0 24px}
+        a{color:#0a4d8c;text-decoration:none}
+        a:hover{text-decoration:underline}
+        .topbar{background:#1f1f1f;color:#ddd;font-size:13px;padding:8px 0}
+        .topbar-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+        .topbar a{color:#9cc3ed}
+        header{background:#fff;border-bottom:1px solid #e5e5e5;padding:18px 0;position:sticky;top:0;z-index:10}
+        .header-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+        .brand{font-size:20px;font-weight:700;color:#1f1f1f}
+        .brand small{display:block;font-size:12px;color:#666;font-weight:400;margin-top:2px}
+        nav a{color:#444;margin-left:20px;font-size:14px}
+        .hero{padding:56px 0 40px;border-bottom:1px solid #eee;background:#fafafa}
+        .hero h1{font-size:30px;font-weight:700;margin-bottom:14px;color:#1f1f1f;line-height:1.25}
+        .hero p{font-size:17px;color:#555;max-width:720px}
+        .btn{display:inline-block;background:#0a4d8c;color:#fff;padding:11px 22px;border-radius:4px;font-weight:600;font-size:15px;margin-top:22px}
+        .btn:hover{background:#083d6f;text-decoration:none;color:#fff}
+        section{padding:48px 0;border-bottom:1px solid #eee}
+        section h2{font-size:22px;font-weight:700;margin-bottom:18px;color:#1f1f1f}
+        section h3{font-size:17px;font-weight:600;margin:18px 0 8px;color:#1f1f1f}
+        section p{margin-bottom:14px;color:#444;max-width:780px}
+        .info-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:15px}
+        .info-table th,.info-table td{text-align:left;padding:12px 14px;border-bottom:1px solid #eee;vertical-align:top}
+        .info-table th{width:210px;color:#555;font-weight:600;background:#fafafa}
+        .info-table td{color:#1f1f1f}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:18px}
+        .card{border:1px solid #e5e5e5;border-radius:6px;padding:20px;background:#fff}
+        .card h4{font-size:15px;font-weight:700;margin-bottom:8px;color:#1f1f1f}
+        .card p{font-size:14px;color:#555;margin-bottom:0}
+        ul.bullets{list-style:disc;padding-left:22px;color:#444}
+        ul.bullets li{margin-bottom:8px}
+        details{border:1px solid #e5e5e5;border-radius:6px;padding:14px 18px;margin-top:10px;background:#fafafa}
+        details summary{cursor:pointer;font-weight:600;color:#1f1f1f;font-size:14px}
+        details[open]{background:#fff}
+        details p{font-size:13.5px;color:#555;margin:10px 0 0;line-height:1.65}
+        footer{background:#1f1f1f;color:#bbb;padding:32px 0;font-size:13px}
+        footer .container{max-width:1000px}
+        footer p{margin-bottom:6px}
+        footer strong{color:#fff}
+        footer a{color:#9cc3ed}
+        @media(max-width:640px){
+            .hero h1{font-size:24px}
+            .info-table th{width:140px;font-size:13px}
+            nav a{margin-left:12px;font-size:13px}
+            .grid-2{grid-template-columns:1fr}
+            .topbar-row{font-size:12px}
+        }
+    </style>
 </head>
 <body>
-<nav>
-  <a href="#inicio" class="nav-logo">Dashboard Verificado</a>
-  <ul class="nav-links">
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#contato">Contato</a></li>
-    <li><a href="#privacidade">Privacidade</a></li>
-  </ul>
-</nav>
-<div class="hero" id="inicio">
-  <h1>Dashboard Verificado</h1>
-  <p>Empresa verificada e ativa</p>
-  <div class="cnpj-tag">CNPJ: 00000000000000 &nbsp;|&nbsp; Situação: <span class="verified-badge">ATIVA</span></div>
-</div>
-<div class="section" id="sobre">
-  <h2>Sobre a Empresa</h2>
-  <p>Quem Somos<br><br>A Empresa Teste é uma empresa fundada em 11/07/2026, localizada no Brasil.<br><br>Pequena<br><br>CNPJ: 00000000000000<br><br>Nossa equipe está pronta para oferecer o melhor atendimento e serviços de qualidade.</p>
-  <div class="info-grid">
-    <div class="info-box"><strong>Razão Social</strong><span>Empresa Teste</span></div>
-    <div class="info-box"><strong>CNPJ</strong><span>00000000000000</span></div>
-    <div class="info-box"><strong>Situação</strong><span class="status-ativa">✔ ATIVA</span></div>
-  </div>
-</div>
-<div class="section-alt">
-  <div class="inner" id="contato">
-    <h2>Contato</h2>
-    <table class="contact-table">
-      <tr><td>Razão Social</td><td><strong>Empresa Teste</strong></td></tr>
-      <tr><td>CNPJ</td><td><strong>00000000000000</strong></td></tr>
-      <tr><td>E-mail</td><td><a href="mailto:contato@empresa.com">contato@empresa.com</a></td></tr>
-      <tr><td>Telefone</td><td><a href="tel:(11) 0000-0000">(11) 0000-0000</a></td></tr>
-      <tr><td>Data de Abertura</td><td>11/07/2026</td></tr>
-      <tr><td>Porte</td><td>Pequena</td></tr>
-    </table>
-  </div>
-</div>
-<div class="section" id="privacidade">
-  <h2>Política de Privacidade</h2>
-  <div class="priv-box">
-    Política de Privacidade<br><br>Empresa Teste (CNPJ: 00000000000000) está comprometida com a proteção dos seus dados pessoais, conforme a LGPD — Lei nº 13.709/2018.<br><br><strong>1. Dados Coletados</strong><br>Nome completo, e-mail e telefone fornecidos voluntariamente.<br><br><strong>2. Finalidade</strong><br>Atendimento ao cliente e comunicação comercial.<br><br><strong>3. Compartilhamento</strong><br>Não vendemos seus dados a terceiros.<br><br><strong>4. Seus Direitos</strong><br>Acesso, correção e exclusão dos seus dados a qualquer momento.<br><br><strong>5. Contato</strong><br><a href="mailto:contato@empresa.com">contato@empresa.com</a>
-  </div>
-</div>
-<footer>
-  <p><strong>Dashboard Verificado</strong></p>
-  <p>CNPJ: 00000000000000</p>
-  <p>© 2026 - Empresa Verificada</p>
-</footer>
+    <div class="topbar">
+        <div class="container topbar-row">
+            <span>CNPJ <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=00000000000000" target="_blank" rel="noopener">00000000000000</a></span>
+            <span>Segunda a sexta, das 09h às 18h · <a href="mailto:contato@empresa.com.br">contato@empresa.com.br</a></span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-row">
+            <div class="brand">
+                Empresa Teste
+                <small>Serviços · São Paulo/SP</small>
+            </div>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#empresa">Dados</a>
+                <a href="#politicas">Políticas</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Empresa Teste</h1>
+                <p>Empresa de serviços brasileira</p>
+                <a href="mailto:contato@empresa.com.br" target="_blank" rel="noopener" class="btn">Entrar em contato</a>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre a empresa</h2>
+                <p>A <strong>Empresa Teste</strong> é uma empresa brasileira do segmento de serviços, com sede em São Paulo/SP e atendimento em todo o território nacional. Atuamos com foco em qualidade, atendimento direto e transparência em todas as etapas.</p>
+                <p>Nossa operação está devidamente registrada junto aos órgãos competentes. Os dados cadastrais da empresa podem ser consultados publicamente na Receita Federal através do CNPJ informado nesta página.</p>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <div class="container">
+                <h2>Atuação e serviços</h2>
+                <p>Atendimento empresarial e particular no segmento de serviços:</p>
+                <ul class="bullets">
+                    <li>Serviços</li>
+                    <li>Consultoria e orientação personalizada</li>
+                    <li>Suporte por e-mail, telefone e WhatsApp em horário comercial</li>
+                    <li>Atendimento corporativo com proposta formal e contrato</li>
+                </ul>
+                <div class="grid-2">
+                    <div class="card"><h4>Atendimento direto</h4><p>Ponto focal único, sem terceirizações, com resposta em até 24h úteis.</p></div>
+                    <div class="card"><h4>Processos transparentes</h4><p>Escopo, prazos e valores definidos por contrato e nota fiscal.</p></div>
+                    <div class="card"><h4>Continuidade operacional</h4><p>Suporte após a entrega, com SLA e relacionamento de longo prazo.</p></div>
+                    <div class="card"><h4>Conformidade legal</h4><p>Operação regularizada, em conformidade com a legislação brasileira aplicável.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="empresa">
+            <div class="container">
+                <h2>Dados institucionais</h2>
+                <p>Documentação corporativa pública. Os dados abaixo podem ser conferidos diretamente nos órgãos oficiais.</p>
+                <table class="info-table">
+                    <tbody>
+                        <tr><th>Razão social</th><td>Empresa Teste</td></tr>
+                        <tr><th>CNPJ</th><td><a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=00000000000000" target="_blank" rel="noopener">00000000000000</a><br><small style="color:#777">Clique para consulta pública na Receita Federal</small></td></tr>
+                        <tr><th>Atividade principal</th><td>Serviços</td></tr>
+                        <tr><th>Endereço</th><td>Rua Exemplo, 123<br>Centro<br>São Paulo - SP · CEP 00000-000</td></tr>
+                        <tr><th>Início das atividades</th><td>2020</td></tr>
+                        <tr><th>Cobertura</th><td>Atendimento em todo o território nacional</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Canais de atendimento</h2>
+                <table class="info-table">
+                    <tbody>
+                        <tr><th>Telefone</th><td>(11) 0000-0000</td></tr>
+                        <tr><th>WhatsApp</th><td>—</td></tr>
+                        <tr><th>E-mail comercial</th><td><a href="mailto:contato@empresa.com.br">contato@empresa.com.br</a></td></tr>
+                        <tr><th>Ouvidoria</th><td><a href="mailto:ouvidoria@empresa.com.br">ouvidoria@empresa.com.br</a></td></tr>
+                        <tr><th>Encarregado de dados (DPO)</th><td><a href="mailto:dpo@empresa.com.br">dpo@empresa.com.br</a></td></tr>
+                        <tr><th>Horário de atendimento</th><td>Segunda a sexta, das 09h às 18h</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="politicas">
+            <div class="container">
+                <h2>Políticas e conformidade</h2>
+                <p>A Empresa Teste atua em conformidade com a legislação brasileira, incluindo a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018) e o Código de Defesa do Consumidor.</p>
+
+                <details>
+                    <summary>Política de Privacidade (LGPD)</summary>
+                    <p>Os dados pessoais coletados pela Empresa Teste são utilizados exclusivamente para finalidades relacionadas à prestação dos serviços, comunicação com clientes e cumprimento de obrigações legais. Não compartilhamos dados com terceiros sem base legal. O titular pode, a qualquer momento, solicitar acesso, correção ou exclusão de seus dados pelo e-mail <a href="mailto:dpo@empresa.com.br">dpo@empresa.com.br</a>.</p>
+                </details>
+
+                <details>
+                    <summary>Termos de Uso</summary>
+                    <p>Este site é mantido pela Empresa Teste, CNPJ 00000000000000, e tem caráter institucional. As informações apresentadas são de boa-fé e podem ser atualizadas a qualquer momento. O uso indevido das informações, marca ou conteúdo deste site sujeita o infrator às sanções legais cabíveis.</p>
+                </details>
+
+                <details>
+                    <summary>Ouvidoria e atendimento ao consumidor</summary>
+                    <p>Manifestações, dúvidas, reclamações ou sugestões podem ser encaminhadas para <a href="mailto:ouvidoria@empresa.com.br">ouvidoria@empresa.com.br</a>. O prazo de resposta é de até 5 dias úteis, conforme as melhores práticas de atendimento ao consumidor.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Empresa Teste</strong> · CNPJ 00000000000000</p>
+            <p>Rua Exemplo, 123 · São Paulo/SP · CEP 00000-000</p>
+            <p><a href="mailto:contato@empresa.com.br">contato@empresa.com.br</a> · (11) 0000-0000</p>
+            <p style="margin-top:14px;color:#888">© 2026 Empresa Teste. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
