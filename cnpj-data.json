@@ -446,6 +446,50 @@
       "PORTE": "Microempresa (ME)",
       "DATA_GERACAO": "09/07/2026",
       "META_TAG": "o9srxtzvfbesn96ph2v76p4mkisnfs"
+    },
+    "10490573000102": {
+      "CNPJ": "10490573000102",
+      "RAZAO_SOCIAL": "LORENA IRIGOYEN LAMAS",
+      "NOME_FANTASIA": "JUMPMEDIA MARKETING DIGITAL",
+      "EMAIL": "jcbernardes@cpovo.net",
+      "TELEFONE": "(51) 32125926",
+      "DATA_ABERTURA": "2008-11-24",
+      "SITUACAO": "Ativa",
+      "PORTE": "Microempresa (ME)",
+      "DATA_GERACAO": "11/07/2026"
+    },
+    "25113558000104": {
+      "CNPJ": "25113558000104",
+      "RAZAO_SOCIAL": "ANTONIO MARCIO DAS NEVES",
+      "NOME_FANTASIA": "NIVI      ANTUNIU",
+      "EMAIL": "CARLACAPUCHO2@HOTMAIL.COM",
+      "TELEFONE": "(12) 31112208",
+      "DATA_ABERTURA": "2016-06-30",
+      "SITUACAO": "Ativa",
+      "PORTE": "Demais",
+      "DATA_GERACAO": "11/07/2026"
+    },
+    "14402872000190": {
+      "CNPJ": "14402872000190",
+      "RAZAO_SOCIAL": "RAFAEL RIBEIRO DOS SANTOS 08340605666",
+      "NOME_FANTASIA": "RAFAEL BIJOUX",
+      "EMAIL": "marsidnei@hotmail.com",
+      "TELEFONE": "(31) 33223912",
+      "DATA_ABERTURA": "2011-10-04",
+      "SITUACAO": "Baixada",
+      "PORTE": "Microempresa (ME)",
+      "DATA_GERACAO": "11/07/2026"
+    },
+    "33261945000116": {
+      "CNPJ": "33261945000116",
+      "RAZAO_SOCIAL": "ARCELY TONICO BALEM 41464974934",
+      "NOME_FANTASIA": "BALEM CONSTR",
+      "EMAIL": "contatomil2ai@gmail.com",
+      "TELEFONE": "(45) 91291693",
+      "DATA_ABERTURA": "2019-04-05",
+      "SITUACAO": "Ativa",
+      "PORTE": "Microempresa (ME)",
+      "DATA_GERACAO": "11/07/2026"
     }
   }
 }

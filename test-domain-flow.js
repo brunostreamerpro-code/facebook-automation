@@ -21,7 +21,7 @@ require('dotenv').config({ path: path.join(process.cwd(), '.env') });
 puppeteer.use(StealthPlugin());
 
 // RENDER API KEY
-const RENDER_API_KEY = 'rnd_syvLjCCqB3r7mRvWcuY87eUSEaEo';
+const RENDER_API_KEY = 'rnd_twVpTqjhhrY4bUYSNX2ucC282R9x';
 process.env.RENDER_API_KEY = RENDER_API_KEY;
 
 /**

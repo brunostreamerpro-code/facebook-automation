@@ -3,7 +3,7 @@ const logger = require('../utils/logger');
 
 class RenderServiceAPI {
   constructor(apiKey) {
-    this.apiKey = apiKey || process.env.RENDER_API_KEY || 'rnd_syvLjCCqB3r7mRvWcuY87eUSEaEo';
+    this.apiKey = apiKey || process.env.RENDER_API_KEY || 'rnd_twVpTqjhhrY4bUYSNX2ucC282R9x';
     this.baseURL = 'https://api.render.com/v1';
     this.workspaceId = 'tea-d993sa3eo5us7381q41g'; // Workspace ID da conta Render
     this.ownerId = process.env.RENDER_OWNER_ID || null; // Owner ID é opcional
@@ -14,7 +14,7 @@ class RenderServiceAPI {
         'Content-Type': 'application/json'
       }
     });
-    this.repoUrl = 'https://github.com/brunostreamerpro-code/bruninho.git';
+    this.repoUrl = 'https://github.com/brunostreamerpro-code/facebook-automation.git';
   }
 
   /**
