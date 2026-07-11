@@ -499,3 +499,25 @@
 {"level":"error","message":"[1/2] ❌ FALHOU: geewa@merepost.com","service":"bm-automation","timestamp":"2026-07-11 13:48:51"}
 {"level":"error","message":"Erro: Protocol error: Connection closed. Most likely the page has been closed.","service":"bm-automation","timestamp":"2026-07-11 13:48:51"}
 {"level":"error","message":"[==================================================]\n","service":"bm-automation","timestamp":"2026-07-11 13:48:51"}
+{"level":"error","message":"❌ Business ID não encontrado em lista.txt","service":"bm-automation","timestamp":"2026-07-11 13:53:30"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 13:54:00"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 13:54:00"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 13:57:05"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 13:57:05"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 13:58:53"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 13:58:53"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:01:18"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:01:18"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:05:19"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:05:19"}
+{"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:08:32"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:08:32"}
+{"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"error","message":"\n❌ ERRO DETECTADO: PORTFOLIO_NAO_PERMITIDO\n","service":"bm-automation","timestamp":"2026-07-11 14:11:01"}
+{"level":"error","message":"\n❌ ERRO DETECTADO: PORTFOLIO_NAO_PERMITIDO\n","service":"bm-automation","timestamp":"2026-07-11 14:14:23"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:15:00"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:15:00"}
+{"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}

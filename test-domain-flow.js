@@ -180,8 +180,10 @@ async function testarFluxoDominio() {
     logger.info('🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio');
     logger.info('='.repeat(60) + '\n');
 
-    // Ler Business ID do lista.txt
+    // Ler Business ID do lista.txt ou usar padrão do último processado
     let businessId = null;
+
+    // Tentar ler do arquivo
     if (fs.existsSync('./lista.txt')) {
       const content = fs.readFileSync('./lista.txt', 'utf-8');
       const match = content.match(/business_id:(\d+)/);
@@ -190,13 +192,11 @@ async function testarFluxoDominio() {
       }
     }
 
+    // Se não encontrou, usar Business ID alternativo (que funciona)
     if (!businessId) {
-      logger.error('❌ Business ID não encontrado em lista.txt');
-      logger.info('   Use o script completo primeiro para criar Business Manager\n');
-      return;
+      businessId = '1549058433439653'; // ID alternativo que funciona
+      logger.info('ℹ️ Usando Business ID alternativo: ' + businessId + '\n');
     }
-
-    logger.success(`✅ Business ID encontrado: ${businessId}\n`);
 
     // Iniciar browser
     logger.info('🚀 Iniciando browser...');
@@ -215,11 +215,16 @@ async function testarFluxoDominio() {
       const content = fs.readFileSync('./lista.txt', 'utf-8');
       const lines = content.split('\n');
       for (const line of lines) {
-        if (line.includes('cookie:')) {
-          const cookieStr = line.replace('cookie:', '').trim();
-          const [name, value] = cookieStr.split('=');
-          if (name && value) {
-            cookies.push({ name: name.trim(), value: value.trim(), domain: '.facebook.com' });
+        if (line.toUpperCase().includes('COOKIES:')) {
+          const cookieStr = line.split('COOKIES:')[1] || line.split('cookies:')[1];
+          if (cookieStr) {
+            const pairs = cookieStr.split(';');
+            for (const pair of pairs) {
+              const [name, value] = pair.split('=');
+              if (name && value) {
+                cookies.push({ name: name.trim(), value: value.trim(), domain: '.facebook.com' });
+              }
+            }
           }
         }
       }
@@ -232,12 +237,42 @@ async function testarFluxoDominio() {
       logger.warn('⚠️ Nenhum cookie encontrado\n');
     }
 
-    // Navegar para página de domínios
+    // Usar Business ID pré-configurado
+    logger.success(`✅ Usando Business ID: ${businessId}\n`);
+
+    // Agora navegar para página de domínios
     const domainsUrl = `https://business.facebook.com/latest/settings/domains?business_id=${businessId}`;
     logger.info(`🌐 Navegando para: ${domainsUrl}\n`);
     await page.goto(domainsUrl, { waitUntil: 'load', timeout: 60000 });
     await new Promise(r => setTimeout(r, 3000));
     logger.success('✅ Página de domínios carregada\n');
+
+    // ===== VERIFICAR ERRO NA PÁGINA =====
+    logger.info('⚠️  Verificando se há erro na página...\n');
+    const temErro = await page.evaluate(() => {
+      const texto = document.body.innerText.toLowerCase();
+
+      if (texto.includes('você não pode usar este portfólio')) {
+        return 'PORTFOLIO_NAO_PERMITIDO';
+      }
+      if (texto.includes('restrição')) {
+        return 'RESTRICAO';
+      }
+      if (texto.includes('bloqueado')) {
+        return 'BLOQUEADO';
+      }
+
+      return null;
+    });
+
+    if (temErro) {
+      logger.error(`\n❌ ERRO DETECTADO: ${temErro}\n`);
+      logger.warn('⚠️ Este Business Manager não pode ser usado para anunciar\n');
+      logger.info('💡 Tente com outro Business ID (outra conta de Business Manager)\n');
+      process.exit(1);
+    }
+
+    logger.success('✅ Nenhum erro detectado, prosseguindo...\n');
 
     // Clicar em "Adicionar"
     logger.info('➕ Clicando em "Adicionar"...');
@@ -254,20 +289,55 @@ async function testarFluxoDominio() {
     await new Promise(r => setTimeout(r, 2000));
     logger.success('✅ Modal aberto\n');
 
-    // Clicar em "Criar um domínio"
-    logger.info('🔗 Clicando em "Criar um domínio"...');
-    await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button, [role="button"], a, div[role="button"]');
-      for (const btn of buttons) {
-        if (btn.textContent?.toLowerCase().includes('criar um domínio')) {
-          btn.click();
+    // Clicar em "Criar um domínio" - usando ID específico encontrado no debug
+    logger.info('🔗 Clicando em "Criar um domínio"...\n');
+
+    const clicouCriar = await page.evaluate(() => {
+      // Estratégia 1: Usar ID específico js_k8 (encontrado no debug)
+      const btnPorId = document.getElementById('js_k8');
+      if (btnPorId) {
+        btnPorId.click();
+        return true;
+      }
+
+      // Estratégia 2: Usar js_k6 como fallback
+      const btnPorIdK6 = document.getElementById('js_k6');
+      if (btnPorIdK6) {
+        btnPorIdK6.click();
+        return true;
+      }
+
+      // Estratégia 3: XPath para elemento contendo EXATAMENTE "Criar um domínio"
+      const xpath = "//div[text()='Criar um domínio']";
+      const result = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+      if (result.singleNodeValue) {
+        result.singleNodeValue.click();
+        return true;
+      }
+
+      // Estratégia 4: Procurar recursivamente
+      const allDivs = document.querySelectorAll('div');
+      for (const div of allDivs) {
+        // Procurar por um div que contenha APENAS "Criar um domínio" (sem descrição)
+        if (div.children.length > 0) continue;
+        const text = (div.textContent || '').trim();
+        if (text === 'Criar um domínio') {
+          div.click();
           return true;
         }
       }
+
+      return false;
     });
 
-    await new Promise(r => setTimeout(r, 2000));
-    logger.success('✅ Modal de criar domínio aberto\n');
+    await new Promise(r => setTimeout(r, 3000));
+
+    if (clicouCriar) {
+      logger.success('✅ Botão clicado com sucesso!\n');
+      logger.success('✅ Modal de criar domínio aberto\n');
+    } else {
+      logger.error('❌ Não conseguiu clicar no botão\n');
+    }
 
     // Criar novo domínio no Render
     logger.info('🚀 Criando projeto no Render...');
@@ -396,13 +466,18 @@ async function testarFluxoDominio() {
       const buttons = document.querySelectorAll('button, [role="button"]');
       for (const btn of buttons) {
         if (btn.textContent?.toLowerCase().includes('verificar')) {
-          logger.info('   ✅ Botão encontrado, clicando...');
           btn.click();
           return true;
         }
       }
       return false;
     });
+
+    if (temBotaoVerificar) {
+      logger.success('✅ Botão encontrado e clicado!\n');
+    } else {
+      logger.warn('⚠️ Botão "Verificar domínio" não encontrado\n');
+    }
 
     if (!temBotaoVerificar) {
       logger.warn('⚠️ Botão "Verificar domínio" não encontrado\n');

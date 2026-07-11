@@ -20617,3 +20617,918 @@
 {"level":"info","message":"💾 Usando cookies do arquivo lista.txt...\n","service":"bm-automation","timestamp":"2026-07-11 13:48:54"}
 {"level":"info","message":"✅ Cookies do lista.txt carregados (4 cookies)\n","service":"bm-automation","timestamp":"2026-07-11 13:48:54"}
 {"level":"info","message":"🌐 Navegando para Facebook...","service":"bm-automation","timestamp":"2026-07-11 13:48:54"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 13:53:30"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 13:53:30"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:53:30"}
+{"level":"error","message":"❌ Business ID não encontrado em lista.txt","service":"bm-automation","timestamp":"2026-07-11 13:53:30"}
+{"level":"info","message":"   Use o script completo primeiro para criar Business Manager\n","service":"bm-automation","timestamp":"2026-07-11 13:53:30"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"ℹ️ Usando Business ID do último processamento: 2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID encontrado: 2192445558205713\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"warn","message":"⚠️ Nenhum cookie encontrado\n","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:53:51"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:53:55"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 13:53:55"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:53:57"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...","service":"bm-automation","timestamp":"2026-07-11 13:53:57"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:53:59"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 13:53:59"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 13:53:59"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 13:53:59"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 13:54:00"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 13:54:00"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-839591.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 13:54:00"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-839591.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 13:54:00"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fbusiness.facebook.com%2Flatest%2Fsettings%2Fdomains%3Fbusiness_id%3D2192445558205713%26nav_ref%3Dbiz_unified_f3_login_page_to_mbs&login_options%5B0%5D=FB&login_options%5B1%5D=IG&login_options%5B2%5D=SSO&config_ref=biz_login_tool_flavor_mbs\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"📄 Título: Meta for Business (formerly Facebook for Business)\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   Get started with business tools from MetaBy logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your customers and get better bus\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"warn","message":"⚠️ Botão não encontrado\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 13:54:02"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fbusiness.facebook.com%2Flatest%2Fsettings%2Fdomains%3Fbusiness_id%3D2192445558205713%26nav_ref%3Dbiz_unified_f3_login_page_to_mbs&login_options%5B0%5D=FB&login_options%5B1%5D=IG&login_options%5B2%5D=SSO&config_ref=biz_login_tool_flavor_mbs\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"📄 Título: Meta for Business (formerly Facebook for Business)\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   Get started with business tools from MetaBy logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your customers and get better bus\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"warn","message":"⚠️ Botão \"Verificar domínio\" não encontrado\n","service":"bm-automation","timestamp":"2026-07-11 13:54:05"}
+{"level":"info","message":"🔍 DEBUG 3: Resultado da verificação\n","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"\n🔍 APÓS TENTAR VERIFICAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fbusiness.facebook.com%2Flatest%2Fsettings%2Fdomains%3Fbusiness_id%3D2192445558205713%26nav_ref%3Dbiz_unified_f3_login_page_to_mbs&login_options%5B0%5D=FB&login_options%5B1%5D=IG&login_options%5B2%5D=SSO&config_ref=biz_login_tool_flavor_mbs\n","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"📄 Título: Meta for Business (formerly Facebook for Business)\n","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   Get started with business tools from MetaBy logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your customers and get better bus\n","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"\u001b[32m✅ \n✅ Teste concluído! Verifique os debugs acima.\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:54:08"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"ℹ️ Usando Business ID do último processamento: 2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID encontrado: 2192445558205713\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:56:56"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:57:00"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 13:57:00"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:57:02"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...","service":"bm-automation","timestamp":"2026-07-11 13:57:02"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:57:04"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 13:57:04"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 13:57:04"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 13:57:04"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 13:57:05"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 13:57:05"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-024623.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 13:57:05"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-024623.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 13:57:05"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"📄 Título: Facebook\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"warn","message":"⚠️ Botão não encontrado\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 13:57:07"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"📄 Título: Facebook\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"warn","message":"⚠️ Botão \"Verificar domínio\" não encontrado\n","service":"bm-automation","timestamp":"2026-07-11 13:57:10"}
+{"level":"info","message":"🔍 DEBUG 3: Resultado da verificação\n","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"\n🔍 APÓS TENTAR VERIFICAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"📄 Título: Facebook\n","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"\u001b[32m✅ \n✅ Teste concluído! Verifique os debugs acima.\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:57:13"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 13:58:35"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 13:58:35"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:58:35"}
+{"level":"info","message":"ℹ️ Usando Business ID do último processamento: 2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 13:58:35"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 13:58:35"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 13:58:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:36"}
+{"level":"info","message":"🌐 Navegando para settings...\n","service":"bm-automation","timestamp":"2026-07-11 13:58:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID capturado da URL: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:42"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 13:58:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:48"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 13:58:48"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:50"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...","service":"bm-automation","timestamp":"2026-07-11 13:58:50"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:52"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 13:58:52"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 13:58:52"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 13:58:52"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 13:58:53"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 13:58:53"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-132735.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 13:58:53"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-132735.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 13:58:53"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Adicionar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 13:58:55"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"warn","message":"⚠️ Botão \"Verificar domínio\" não encontrado\n","service":"bm-automation","timestamp":"2026-07-11 13:58:58"}
+{"level":"info","message":"🔍 DEBUG 3: Resultado da verificação\n","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"\n🔍 APÓS TENTAR VERIFICAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"\u001b[32m✅ \n✅ Teste concluído! Verifique os debugs acima.\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 13:59:01"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:00:59"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:00:59"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:00:59"}
+{"level":"info","message":"ℹ️ Usando Business ID do último processamento: 2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 14:00:59"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:00:59"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:01:00"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:00"}
+{"level":"info","message":"🌐 Navegando para settings...\n","service":"bm-automation","timestamp":"2026-07-11 14:01:00"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID capturado da URL: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:06"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:01:06"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:11"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:01:11"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:13"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...","service":"bm-automation","timestamp":"2026-07-11 14:01:13"}
+{"level":"warn","message":"⚠️ Não conseguiu clicar no botão, tentando com page.click\n","service":"bm-automation","timestamp":"2026-07-11 14:01:15"}
+{"level":"info","message":"\u001b[32m✅ ✅ Tentativa 2 concluída\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:17"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 14:01:17"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 14:01:17"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 14:01:17"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:01:18"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:01:18"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-277710.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:01:18"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-277710.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:01:18"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Adicionar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 14:01:20"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"warn","message":"⚠️ Botão \"Verificar domínio\" não encontrado\n","service":"bm-automation","timestamp":"2026-07-11 14:01:23"}
+{"level":"info","message":"🔍 DEBUG 3: Resultado da verificação\n","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"\n🔍 APÓS TENTAR VERIFICAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"\u001b[32m✅ \n✅ Teste concluído! Verifique os debugs acima.\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:01:26"}
+{"level":"info","message":"\n🔍 DEBUG: Analisando botão \"Criar um domínio\"\n","service":"bm-automation","timestamp":"2026-07-11 14:02:27"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 14:02:27"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:27"}
+{"level":"info","message":"🌐 Navegando para settings...\n","service":"bm-automation","timestamp":"2026-07-11 14:02:27"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:32"}
+{"level":"info","message":"🌐 Navegando para domínios...\n","service":"bm-automation","timestamp":"2026-07-11 14:02:32"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:02:37"}
+{"level":"info","message":"\n🔍 ANALISANDO ESTRUTURA DO DOM\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"📋 TODOS OS BOTÕES VISÍVEIS:\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [0] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [1] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [2] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Alternar grupo​\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [3] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [4] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Alternar grupo​\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [5] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [6] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Alternar grupo​\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [7] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [8] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Alternar grupo​\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [9] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [10] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Alternar grupo​\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [11] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [12] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Recolher​\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [13] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Adicionar\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [14] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Ver detalhes\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [15] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Meta Business Suite\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Aria: \"Meta logo\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [16] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Aria: \"All Tools menu\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [17] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Aria: \"Pressable\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [18] BUTTON (role=link)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Gerenciador de Anúncios\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Aria: \"Gerenciador de Anúncios\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [19] BUTTON (role=link)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Pesquisar\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Aria: \"Pesquisar\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [20] BUTTON (role=link)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Notificações\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Aria: \"Notificações\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [21] BUTTON (role=link)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Ajuda\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Aria: \"Ajuda\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   [22] DIV (role=button)","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"       Texto: \"Fechar​\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\n📋 ELEMENTOS COM \"Criar\":\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínio\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínio\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\n📋 ELEMENTOS COM \"domínio\":\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solici\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua em\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínio\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Criar um domínio\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Você precisa de um novo domínio para sua empresa.\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínio\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"   DIV - \"Solicitar acesso a um domínio\"","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\n🎯 ELEMENTOS COM \"Criar\" E \"domínio\":\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar es\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar es\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1qjc9v5 x9f619 x78zum5 xdt5ytf x1nhvcw1 xg6iff7 xmzvs34 xf159sx x1l90r2v\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar es\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1cy8zhl x78zum5 xl56j7k x47corl\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar es\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x78zum5 xdt5ytf x1t137rt x71s49j x1n2onr6 x1ja2u2z\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar es\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1gzqxud xjwep3j x1t39747 x1wcsgtt x1pczhz8 x1xp1s0c x5yr21d xh8yej3\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"O que você quer fazer?Fechar​Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar es\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x78zum5 xdt5ytf x5yr21d xedcshv x1t2pt76 xh8yej3\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x9f619 x78zum5 x1iyjqo2 x5yr21d x2lwn1j x1n2onr6 xh8yej3\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"xw2csxc x1odjw0f xjkvuk6 xh8yej3\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1iyjqo2 xs83m0k xdl72j9 x3igimt xedcshv x1t2pt76 xf7dkkf xv54qhq xexx8yu x18d9i69\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"xeuugli\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.Solicitar acesso a um domínioSua empresa precisa usar este ativo em nome de outra\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x78zum5 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl xdt5ytf x1dbijih\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x78zum5 x1iyjqo2\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x8va1my xjwep3j x1t39747 x1wcsgtt x1pczhz8 x1y1aw1k xwib8y2 xmzvs34 xf159sx x1qfufaz x1w5wx5t xo1l8bm xbsr9hj x1v911su\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x78zum5 x1iyjqo2 x1qughib xeuugli\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"js_k6\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x8va1my\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1io82uz xh8yej3\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xc5r6h4 xqeqjp1 x1phubyo x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk x78zum5 xdl72j9 xdt5ytf x2lah0s x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak x2lwn1j xeuugli xexx8yu xyri2b x18d9i69 x1c1uobl x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x78zum5 x1iyjqo2\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x8va1my xjwep3j x1t39747 x1wcsgtt x1pczhz8 x1y1aw1k xwib8y2 xmzvs34 xf159sx x1qfufaz x1w5wx5t x1n2onr6 xo1l8bm xbsr9hj x1v911su\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínioVocê precisa de um novo domínio para sua empresa.\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1iyjqo2 xamitd3\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínio\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x6s0dn4 x1q0g3np xozqiw3 x2lwn1j x1iyjqo2 xs83m0k x1xsc7gk x78zum5 xeuugli\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅    ✅ DIV (clickable=false)\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Texto: \"Criar um domínio\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        Classe: \"x1vvvo52 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1iyjqo2\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅        ID: \"js_k8\"\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=\n=","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\n💡 PRÓXIMO PASSO:\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"Use as informações acima para identificar:","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"1. A classe ou atributo exato do botão","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"2. Como diferenciá-lo de outros botões","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"3. O seletor CSS/XPath mais confiável\n","service":"bm-automation","timestamp":"2026-07-11 14:02:39"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:05:00"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:05:00"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:05:00"}
+{"level":"info","message":"ℹ️ Usando Business ID do último processamento: 2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 14:05:00"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:05:00"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:05:01"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:01"}
+{"level":"info","message":"🌐 Navegando para settings...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:01"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID capturado da URL: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:06"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:05:06"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:13"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:05:13"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:15"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:15"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão clicado com sucesso!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:18"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:18"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 14:05:18"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:18"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:18"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:05:19"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:05:19"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-518093.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:05:19"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-518093.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:19"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 14:05:20"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:22"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:05:22"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Adicionar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:05:22"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:22"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=27731590079805773&selected_asset_id=999911662811785&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:05:25"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:08:14"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:08:14"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:08:14"}
+{"level":"info","message":"ℹ️ Usando Business ID do último processamento: 2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 14:08:14"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:08:14"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:08:15"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:15"}
+{"level":"info","message":"🌐 Navegando para settings...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:15"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID capturado da URL: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:20"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:08:20"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:26"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:08:26"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:28"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:28"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão clicado com sucesso!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:31"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:31"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 14:08:31"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:31"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:31"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:08:32"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:08:32"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-711377.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:08:32"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-711377.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:32"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 14:08:34"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:35"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:08:35"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Adicionar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:08:35"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:35"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=27731590079805773&selected_asset_id=901887769635801&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesAdryan Henrique Joaquim de SantanaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:08:38"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:10:48"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:10:48"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:10:48"}
+{"level":"info","message":"ℹ️ Usando Business ID do último processamento: 2192445558205713\n","service":"bm-automation","timestamp":"2026-07-11 14:10:48"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:10:48"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:10:49"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:10:49"}
+{"level":"info","message":"🌐 Navegando para settings...\n","service":"bm-automation","timestamp":"2026-07-11 14:10:49"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID capturado da URL: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:10:56"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:10:56"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:11:01"}
+{"level":"info","message":"⚠️  Verificando se há erro na página...\n","service":"bm-automation","timestamp":"2026-07-11 14:11:01"}
+{"level":"error","message":"\n❌ ERRO DETECTADO: PORTFOLIO_NAO_PERMITIDO\n","service":"bm-automation","timestamp":"2026-07-11 14:11:01"}
+{"level":"info","message":"\n📋 LISTANDO TODOS OS BUSINESS IDs DISPONÍVEIS\n","service":"bm-automation","timestamp":"2026-07-11 14:11:49"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:11:49"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 14:11:49"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:11:49"}
+{"level":"info","message":"🌐 Acessando Meta Business Suite...\n","service":"bm-automation","timestamp":"2026-07-11 14:11:49"}
+{"level":"info","message":"🔍 Procurando Business Manager Links...\n","service":"bm-automation","timestamp":"2026-07-11 14:11:57"}
+{"level":"info","message":"\u001b[32m✅ \n✅ 1 Business ID(s) encontrado(s):\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:11:57"}
+{"level":"info","message":"   [1] 1549058433439653","service":"bm-automation","timestamp":"2026-07-11 14:11:57"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:11:57"}
+{"level":"info","message":"\n💡 Use um desses IDs no script test-domain-flow.js","service":"bm-automation","timestamp":"2026-07-11 14:11:57"}
+{"level":"info","message":"   Atualize a linha: const businessId = \"..._ID_AQUI_...\";\n","service":"bm-automation","timestamp":"2026-07-11 14:11:57"}
+{"level":"info","message":"🌐 Navegando para settings geral...\n","service":"bm-automation","timestamp":"2026-07-11 14:11:57"}
+{"level":"info","message":"📍 URL Atual: https://business.facebook.com/latest/settings/business_users/?nav_ref=internal_nav&business_id=27731590079805773&ir_qe_exposed=1\n","service":"bm-automation","timestamp":"2026-07-11 14:12:03"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID da URL: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:12:03"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:14:11"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:14:11"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:14:11"}
+{"level":"info","message":"ℹ️ Usando Business ID alternativo: 1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:14:11"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:14:11"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:14:12"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:12"}
+{"level":"info","message":"🌐 Navegando para settings...\n","service":"bm-automation","timestamp":"2026-07-11 14:14:12"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID capturado da URL: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:18"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=27731590079805773\n","service":"bm-automation","timestamp":"2026-07-11 14:14:18"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:23"}
+{"level":"info","message":"⚠️  Verificando se há erro na página...\n","service":"bm-automation","timestamp":"2026-07-11 14:14:23"}
+{"level":"error","message":"\n❌ ERRO DETECTADO: PORTFOLIO_NAO_PERMITIDO\n","service":"bm-automation","timestamp":"2026-07-11 14:14:23"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:14:47"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:14:47"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:14:47"}
+{"level":"info","message":"ℹ️ Usando Business ID alternativo: 1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:14:47"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:14:47"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:14:48"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:48"}
+{"level":"info","message":"\u001b[32m✅ ✅ Usando Business ID: 1549058433439653\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:48"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:14:48"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:54"}
+{"level":"info","message":"⚠️  Verificando se há erro na página...\n","service":"bm-automation","timestamp":"2026-07-11 14:14:54"}
+{"level":"info","message":"\u001b[32m✅ ✅ Nenhum erro detectado, prosseguindo...\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:54"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:14:54"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:56"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:14:56"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão clicado com sucesso!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:59"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:14:59"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 14:14:59"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 14:14:59"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 14:14:59"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:15:00"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:15:00"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-099373.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:15:00"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-099373.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:15:00"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 14:15:02"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:15:03"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:15:03"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Adicionar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:15:03"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 14:15:03"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1341619324773678&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"\u001b[32m✅ ✅ MENSAGENS DE SUCESSO:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"error","message":"\n❌ ERRO: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 14:15:06"}
+{"level":"info","message":"\n============================================================","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"🧪 TEST DOMAIN FLOW - Testando criação e verificação de domínio","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"ℹ️ Usando Business ID alternativo: 1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"🚀 Iniciando browser...","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"💾 Carregando cookies...","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"\u001b[32m✅ ✅ Usando Business ID: 1549058433439653\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"🌐 Navegando para: https://business.facebook.com/latest/settings/domains?business_id=1549058433439653\n","service":"bm-automation","timestamp":"2026-07-11 14:18:21"}
+{"level":"info","message":"\u001b[32m✅ ✅ Página de domínios carregada\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:26"}
+{"level":"info","message":"⚠️  Verificando se há erro na página...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:26"}
+{"level":"info","message":"\u001b[32m✅ ✅ Nenhum erro detectado, prosseguindo...\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:26"}
+{"level":"info","message":"➕ Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:18:26"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:28"}
+{"level":"info","message":"🔗 Clicando em \"Criar um domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:28"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão clicado com sucesso!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:31"}
+{"level":"info","message":"\u001b[32m✅ ✅ Modal de criar domínio aberto\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:31"}
+{"level":"info","message":"🚀 Criando projeto no Render...","service":"bm-automation","timestamp":"2026-07-11 14:18:31"}
+{"level":"info","message":"\n🚀 Criando projeto Render para cnpj-12345678...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:31"}
+{"level":"info","message":"📝 Enviando para Render API...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:31"}
+{"level":"error","message":"\n❌ Erro ao criar projeto Render:","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}
+{"level":"error","message":"   name: (cnpj-12345678) already in use\n","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}
+{"level":"warn","message":"⚠️ Usando domínio fallback: facebook-automation-311457.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}
+{"level":"info","message":"📝 Preenchendo domínio: facebook-automation-311457.onrender.com...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:32"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio preenchido\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"🔍 DEBUG 1: Após preencher domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"\n🔍 APÓS PREENCHER DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1341619324773678&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"\u001b[32m✅ ✅ MENSAGENS DE SUCESSO:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"🤖 Aplicando anti-bot...","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"\u001b[32m✅ ✅ Anti-bot aplicado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"🔗 Clicando em \"Adicionar\"...","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Adicionar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"📋 Aguardando geração de meta tag...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:34"}
+{"level":"info","message":"🔍 Procurando meta tag gerada...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"⚠️ Meta tag não encontrada\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"🔍 DEBUG 2: Após adicionar domínio\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"\n🔍 APÓS ADICIONAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1341619324773678&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"\u001b[32m✅ ✅ MENSAGENS DE SUCESSO:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"🔍 Procurando botão \"Verificar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão encontrado e clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:37"}
+{"level":"info","message":"🔍 DEBUG 3: Resultado da verificação\n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"\n🔍 APÓS TENTAR VERIFICAR DOMÍNIO\n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"============================================================","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"📍 URL: https://business.facebook.com/latest/settings/domains/?business_id=1549058433439653&selected_asset_id=1341619324773678&selected_asset_type=owned-domain\n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"📄 Título: Meta Business Suite\n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"   ℹ️ Nenhuma meta tag Facebook detectada\n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"❌ ERROS DETECTADOS:","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"   • Relatórios de AnúnciosRelatórios de Anúncios","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"   • Gerenciador de EventosGerenciador de Eventos","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"   • Cobrança e pagamentosCobrança e pagamentos","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"   • PesquisarPesquisar","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"   • NotificaçõesNotificações","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"   • AjudaAjuda","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"warn","message":"","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"\u001b[32m✅ ✅ MENSAGENS DE SUCESSO:\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"\u001b[32m✅    • Not Verified\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"\u001b[32m✅ \u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"📝 Conteúdo da modal:\n   ConfiguraçõesSadz cabeleireiros ltdaPortfólio empresarialInformações da empresaUsuáriosAlternar grupo​PessoasParceirosUsuários do sistemaContasAlternar grupo​PáginasContas de anúnciosGrupos de ativos \n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"============================================================\n","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
+{"level":"info","message":"\u001b[32m✅ \n✅ Teste concluído! Verifique os debugs acima.\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 14:18:40"}
