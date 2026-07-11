@@ -10,6 +10,7 @@
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
+const axios = require('axios');
 const logger = require('./src/utils/logger');
 
 puppeteer.use(StealthPlugin());
