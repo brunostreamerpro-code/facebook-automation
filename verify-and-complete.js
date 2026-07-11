@@ -72,29 +72,50 @@ async function executarVerificacao() {
 
     // ===== PASSO 1: Verificar meta tag no Render =====
     logger.info('🌐 [PASSO 1] Verificando meta tag no site do Render...\n');
-    logger.info(`   Acessando: http://${dominio}/\n`);
 
-    await page.goto(`http://${dominio}/`, { waitUntil: 'load', timeout: 30000 }).catch(() => {
-      logger.warn('   ⚠️ Site pode estar em processo de inicialização, continuando...\n');
-    });
+    let temMetaTag = false;
+    let tentativasMetaTag = 0;
+    const maxTentativas = 5;
 
-    await new Promise(r => setTimeout(r, 2000));
+    while (!temMetaTag && tentativasMetaTag < maxTentativas) {
+      tentativasMetaTag++;
+      logger.info(`   Tentativa ${tentativasMetaTag}/${maxTentativas}: Acessando http://${dominio}/\n`);
 
-    const temMetaTag = await page.evaluate((codigo) => {
-      const html = document.documentElement.outerHTML;
-      return html.includes('facebook-domain-verification') && html.includes(codigo);
-    }, metaTagCode);
+      try {
+        const response = await axios.get(`http://${dominio}/`, { timeout: 10000 });
+        const html = response.data;
+
+        if (html.includes('facebook-domain-verification') && html.includes(metaTagCode)) {
+          temMetaTag = true;
+          logger.success(`✅ Meta tag encontrado no site!\n`);
+        } else {
+          logger.warn(`⚠️ Meta tag NÃO encontrado (tentativa ${tentativasMetaTag})\n`);
+
+          if (tentativasMetaTag < maxTentativas) {
+            logger.info(`   ⏳ Aguardando 5 segundos antes de tentar novamente...\n`);
+            await new Promise(r => setTimeout(r, 5000));
+          }
+        }
+      } catch (err) {
+        logger.warn(`   ⚠️ Erro ao acessar site: ${err.message}\n`);
+
+        if (tentativasMetaTag < maxTentativas) {
+          logger.info(`   ⏳ Aguardando 5 segundos antes de tentar novamente...\n`);
+          await new Promise(r => setTimeout(r, 5000));
+        }
+      }
+    }
 
     if (temMetaTag) {
-      logger.success(`✅ Meta tag JÁ está presente no site!\n`);
-      logger.success(`✅ Site: ${dominio}\n`);
-      logger.success(`✅ Código: ${metaTagCode}\n`);
+      logger.success(`\n✅ Meta tag confirmado no site!\n`);
+      logger.success(`   🌐 Site: ${dominio}\n`);
+      logger.success(`   🔑 Código: ${metaTagCode}\n`);
     } else {
-      logger.warn(`⚠️ Meta tag NÃO encontrado no site\n`);
+      logger.warn(`\n⚠️ Meta tag NÃO encontrado no site após ${maxTentativas} tentativas\n`);
 
       // Tentar salvar em cnpj-data.json e fazer push (como no script-auto.js)
       if (cnpj) {
-        logger.info(`\n📝 Tentando salvar meta tag em cnpj-data.json...\n`);
+        logger.info(`\n📝 Tentando atualizar meta tag no repositório...\n`);
         try {
           const path = require('path');
           const cnpjDataPath = path.join(process.cwd(), 'cnpj-data.json');
@@ -104,40 +125,47 @@ async function executarVerificacao() {
           if (cnpjDataContent.cnpjs[cnpjKey]) {
             cnpjDataContent.cnpjs[cnpjKey].META_TAG = metaTagCode;
             fs.writeFileSync(cnpjDataPath, JSON.stringify(cnpjDataContent, null, 2), 'utf8');
-            logger.success(`✅ Meta tag salva em cnpj-data.json\n`);
+            logger.success(`✅ Meta tag salvo em cnpj-data.json\n`);
 
             // Fazer git commit e push
-            logger.info(`🚀 Enviando meta tag para Render...\n`);
+            logger.info(`🚀 Enviando meta tag para Render via Git...\n`);
             try {
               const { execSync } = require('child_process');
               execSync('git add cnpj-data.json', { cwd: process.cwd(), stdio: 'pipe' });
               execSync('git commit -m "data: update meta tag for domain verification"', { cwd: process.cwd(), stdio: 'pipe' });
               execSync('git push origin main', { cwd: process.cwd(), stdio: 'pipe' });
-              logger.success(`✅ Meta tag enviada para Render!\n`);
-              logger.info(`⏳ Aguarde ~30 segundos para Render recarregar com a meta tag\n`);
+              logger.success(`✅ Meta tag enviado para Render!\n`);
 
-              // Aguardar Render recarregar
-              logger.info(`⏳ Aguardando Render processar (40 segundos)...\n`);
+              // Aguardar Render recarregar e verificar novamente
+              logger.info(`⏳ Aguardando Render recarregar (40 segundos)...\n`);
               await new Promise(r => setTimeout(r, 40000));
-              temMetaTag = true; // Marcar como se tivesse
+
+              logger.info(`🔄 Verificando meta tag novamente...\n`);
+              try {
+                const response = await axios.get(`http://${dominio}/`, { timeout: 10000 });
+                if (response.data.includes('facebook-domain-verification') && response.data.includes(metaTagCode)) {
+                  temMetaTag = true;
+                  logger.success(`✅ Meta tag agora está presente no site!\n`);
+                }
+              } catch (e) {
+                logger.warn(`⚠️ Erro ao verificar novamente: ${e.message}\n`);
+              }
             } catch (pushErr) {
               logger.warn(`⚠️ Erro ao fazer push: ${pushErr.message}\n`);
             }
           }
         } catch (err) {
-          logger.warn(`⚠️ Erro ao salvar meta tag: ${err.message}\n`);
+          logger.warn(`⚠️ Erro ao atualizar: ${err.message}\n`);
         }
       }
 
       if (!temMetaTag) {
-        logger.info(`\n📋 INSTRUÇÕES MANUAIS PARA ADICIONAR:\n`);
-        logger.info(`   1. Acesse o servidor/arquivo HTML do site: ${dominio}`);
-        logger.info(`   2. Abra o arquivo index.html ou página principal\n`);
-        logger.info(`   3. Cole ANTES de </head>:\n`);
+        logger.info(`\n📋 INSTRUÇÕES MANUAIS:\n`);
+        logger.info(`   1. Acesse: ${dominio}\n`);
+        logger.info(`   2. Cole no <head>:\n`);
         logger.info(`   ${metaTagCompleto}\n`);
-        logger.info(`   4. Salve o arquivo\n`);
-        logger.info(`   5. Publique/deploy o site\n`);
-        logger.info(`⏱️  Aguarde 1-2 minutos para o site recarregar\n`);
+        logger.info(`   3. Salve e publique\n`);
+        logger.info(`   4. Aguarde 1-2 minutos\n`);
       }
     }
 
