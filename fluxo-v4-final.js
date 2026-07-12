@@ -18,6 +18,7 @@ puppeteer.use(StealthPlugin());
 
 const GENESIZ_API = 'https://genesisai2001.vercel.app/api/generate-site';
 const RENDER_API_KEY = 'rnd_twVpTqjhhrY4bUYSNX2ucC282R9x';
+const RENDER_OWNER_ID = 'tea-d993sa3eo5us7381q41g';
 const RENDER_API = 'https://api.render.com/v1';
 
 function gerarNomeDominio(cnpj) {
@@ -290,14 +291,8 @@ async function executarFluxoCompleto() {
         body: JSON.stringify({
           name: dominio.replace(/\./g, '-').substring(0, 50),
           type: 'web_service',
-          runtime: 'node',
-          plan: 'free',
-          envVars: [
-            {
-              key: 'HTML_CONTENT',
-              value: htmlGerado
-            }
-          ]
+          ownerId: RENDER_OWNER_ID,
+          plan: 'free'
         })
       });
 

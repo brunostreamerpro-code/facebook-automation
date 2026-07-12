@@ -27202,3 +27202,104 @@
 {"level":"info","message":"   ✅ Meta Tag: rlaor279g623i3t6afkpmrjnwxik5d","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
 {"level":"info","message":"   ✅ Site: https://cnpj-32960315-t8f1nd.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
 {"level":"info","message":"   ✅ Status: VERIFICADO\n","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:41:09"}
+{"level":"info","message":"🌐 ACESSANDO SITE DO RENDER","service":"bm-automation","timestamp":"2026-07-11 21:41:09"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:41:09"}
+{"level":"info","message":"📍 URL: https://cnpj-32960315-t8f1nd.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:41:09"}
+{"level":"info","message":"🔍 Procurando meta tag: rlaor279g623i3t6afkpmrjnwxik5d\n","service":"bm-automation","timestamp":"2026-07-11 21:41:09"}
+{"level":"info","message":"⏳ Acessando site...\n","service":"bm-automation","timestamp":"2026-07-11 21:41:09"}
+{"level":"info","message":"📊 Status: 404\n","service":"bm-automation","timestamp":"2026-07-11 21:41:10"}
+{"level":"error","message":"❌ Erro HTTP: 404\n","service":"bm-automation","timestamp":"2026-07-11 21:41:10"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"🔍 DEBUG - Render API","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"API Key: rnd_twVpTq...","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"Endpoint: https://api.render.com/v1/services\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"📤 Tentativa 1: Criar serviço web simples...\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"Payload:\n{\n  \"name\": \"test-domain-12345\",\n  \"type\": \"web_service\",\n  \"plan\": \"free\"\n}\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"Status: 400\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"📊 Response:\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"{\n  \"message\": \"ownerID is a required field\"\n}\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"error","message":"❌ Erro retornado pela API:\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"error","message":"Message: ownerID is a required field","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"📤 Tentativa 2: Com header Authorization diferente...\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"Status: 400\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"Response:\n{\n  \"message\": \"ownerID is a required field\"\n}\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:41:38"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"🔐 OBTER OWNER ID DO RENDER","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"📡 Chamando /owners...\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"Status: 200\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"\u001b[32m✅ ✅ Owners encontrado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"Response:\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"[\n  {\n    \"cursor\": \"4nlWyrDtZk1zYTNlbzV1czczODFxNDFn\",\n    \"owner\": {\n      \"email\": \"perwzinho@gmail.com\",\n      \"id\": \"tea-d993sa3eo5us7381q41g\",\n      \"name\": \"perwzinho's workspace\",\n      \"type\": \"team\"\n    }\n  }\n]\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"📋 OWNERS DISPONÍVEIS:\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"ID: undefined","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"Type: undefined","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"Name: N/A\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"\u001b[32m✅ ✅ Use ownerID: undefined\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:41:50"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:42:05"}
+{"level":"info","message":"🚀 FLUXO V4 FINAL - COMPLETO","service":"bm-automation","timestamp":"2026-07-11 21:42:05"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:42:05"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio gerado: cnpj-32960315-jo6f12.onrender.com\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:06"}
+{"level":"info","message":"   CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:42:06"}
+{"level":"info","message":"   Razão Social: GRUPO G INFORMACOES COMERCIAIS\n","service":"bm-automation","timestamp":"2026-07-11 21:42:06"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:06"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:06"}
+{"level":"info","message":"🔍 [PASSO 1] Capturando Business ID...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:06"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:11"}
+{"level":"info","message":"🌐 [PASSO 2] Navegando para domains...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:11"}
+{"level":"info","message":"➕ [PASSO 3] Clicando \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:18"}
+{"level":"info","message":"🔗 [PASSO 4] Clicando \"Criar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:20"}
+{"level":"info","message":"📝 [PASSO 5] Preenchendo: cnpj-32960315-jo6f12.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:42:23"}
+{"level":"info","message":"🤖 [PASSO 6] Anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:25"}
+{"level":"info","message":"📤 [PASSO 7] Enviando domínio...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:25"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:33"}
+{"level":"info","message":"\n🔍 [PASSO 8] Capturando meta tag da página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:33"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag capturado: j4i0d2nhc2yejejdx6slhwqovhj2mb\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"info","message":"\n🎨 [PASSO 9] Chamando Genesysai2001...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"info","message":"   POST https://genesisai2001.vercel.app/api/generate-site\n","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ Resposta 200 OK\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ HTML gerado (12.30 KB)\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag injetado no HTML\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"info","message":"\n🚀 [PASSO 10] Criando projeto no Render...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"info","message":"   Criando projeto: cnpj-32960315-jo6f12.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:42:36"}
+{"level":"warn","message":"⚠️ Não conseguiu criar projeto Render: 400\n","service":"bm-automation","timestamp":"2026-07-11 21:42:37"}
+{"level":"info","message":"\n✅ [PASSO 11] Verificando domínio no Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:37"}
+{"level":"info","message":"   Procurando botão \"Verificar\" na página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:42:37"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Verificar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:37"}
+{"level":"info","message":"\u001b[32m✅ ✅ ✅ DOMÍNIO VERIFICADO COM SUCESSO! ✅ ✅\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"\u001b[32m✅ 🎉 FLUXO V4 - COMPLETO COM SUCESSO!\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"📊 RESUMO:\n","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"   ✅ CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"   ✅ Razão Social: GRUPO G INFORMACOES COMERCIAIS","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"   ✅ Domínio: cnpj-32960315-jo6f12.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"   ✅ Meta Tag: j4i0d2nhc2yejejdx6slhwqovhj2mb","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"   ✅ Site: https://cnpj-32960315-jo6f12.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"   ✅ Status: VERIFICADO\n","service":"bm-automation","timestamp":"2026-07-11 21:42:42"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:42:53"}
+{"level":"info","message":"🔧 TESTE - Criar Serviço Render","service":"bm-automation","timestamp":"2026-07-11 21:42:53"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:42:53"}
+{"level":"info","message":"📤 Payload:\n","service":"bm-automation","timestamp":"2026-07-11 21:42:53"}
+{"level":"info","message":"{\n  \"name\": \"test-cnpj-32960315-abc123\",\n  \"ownerId\": \"tea-d993sa3eo5us7381q41g\",\n  \"type\": \"web_service\",\n  \"plan\": \"free\"\n}\n","service":"bm-automation","timestamp":"2026-07-11 21:42:53"}
+{"level":"info","message":"Status: 400\n","service":"bm-automation","timestamp":"2026-07-11 21:42:54"}
+{"level":"info","message":"📊 Response:\n","service":"bm-automation","timestamp":"2026-07-11 21:42:54"}
+{"level":"info","message":"{\n  \"message\": \"must include serviceDetails when creating a non-static service\"\n}\n","service":"bm-automation","timestamp":"2026-07-11 21:42:54"}
+{"level":"error","message":"❌ Erro:\n","service":"bm-automation","timestamp":"2026-07-11 21:42:54"}
+{"level":"error","message":"Message: must include serviceDetails when creating a non-static service","service":"bm-automation","timestamp":"2026-07-11 21:42:54"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:42:54"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:43:04"}
+{"level":"info","message":"🔧 TESTE - Static Site no Render","service":"bm-automation","timestamp":"2026-07-11 21:43:04"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:43:04"}
+{"level":"info","message":"📤 Payload:\n","service":"bm-automation","timestamp":"2026-07-11 21:43:04"}
+{"level":"info","message":"{\n  \"name\": \"test-static-cnpj-abc\",\n  \"ownerId\": \"tea-d993sa3eo5us7381q41g\",\n  \"type\": \"static_site\",\n  \"plan\": \"free\"\n}\n","service":"bm-automation","timestamp":"2026-07-11 21:43:04"}
+{"level":"info","message":"Status: 400\n","service":"bm-automation","timestamp":"2026-07-11 21:43:05"}
+{"level":"info","message":"📊 Response:\n","service":"bm-automation","timestamp":"2026-07-11 21:43:05"}
+{"level":"info","message":"{\n  \"message\": \"repo is required when using service type: static_site\"\n}\n","service":"bm-automation","timestamp":"2026-07-11 21:43:05"}
+{"level":"error","message":"❌ repo is required when using service type: static_site\n","service":"bm-automation","timestamp":"2026-07-11 21:43:05"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:43:05"}
