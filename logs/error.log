@@ -573,3 +573,4 @@
 {"level":"error","message":"❌ Erro ao buscar dados: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.\n","service":"bm-automation","timestamp":"2026-07-11 21:21:18"}
 {"level":"error","message":"❌ Não foi possível obter dados","service":"bm-automation","timestamp":"2026-07-11 21:21:18"}
 {"level":"error","message":"\n❌ Erro: logger is not defined\n","service":"bm-automation","timestamp":"2026-07-11 21:36:09"}
+{"level":"error","message":"\n❌ Erro: siteUrl is not defined\n","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}

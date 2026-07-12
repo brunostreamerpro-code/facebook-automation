@@ -27080,3 +27080,125 @@
 {"level":"info","message":"📄 Primeiros 1000 caracteres da resposta:\n","service":"bm-automation","timestamp":"2026-07-11 21:36:48"}
 {"level":"info","message":"<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"facebook-domain-verification\" content=\"4496s6i1v0p0ke9v8jspjzmrdlg6fr\">\n    <meta name=\"robots\" content=\"index, follow\">\n    <meta name=\"author\" content=\"GRUPO G INFORMACOES COMERCIAIS\">\n    <title>GRUPO G INFORMACOES COMERCIAIS — Serviços · SAO PAULO</title>\n    <meta name=\"description\" content=\"Empresa especializada em promoção de vendas\">\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:locale\" content=\"pt_BR\">\n    <meta property=\"og:site_name\" content=\"GRUPO G INFORMACOES COMERCIAIS\">\n    <meta property=\"og:title\" content=\"GRUPO G INFORMACOES COMERCIAIS\">\n    <meta property=\"og:description\" content=\"Empresa especializada em promoção de vendas\">\n    <script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"GRUPO G INFORMACOES COMERCIAIS\",\"legalName\":\"GRUPO G INFO\n","service":"bm-automation","timestamp":"2026-07-11 21:36:48"}
 {"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:36:48"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:38:10"}
+{"level":"info","message":"🚀 FLUXO V4 FINAL - COMPLETO","service":"bm-automation","timestamp":"2026-07-11 21:38:10"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:38:10"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio gerado: cnpj-32960315-rzu3dv.onrender.com\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:11"}
+{"level":"info","message":"   CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:38:11"}
+{"level":"info","message":"   Razão Social: GRUPO G INFORMACOES COMERCIAIS\n","service":"bm-automation","timestamp":"2026-07-11 21:38:11"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:11"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:11"}
+{"level":"info","message":"🔍 [PASSO 1] Capturando Business ID...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:11"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID: 1549058433439653\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:16"}
+{"level":"info","message":"🌐 [PASSO 2] Navegando para domains...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:16"}
+{"level":"info","message":"➕ [PASSO 3] Clicando \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:24"}
+{"level":"info","message":"🔗 [PASSO 4] Clicando \"Criar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:26"}
+{"level":"info","message":"📝 [PASSO 5] Preenchendo: cnpj-32960315-rzu3dv.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:38:29"}
+{"level":"info","message":"🤖 [PASSO 6] Anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:31"}
+{"level":"info","message":"📤 [PASSO 7] Enviando domínio...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:31"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:39"}
+{"level":"info","message":"\n🔍 [PASSO 8] Capturando meta tag da página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:39"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag capturado: 3jmh35prf3xvn5cnj7z36ioxc9kwql\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\n🎨 [PASSO 9] Chamando Genesysai2001...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"   POST https://genesisai2001.vercel.app/api/generate-site\n","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Resposta 200 OK\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ HTML gerado (12.30 KB)\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag injetado no HTML\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\n🚀 [PASSO 10] Criando projeto no Render...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"   Criando projeto: cnpj-32960315-rzu3dv.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"warn","message":"⚠️ Erro Render: htmlGerado is not defined\n","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\n✅ [PASSO 11] Verificando domínio no Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"   Procurando botão \"Verificar\" na página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Verificar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:42"}
+{"level":"info","message":"\u001b[32m✅ ✅ ✅ DOMÍNIO VERIFICADO COM SUCESSO! ✅ ✅\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"\u001b[32m✅ 🎉 FLUXO V4 - COMPLETO COM SUCESSO!\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"📊 RESUMO:\n","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"   ✅ CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"   ✅ Razão Social: GRUPO G INFORMACOES COMERCIAIS","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"   ✅ Domínio: cnpj-32960315-rzu3dv.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"   ✅ Meta Tag: 3jmh35prf3xvn5cnj7z36ioxc9kwql","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"   ✅ Site: https://cnpj-32960315-rzu3dv.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"   ✅ Status: VERIFICADO\n","service":"bm-automation","timestamp":"2026-07-11 21:38:47"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:39:04"}
+{"level":"info","message":"🚀 FLUXO V4 FINAL - COMPLETO","service":"bm-automation","timestamp":"2026-07-11 21:39:04"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:39:04"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio gerado: cnpj-32960315-vzdkz2.onrender.com\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:05"}
+{"level":"info","message":"   CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:39:05"}
+{"level":"info","message":"   Razão Social: GRUPO G INFORMACOES COMERCIAIS\n","service":"bm-automation","timestamp":"2026-07-11 21:39:05"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:05"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:05"}
+{"level":"info","message":"🔍 [PASSO 1] Capturando Business ID...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:05"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID: 1549058433439653\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:10"}
+{"level":"info","message":"🌐 [PASSO 2] Navegando para domains...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:10"}
+{"level":"info","message":"➕ [PASSO 3] Clicando \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:17"}
+{"level":"info","message":"🔗 [PASSO 4] Clicando \"Criar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:19"}
+{"level":"info","message":"📝 [PASSO 5] Preenchendo: cnpj-32960315-vzdkz2.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:39:22"}
+{"level":"info","message":"🤖 [PASSO 6] Anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:24"}
+{"level":"info","message":"📤 [PASSO 7] Enviando domínio...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:24"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:32"}
+{"level":"info","message":"\n🔍 [PASSO 8] Capturando meta tag da página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:32"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag capturado: 3anjaouqikabxgfnzoyvln43jl0jmh\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"info","message":"\n🎨 [PASSO 9] Chamando Genesysai2001...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"info","message":"   POST https://genesisai2001.vercel.app/api/generate-site\n","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"info","message":"\u001b[32m✅ ✅ Resposta 200 OK\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"info","message":"\u001b[32m✅ ✅ HTML gerado (12.30 KB)\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag injetado no HTML\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"info","message":"\n🚀 [PASSO 10] Criando projeto no Render...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"info","message":"   Criando projeto: cnpj-32960315-vzdkz2.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:39:35"}
+{"level":"warn","message":"⚠️ Não conseguiu criar projeto Render: 400\n","service":"bm-automation","timestamp":"2026-07-11 21:39:36"}
+{"level":"info","message":"\n✅ [PASSO 11] Verificando domínio no Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:36"}
+{"level":"info","message":"   Procurando botão \"Verificar\" na página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Verificar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:36"}
+{"level":"info","message":"\u001b[32m✅ ✅ ✅ DOMÍNIO VERIFICADO COM SUCESSO! ✅ ✅\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"\u001b[32m✅ 🎉 FLUXO V4 - COMPLETO COM SUCESSO!\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"📊 RESUMO:\n","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"   ✅ CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"   ✅ Razão Social: GRUPO G INFORMACOES COMERCIAIS","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"   ✅ Domínio: cnpj-32960315-vzdkz2.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"   ✅ Meta Tag: 3anjaouqikabxgfnzoyvln43jl0jmh","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"error","message":"\n❌ Erro: siteUrl is not defined\n","service":"bm-automation","timestamp":"2026-07-11 21:39:41"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"🚀 FLUXO V4 FINAL - COMPLETO","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio gerado: cnpj-32960315-t8f1nd.onrender.com\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"   CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"   Razão Social: GRUPO G INFORMACOES COMERCIAIS\n","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"💾 Carregando cookies...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"\u001b[32m✅ ✅ 12 cookies carregados\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"🔍 [PASSO 1] Capturando Business ID...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:51"}
+{"level":"info","message":"\u001b[32m✅ ✅ Business ID: 27731590079805773\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:39:57"}
+{"level":"info","message":"🌐 [PASSO 2] Navegando para domains...\n","service":"bm-automation","timestamp":"2026-07-11 21:39:57"}
+{"level":"info","message":"➕ [PASSO 3] Clicando \"Adicionar\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:05"}
+{"level":"info","message":"🔗 [PASSO 4] Clicando \"Criar domínio\"...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:07"}
+{"level":"info","message":"📝 [PASSO 5] Preenchendo: cnpj-32960315-t8f1nd.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:40:10"}
+{"level":"info","message":"🤖 [PASSO 6] Anti-bot...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:11"}
+{"level":"info","message":"📤 [PASSO 7] Enviando domínio...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:12"}
+{"level":"info","message":"\u001b[32m✅ ✅ Domínio enviado\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:20"}
+{"level":"info","message":"\n🔍 [PASSO 8] Capturando meta tag da página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:20"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag capturado: rlaor279g623i3t6afkpmrjnwxik5d\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\n🎨 [PASSO 9] Chamando Genesysai2001...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"   POST https://genesisai2001.vercel.app/api/generate-site\n","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\u001b[32m✅ ✅ Resposta 200 OK\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\u001b[32m✅ ✅ HTML gerado (12.30 KB)\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\u001b[32m✅ ✅ Meta tag injetado no HTML\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\n🚀 [PASSO 10] Criando projeto no Render...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"   Criando projeto: cnpj-32960315-t8f1nd.onrender.com\n","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"warn","message":"⚠️ Não conseguiu criar projeto Render: 400\n","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\n✅ [PASSO 11] Verificando domínio no Facebook...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"   Procurando botão \"Verificar\" na página de detalhes...\n","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\u001b[32m✅ ✅ Botão \"Verificar\" clicado!\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:23"}
+{"level":"info","message":"\u001b[32m✅ ✅ ✅ DOMÍNIO VERIFICADO COM SUCESSO! ✅ ✅\n\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"\n================================================================================","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"\u001b[32m✅ 🎉 FLUXO V4 - COMPLETO COM SUCESSO!\u001b[0m","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"================================================================================\n","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"📊 RESUMO:\n","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"   ✅ CNPJ: 32960315000177","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"   ✅ Razão Social: GRUPO G INFORMACOES COMERCIAIS","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"   ✅ Domínio: cnpj-32960315-t8f1nd.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"   ✅ Meta Tag: rlaor279g623i3t6afkpmrjnwxik5d","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"   ✅ Site: https://cnpj-32960315-t8f1nd.onrender.com","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}
+{"level":"info","message":"   ✅ Status: VERIFICADO\n","service":"bm-automation","timestamp":"2026-07-11 21:40:28"}

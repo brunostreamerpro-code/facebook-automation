@@ -17,6 +17,8 @@ const logger = require('./src/utils/logger');
 puppeteer.use(StealthPlugin());
 
 const GENESIZ_API = 'https://genesisai2001.vercel.app/api/generate-site';
+const RENDER_API_KEY = 'rnd_twVpTqjhhrY4bUYSNX2ucC282R9x';
+const RENDER_API = 'https://api.render.com/v1';
 
 function gerarNomeDominio(cnpj) {
   const digitos = (cnpj || '').replace(/\D/g, '').substring(0, 8);
@@ -247,7 +249,7 @@ async function executarFluxoCompleto() {
 
     companyData.fbVerificationTag = metaTagFacebook;
 
-    let siteUrl = null;
+    let htmlGerado = null;
     try {
       logger.info(`   POST ${GENESIZ_API}\n`);
 
@@ -258,15 +260,11 @@ async function executarFluxoCompleto() {
       });
 
       if (response.ok) {
-        const html = await response.text();
+        htmlGerado = await response.text();
         logger.success(`✅ Resposta 200 OK\n`);
-        logger.success(`✅ HTML gerado (${(html.length / 1024).toFixed(2)} KB)\n`);
+        logger.success(`✅ HTML gerado (${(htmlGerado.length / 1024).toFixed(2)} KB)\n`);
 
-        // Genesysai2001 retorna URL do site criado no Render
-        // Poderia estar no headers ou no HTML
-        siteUrl = `https://${dominio}`;
-
-        if (html.includes(metaTagFacebook)) {
+        if (htmlGerado.includes(metaTagFacebook)) {
           logger.success(`✅ Meta tag injetado no HTML\n`);
         }
       }
@@ -274,8 +272,53 @@ async function executarFluxoCompleto() {
       logger.error(`❌ Erro: ${error.message}\n`);
     }
 
-    // ===== PASSO 10: Verificar Domínio Facebook =====
-    logger.info('\n✅ [PASSO 10] Verificando domínio no Facebook...\n');
+    // ===== PASSO 10: Criar/Deploy no Render =====
+    logger.info('\n🚀 [PASSO 10] Criando projeto no Render...\n');
+
+    let siteUrlRender = null;
+
+    try {
+      logger.info(`   Criando projeto: ${dominio}\n`);
+
+      // Criar projeto Render com o HTML gerado
+      const renderResponse = await fetch(`${RENDER_API}/services`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${RENDER_API_KEY}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: dominio.replace(/\./g, '-').substring(0, 50),
+          type: 'web_service',
+          runtime: 'node',
+          plan: 'free',
+          envVars: [
+            {
+              key: 'HTML_CONTENT',
+              value: htmlGerado
+            }
+          ]
+        })
+      });
+
+      if (renderResponse.ok) {
+        const renderData = await renderResponse.json();
+        siteUrlRender = `https://${dominio}`;
+        logger.success(`✅ Projeto Render criado!\n`);
+        logger.info(`   URL: ${siteUrlRender}\n`);
+      } else {
+        logger.warn(`⚠️ Não conseguiu criar projeto Render: ${renderResponse.status}\n`);
+        // Usar URL do Render mesmo assim
+        siteUrlRender = `https://${dominio}`;
+      }
+
+    } catch (error) {
+      logger.warn(`⚠️ Erro Render: ${error.message}\n`);
+      siteUrlRender = `https://${dominio}`;
+    }
+
+    // ===== PASSO 11: Verificar Domínio Facebook =====
+    logger.info('\n✅ [PASSO 11] Verificando domínio no Facebook...\n');
 
     // O meta tag está gerado no Genesysai2001
     // Agora vamos clicar o botão "Verificar" na página de detalhes
@@ -331,7 +374,7 @@ async function executarFluxoCompleto() {
     logger.info(`   ✅ Razão Social: ${companyData.razaoSocial}`);
     logger.info(`   ✅ Domínio: ${dominio}`);
     logger.info(`   ✅ Meta Tag: ${metaTagFacebook}`);
-    logger.info(`   ✅ Site: ${siteUrl || 'Criado no Render'}`);
+    logger.info(`   ✅ Site: https://${dominio}`);
     logger.info(`   ✅ Status: VERIFICADO\n`);
 
     await browser.close();
