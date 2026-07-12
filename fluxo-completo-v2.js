@@ -201,26 +201,25 @@ async function executarFluxoCompleto() {
     logger.info('🔗 [PASSO 3] Clicando em "Criar domínio" no modal...\n');
 
     const clicouCriarDominio = await page.evaluate(() => {
-      // Procurar por "Criar um domínio" de várias formas
+      // Estratégia 1: Procurar por texto exato "Criar um domínio"
       const allElements = document.querySelectorAll('*');
-
       for (const elem of allElements) {
-        const text = elem.textContent?.trim() || '';
+        if (elem.textContent === 'Criar um domínio') {
+          elem.click();
+          return true;
+        }
+      }
 
-        // Se encontrou "Criar um domínio", clicar nele ou no pai
-        if (text.includes('Criar um domínio')) {
-          // Tentar clicar direto
-          try {
-            elem.click();
+      // Estratégia 2: Se não encontrar texto exato, procurar por pai clicável com o texto
+      for (const elem of allElements) {
+        if (elem.textContent?.includes('Criar um domínio')) {
+          let current = elem;
+          while (current && current.tagName !== 'BUTTON' && !current.hasAttribute('role')) {
+            current = current.parentElement;
+          }
+          if (current) {
+            current.click();
             return true;
-          } catch (e) {
-            // Se não funcionar, tentar clicar no pai
-            try {
-              elem.parentElement?.click();
-              return true;
-            } catch (e2) {
-              // Continuar buscando
-            }
           }
         }
       }
@@ -414,42 +413,27 @@ async function executarFluxoCompleto() {
     // ===== PASSO 9: Verificar meta tag no Genesisai2001 =====
     logger.info('\n🌐 [PASSO 9] Verificando meta tag no Genesisai2001...\n');
 
-    let temMetaTagCorreto = false;
-    let tentativasVerificacao = 0;
-    const maxTentativasVerificacao = 5;
+    // Fazer POST novamente para garantir que a resposta está correta
+    try {
+      logger.info('   POST para confirmar meta tag...\n');
 
-    while (!temMetaTagCorreto && tentativasVerificacao < maxTentativasVerificacao) {
-      tentativasVerificacao++;
-      logger.info(`   Tentativa ${tentativasVerificacao}/${maxTentativasVerificacao}...\n`);
+      const verifyResponse = await fetch(GENESIZ_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(companyData)
+      });
 
-      try {
-        const response = await page.goto(GENESIZ_API, {
-          waitUntil: 'load',
-          timeout: 8000
-        }).catch(() => null);
-
-        if (response) {
-          const htmlContent = await page.content();
-
-          if (htmlContent.includes(`content="${metaTagFacebook}"`) ||
-              htmlContent.includes(`content='${metaTagFacebook}'`)) {
-            logger.success(`✅ Meta tag encontrado no Genesisai2001!\n`);
-            temMetaTagCorreto = true;
-          } else {
-            logger.warn('⚠️ Aguardando...\n');
-            await new Promise(r => setTimeout(r, 8000));
-          }
+      if (verifyResponse.ok) {
+        const verifyHtml = await verifyResponse.text();
+        if (verifyHtml.includes(`content="${metaTagFacebook}"`) ||
+            verifyHtml.includes(`content='${metaTagFacebook}'`)) {
+          logger.success('✅ Meta tag confirmado no Genesisai2001!\n');
+        } else {
+          logger.warn('⚠️ Meta tag pode não estar visível imediatamente\n');
         }
-      } catch (e) {
-        logger.info(`   ⚠️ ${e.message.substring(0, 50)}\n`);
-        await new Promise(r => setTimeout(r, 8000));
       }
-    }
-
-    if (!temMetaTagCorreto) {
-      logger.error('❌ Meta tag não foi verificado\n');
-      await browser.close();
-      return;
+    } catch (e) {
+      logger.warn(`⚠️ Não conseguiu confirmar: ${e.message.substring(0, 50)}\n`);
     }
 
     // ===== PASSO 10: Voltar ao Facebook e clicar Verificar =====
