@@ -569,3 +569,6 @@
 {"level":"error","message":"❌ Não foi possível obter dados do CNPJ","service":"bm-automation","timestamp":"2026-07-11 21:11:14"}
 {"level":"error","message":"❌ Erro HTTP: 401","service":"bm-automation","timestamp":"2026-07-11 21:11:40"}
 {"level":"error","message":"❌ Não foi possível obter dados do CNPJ","service":"bm-automation","timestamp":"2026-07-11 21:11:40"}
+{"level":"error","message":"\n❌ Erro: Requesting main frame too early!\n","service":"bm-automation","timestamp":"2026-07-11 21:16:39"}
+{"level":"error","message":"❌ Erro ao buscar dados: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.\n","service":"bm-automation","timestamp":"2026-07-11 21:21:18"}
+{"level":"error","message":"❌ Não foi possível obter dados","service":"bm-automation","timestamp":"2026-07-11 21:21:18"}
