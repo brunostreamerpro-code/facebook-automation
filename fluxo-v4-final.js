@@ -274,45 +274,20 @@ async function executarFluxoCompleto() {
       logger.error(`❌ Erro: ${error.message}\n`);
     }
 
-    // ===== PASSO 10: Verificar Meta Tag no Site =====
-    if (siteUrl) {
-      logger.info('\n🌐 [PASSO 10] Verificando meta tag no site...\n');
-      logger.info(`   Abrindo: ${siteUrl}\n`);
+    // ===== PASSO 10: Verificar Domínio Facebook =====
+    logger.info('\n✅ [PASSO 10] Verificando domínio no Facebook...\n');
 
-      // Abrir em nova aba
-      const novaAba = await browser.newPage();
-      try {
-        await novaAba.goto(siteUrl, { waitUntil: 'load', timeout: 10000 }).catch(() => null);
-        await new Promise(r => setTimeout(r, 2000));
-
-        const temMetaTag = await novaAba.evaluate((meta) => {
-          const html = document.documentElement.outerHTML;
-          return html.includes(meta);
-        }, metaTagFacebook);
-
-        if (temMetaTag) {
-          logger.success(`✅ Meta tag encontrado no site!\n`);
-        } else {
-          logger.warn(`⚠️ Meta tag não encontrado no site\n`);
-        }
-      } catch (e) {
-        logger.warn(`⚠️ Não conseguiu acessar: ${e.message}\n`);
-      }
-      await novaAba.close();
-    }
-
-    // ===== PASSO 11: Verificar Domínio Facebook =====
-    logger.info('\n✅ [PASSO 11] Voltando para Facebook...\n');
-
-    await page.goto(domainsUrl, { waitUntil: 'load', timeout: 60000 });
-    await new Promise(r => setTimeout(r, 3000));
-
-    logger.info('   Procurando botão "Verificar"...\n');
+    // O meta tag está gerado no Genesysai2001
+    // Agora vamos clicar o botão "Verificar" na página de detalhes
+    logger.info('   Procurando botão "Verificar" na página de detalhes...\n');
 
     const verificou = await page.evaluate(() => {
-      const buttons = Array.from(document.querySelectorAll('button, [role="button"]'));
+      const buttons = Array.from(document.querySelectorAll('button, [role="button"], div[role="button"]'));
+
+      // Procurar por botão com "Verificar" que está visível
       for (const btn of buttons) {
-        if (btn.textContent?.toLowerCase().includes('verificar')) {
+        const text = btn.textContent?.toLowerCase() || '';
+        if (text.includes('verificar') && btn.offsetParent !== null) {
           btn.click();
           return true;
         }
@@ -323,8 +298,26 @@ async function executarFluxoCompleto() {
     if (verificou) {
       logger.success('✅ Botão "Verificar" clicado!\n');
       await new Promise(r => setTimeout(r, 5000));
-      logger.success('✅ ✅ DOMÍNIO VERIFICADO COM SUCESSO! ✅ ✅\n');
+
+      // Verificar status
+      const status = await page.evaluate(() => {
+        const pageText = document.body.innerText || '';
+        return {
+          hasVerificado: pageText.toLowerCase().includes('verificado'),
+          hasAtivo: pageText.toLowerCase().includes('ativo'),
+          hasErro: pageText.toLowerCase().includes('erro') || pageText.toLowerCase().includes('falh')
+        };
+      });
+
+      if (status.hasVerificado || status.hasAtivo) {
+        logger.success('✅ ✅ DOMÍNIO VERIFICADO COM SUCESSO! ✅ ✅\n');
+      } else if (status.hasErro) {
+        logger.warn('⚠️ Falha na verificação\n');
+      } else {
+        logger.info('✅ Verificação iniciada! Aguarde alguns segundos no Facebook\n');
+      }
     } else {
+      logger.warn('⚠️ Botão "Verificar" não encontrado\n');
       logger.info('   Verifique manualmente no Facebook\n');
     }
 
