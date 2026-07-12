@@ -191,31 +191,53 @@ async function executarFluxoCompleto() {
     await new Promise(r => setTimeout(r, 8000));
     logger.success('✅ Domínio enviado\n');
 
-    // ===== PASSO 8: Capturar Meta Tag =====
-    logger.info('\n🔍 [PASSO 8] Capturando meta tag...\n');
+    // ===== PASSO 8: Capturar Meta Tag (PÁGINA DE DETALHES) =====
+    logger.info('\n🔍 [PASSO 8] Capturando meta tag da página de detalhes...\n');
 
     let metaTagFacebook = null;
-    for (let i = 1; i <= 5; i++) {
-      logger.info(`   Tentativa ${i}/5...\n`);
-      await new Promise(r => setTimeout(r, 3000));
 
-      metaTagFacebook = await page.evaluate(() => {
-        const inputs = document.querySelectorAll('input[type="text"], input[type="hidden"]');
-        for (const input of inputs) {
-          const value = input.value || '';
-          if (value.length === 30 && /^[a-zA-Z0-9_-]+$/.test(value)) return value;
+    // Aguardar navegação para página de detalhes
+    await new Promise(r => setTimeout(r, 3000));
+
+    metaTagFacebook = await page.evaluate(() => {
+      const allText = document.body.innerText || '';
+
+      // Procurar por códigos de 30 caracteres no texto visível
+      const regex = /[a-z0-9_-]{30}/gi;
+      const matches = allText.match(regex);
+
+      if (matches && matches.length > 0) {
+        // Pega o primeiro match que parece ser um código válido
+        for (const match of matches) {
+          if (/^[a-z0-9_-]{30}$/.test(match)) {
+            return match.toLowerCase();
+          }
         }
-        return null;
+      }
+
+      // Alternativa: procurar no HTML direto
+      const html = document.documentElement.outerHTML;
+      const htmlMatches = html.match(/content="([a-z0-9_-]{30})"/i);
+      if (htmlMatches && htmlMatches[1]) {
+        return htmlMatches[1];
+      }
+
+      return null;
+    });
+
+    if (metaTagFacebook) {
+      logger.success(`✅ Meta tag capturado: ${metaTagFacebook}\n`);
+    } else {
+      logger.warn('⚠️ Meta tag não encontrado na página de detalhes\n');
+
+      // Debug: mostrar o que tem na página
+      const pageContent = await page.evaluate(() => {
+        return document.body.innerText.substring(0, 1000);
       });
 
-      if (metaTagFacebook) {
-        logger.success(`✅ Meta tag: ${metaTagFacebook}\n`);
-        break;
-      }
-    }
+      logger.info('📄 Conteúdo da página:\n');
+      logger.info(pageContent + '\n');
 
-    if (!metaTagFacebook) {
-      logger.warn('⚠️ Meta tag não encontrado\n');
       await browser.close();
       return;
     }
